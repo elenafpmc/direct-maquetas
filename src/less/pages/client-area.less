@@ -19,11 +19,28 @@
     vertical-align: middle;
 
 		&.fullwidth-message{
-			width: 95%;
+			width: 92.5%;
 		}
 		&.long-message {
 			top: 0;
 			margin-bottom: 5px;
+		}
+	}
+	@media(max-width: @screen-max-sm){
+		.text-message {
+	    top: -6px;
+		}
+	}
+	@media(max-width: @screen-max-xs){
+		margin: 0;
+		padding: 20px;
+		
+		[class*="icon-"] {
+			display: none;
+		}
+		.text-message {
+			top: 0;
+			width: 100%;
 		}
 	}
 }

@@ -8449,11 +8449,29 @@ html {
   vertical-align: middle;
 }
 .block-alert .message .text-message.fullwidth-message {
-  width: 95%;
+  width: 92.5%;
 }
 .block-alert .message .text-message.long-message {
   top: 0;
   margin-bottom: 5px;
+}
+@media (max-width: 991px) {
+  .block-alert .message .text-message {
+    top: -6px;
+  }
+}
+@media (max-width: 767px) {
+  .block-alert .message {
+    margin: 0;
+    padding: 20px;
+  }
+  .block-alert .message [class*="icon-"] {
+    display: none;
+  }
+  .block-alert .message .text-message {
+    top: 0;
+    width: 100%;
+  }
 }
 a.black-link {
   display: inline-block;
