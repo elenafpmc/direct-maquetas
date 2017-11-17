@@ -1,0 +1,192 @@
+{{= it.include("core/html-start.html") }}
+
+    {{= it.include("blocks/header.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+
+		<main class="wrapper public" role="main">
+			<div class="fake-bg"></div>
+			<button type="button" class="btn btn-close" id="btn-close">
+				<span class="icon-svg-close xs" data-grunticon-embed></span>
+			</button>
+
+			<section>
+
+  			<div class="container client-area" id="container-holder">
+          <section class="block-white">
+
+            <div class="row margin-b-50">
+							<div class="col-sm-12">
+								<button type="button" class="btn link pull-left no-decoration back-button" data-target="#general-recibos"><span data-grunticon-embed="" class="icon-svg-arrow-back xs pull-left"></span>Volver a partes</button>
+							</div>
+						</div>
+
+            <div class="row margin-b-40">
+              <div class="col-md-12">
+                <h3 class="h2 no-padding-b">Abrir nuevo parte</h3>
+              </div>
+            </div>
+
+            <div class="row margin-b-30">
+              <div class="col-sm-12">
+                <p class="h4 font-normal">Selecciona el vehículo y el tipo de parte:</p>
+              </div>
+            </div>
+
+            <div class="row margin-b-20">
+              <div class="col-md-4 col-sm-6 margin-b-20">
+								<div class="form-group no-label">
+                  <label for="matricula">Matrícula:</label>
+									<select role="listbox" name="matricula" id="matricula" class="selectpicker">
+                    <option role="placeholder" value="" selected disabled>Seleccionar vehículo</option>
+										<option role="option" value="">1234 YYY</option>
+										<option role="option" value="">1234 YYX</option>
+										<option role="option" value="">1234 YYZ</option>
+									</select>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+
+              <div class="col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-0 margin-b-20">
+								<div class="form-group no-label">
+                  <label for="type">Tipo de parte:</label>
+									<select role="listbox" name="type" id="type" class="selectpicker">
+										<option role="placeholder" value="" selected disabled>Tipo de parte</option>
+										<option role="option" value="">Daños de aparcamiento</option>
+										<option role="option" value="">Daños en lunas</option>
+										<option role="option" value="">Daños por robo</option>
+										<option role="option" value="">Colisión con objeto/animal</option>
+										<option role="option" value="">Siniestro con otro/s vehiculo</option>
+										<option role="option" value="">Otras causas</option>
+									</select>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+            </div>
+            <div class="row margin-b-25">
+                <div class="col-sm-12">
+                  <h4 class="h3 no-padding-b">Datos del vehiculo:</h3>
+                </div>
+            </div>
+            <div class="row margin-b-30">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 margin-b-20">
+                      <p>Nº de póliza:</p>
+                      <strong class="text-overflow">45233932</strong>
+                  </div>
+                  <div class="col-md-3 col-sm-6 margin-b-20">
+                      <p>Tipo de seguro:</p>
+                      <strong class="text-overflow">Todo riesgo sin franquicia</strong>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 margin-b-20">
+                      <p>Marca:</p>
+                      <strong class="text-overflow">SEAT</strong>
+                  </div>
+                  <div class="col-md-3 col-sm-6 margin-b-20">
+                      <p>Modelo:</p>
+                      <strong class="text-overflow">LEÓN 2.0 TDI</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row margin-b-15">
+              <div class="col-md-12">
+                <div class="block-alert relative" style="display: block;">
+                  <div class="alert-danger font-normal margin-b-10">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="message">
+                            <span class="icon-svg-warning sm" data-grunticon-embed=""></span>
+                            <span class="text-message fullwidth-message">
+                              <strong>Lo sentimos, no es posible abrir un parte para esta póliza porque tienes pagos pendientes.</strong>
+                              Puedes ver el estado de tus recibos haciendo click en <strong>Ir a recibo y pagos.</strong>
+                              Si tienes cualquier duda contacta con nosotros en el <strong>918 378 902</strong>
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- row -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row margin-b-15">
+              <div class="col-md-12">
+                <div class="block-alert relative" style="display: block;">
+                  <div class="alert-danger font-normal margin-b-10">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="message">
+                            <span class="icon-svg-warning sm" data-grunticon-embed=""></span>
+                            <span class="text-message long-message fullwidth-message">
+                              <strong>Lo sentimos, no es posible abrir un parte para esta póliza porque tienes un pago pendiente.</strong>
+                              Para continuar, puedes pagar el recibo haciendo clic en <strong>Pagar ahora</strong>.
+                              O, si quieres consultar el estado de tus recibos, haz clic en <strong>Ir a recibos y pagos</strong>.
+                              Si tienes cualquier duda contacta con nosotros en el <strong>918 378 902</strong>.
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- row -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row margin-b-40">
+              <div class="col-md-12">
+                <div class="block-alert relative" style="display: block;">
+                  <div class="alert-danger font-normal margin-b-10">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="message">
+                            <span class="icon-svg-warning sm" data-grunticon-embed=""></span>
+                            <span class="text-message fullwidth-message">
+                              Para abrir un parte de Daños en lunas, ponte en contacto con nuestro <strong>Servicio de Reparación de Lunas</strong> en el <strong>935 617 177</strong>.
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- row -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row margin-b-15">
+							<div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+								<button class="btn btn-block btn-black caps" type="button">Pagar ahora</button>
+							</div>
+              <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+							  <button class="btn btn-block btn-black caps" type="button">Ir a recibos y pagos</button>
+							</div>
+						</div>
+            <div class="row margin-b-15">
+              <div class="visible-xs col-xs-12 pull-right">
+							  <a href="" class="black-link pull-right">Cancelar apertura</a>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+								<button class="btn btn-block btn-black caps disabled" type="button">Enviar</button>
+							</div>
+              <div class="col-md-4 col-sm-6 hidden-xs pull-right">
+                <a href="" class="black-link pull-right">Cancelar apertura</a>
+              </div>
+						</div>
+          </section>
+  		  </div><!-- container -->
+
+			</section><!-- container-fluid -->
+
+	  </main>
+
+
+    {{= it.include("blocks/footer.html") }}
+
+    {{= it.include("core/plugins.js.html") }}
+
+
+{{= it.include("core/html-end.html") }}

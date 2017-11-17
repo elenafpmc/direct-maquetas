@@ -1,0 +1,154 @@
+/* -------------------------------------------------- 
+	Body
+---------------------------------------------------*/	
+
+body	{
+	background: @color-soft-grey;
+	font-family: Futura-pt;
+	
+}
+
+
+.fake-bg	{
+		height: 200px;
+		background: @color-primary;	
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+		@media (max-width: @screen-max-xs) {
+	
+			height: 100px;
+	
+		}			
+		
+}
+
+#btn-close{
+	display: none;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0) inset;
+}
+
+
+.tab-pane {
+	&.active{
+		section.active{
+			display: block!important;
+		}
+	}
+}
+
+.accordion-body {
+	.active{
+		section.active{
+			display: block!important;
+		}
+	}
+}
+/* -------------------------------------------------- 
+	Loading
+---------------------------------------------------*/
+
+.loading-layer	{
+
+ 	background: rgba(0, 0, 0, 1); /* Fall-back for browsers that don't support rgba */
+    background: rgba(0, 0, 0, .8);
+
+
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 9999;
+}
+
+
+.loading-animation	{
+	display: block;
+	margin: auto;
+	width: 170px;
+	height: 90px;
+	top:0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	animation: loading 5s infinite;
+	-webkit-animation: loading 5s infinite;
+	-moz-animation:    loading 5s infinite;
+	-o-animation:      loading 5s infinite;	
+	
+	animation-timing-function: ease-out; 
+	-webkit-animation-timing-function: ease-out; 
+	-moz-animation-timing-function: ease-out; 
+	-o-animation-timing-function: ease-out; 
+
+
+	.icon-svg-loading{
+		background-size: contain;
+		background-position:center center;
+		width: 170px;
+		display: block;
+		height: 90px;
+	}
+
+}
+
+
+
+
+
+.ie9 .loading-animation{
+	right: 0;
+}
+
+
+.text-loading{
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 45px;
+	display: block;
+	margin: auto;	
+	position: absolute;
+	padding-top: 100px;
+	
+	.h3{
+		color:@color-white;
+	}
+}
+
+
+@keyframes loading {
+  0% {
+    left:-170px;
+  }
+  100% {
+    left:100%;
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    left:-170px;
+  }
+  100% {
+    left:100%;
+  }
+}
+@-moz-keyframes loading {
+  0% {
+    left:-170px;
+  }
+  100% {
+    left:100%;
+  }
+}
+@-o-keyframes loading {
+  0% {
+    left:-170px;
+  }
+  100% {
+    left:100%;
+  }
+}
+

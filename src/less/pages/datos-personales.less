@@ -1,0 +1,31 @@
+/*	----------------------------------------------------------------------------------------------------
+*
+*	 Bloque datos poliza
+*
+------------------------------------------------------------------------------------------------------ */
+
+
+#datos-personales{
+	
+	.selectedBox{
+		.icon-svg-personal-data{
+			background-image:url(@icon-personal-data-active);
+
+		}
+		&.has-alert{
+
+			@media (max-width: @screen-max-xs) {
+				.icon-svg-personal-data{
+					background-image:url(@icon-personal-data-alert);
+		
+				}	
+	
+			}	
+			
+		}		
+		
+		
+		
+	}
+	
+}

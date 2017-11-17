@@ -1,0 +1,126 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Icons Preview!</title>
+		<meta charset="utf-8">
+		<style>
+			body {
+				background-image: linear-gradient(#eee 25%, transparent 25%, transparent), linear-gradient(#eee 25%, transparent 25%, transparent), linear-gradient(transparent 75%, #eee 75%), linear-gradient(transparent 75%, #eee 75%);
+				width: auto;
+				background-size: 10px 10px;
+			}
+		</style>
+		<script>
+			/*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+
+!function(){function e(e,t){function n(){!o&&t&&(o=!0,t.call(e))}var o;e.addEventListener&&e.addEventListener("load",n),e.attachEvent&&e.attachEvent("onload",n),"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(e){"use strict";var t=function(t,n,o){function r(e){if(c.body)return e();setTimeout(function(){r(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=o||"all"}var i,c=e.document,d=c.createElement("link");if(n)i=n;else{var l=(c.body||c.getElementsByTagName("head")[0]).childNodes;i=l[l.length-1]}var s=c.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",r(function(){i.parentNode.insertBefore(d,n?i:i.nextSibling)});var u=function(e){for(var t=d.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){u(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=u,u(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(t){var n=function(o,r){"use strict";if(o&&3===o.length){var a=t.navigator,i=t.document,c=t.Image,d=!(!i.createElementNS||!i.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!i.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),l=new c;l.onerror=function(){n.method="png",n.href=o[2],loadCSS(o[2])},l.onload=function(){var t=1===l.width&&1===l.height,a=o[t&&d?0:t?1:2];n.method=t&&d?"svg":t?"datapng":"png",n.href=a,e(loadCSS(a),r)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",i.documentElement.className+=" grunticon"}};n.loadCSS=loadCSS,n.onloadCSS=e,t.grunticon=n}(this),function(e,t){"use strict";var n,o=t.document,r=function(e){if(o.attachEvent?"complete"===o.readyState:"loading"!==o.readyState)e();else{var t=!1;o.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},i=function(e,t){if(n&&!t)return n;n={};var o,r,a,i,c,d;if(!(o=e.sheet))return n;r=o.cssRules?o.cssRules:o.rules;for(var l=0;l<r.length;l++)a=r[l].cssText,i="grunticon:"+r[l].selectorText,(c=a.split(");")[0].match(/US\-ASCII\,([^"']+)/))&&c[1]&&(d=decodeURIComponent(c[1]),n[i]=d);return n},c=function(e,t){var n,r,a,i,c;t?n=e:(t=e,n=o),i="data-grunticon-embed";for(var d in t){c=d.slice("grunticon:".length);try{r=n.querySelectorAll(c)}catch(e){continue}a=[];for(var l=0;l<r.length;l++)null!==r[l].getAttribute(i)&&a.push(r[l]);if(a.length)for(l=0;l<a.length;l++)a[l].innerHTML=t[d],a[l].style.backgroundImage="none",a[l].removeAttribute(i)}return a},d=function(t,n){"svg"===e.method&&r(function(){var o=i(a(e.href));"function"==typeof n?(c(t,o),n()):c(o),"function"==typeof t&&t()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=d,e.embedSVG=d}(grunticon,this)}();
+			
+			grunticon(["icons.data.svg.css", "icons.data.png.css", "icons.fallback.css"], grunticon.svgLoadedCallback);
+		</script>
+		<noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
+	</head>
+	<body>
+
+		<h1>CUSTOM PREVIEW - you can change this in the previewTemplate option</h1>
+			<pre><code>.icon-svg-4b:</code></pre><div class="icon-svg-4b" style="width: 25px; height: 22px;" ></div><hr/>
+			<pre><code>.icon-svg-android-footer:</code></pre><div class="icon-svg-android-footer" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-svg-apple-footer:</code></pre><div class="icon-svg-apple-footer" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-svg-arrow-back:</code></pre><div class="icon-svg-arrow-back" style="width: 11px; height: 16px;" ></div><hr/>
+			<pre><code>.icon-svg-arrow-down:</code></pre><div class="icon-svg-arrow-down" style="width: 17px; height: 13px;" ></div><hr/>
+			<pre><code>.icon-svg-arrow-navigation-back:</code></pre><div class="icon-svg-arrow-navigation-back" style="width: 18px; height: 25px;" ></div><hr/>
+			<pre><code>.icon-svg-arrow-navigation:</code></pre><div class="icon-svg-arrow-navigation" style="width: 18px; height: 25px;" ></div><hr/>
+			<pre><code>.icon-svg-bath:</code></pre><div class="icon-svg-bath" style="width: 262px; height: 204px;" ></div><hr/>
+			<pre><code>.icon-svg-blog-footer:</code></pre><div class="icon-svg-blog-footer" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-svg-budget-active:</code></pre><div class="icon-svg-budget-active" style="width: 62px; height: 42px;" ></div><hr/>
+			<pre><code>.icon-svg-budget:</code></pre><div class="icon-svg-budget" style="width: 62px; height: 42px;" ></div><hr/>
+			<pre><code>.icon-svg-calendar:</code></pre><div class="icon-svg-calendar" style="width: 24px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-svg-candado:</code></pre><div class="icon-svg-candado" style="width: 138px; height: 190px;" ></div><hr/>
+			<pre><code>.icon-svg-car-active:</code></pre><div class="icon-svg-car-active" style="width: 60px; height: 33px;" ></div><hr/>
+			<pre><code>.icon-svg-car-alert:</code></pre><div class="icon-svg-car-alert" style="width: 60px; height: 33px;" ></div><hr/>
+			<pre><code>.icon-svg-car-broken-active:</code></pre><div class="icon-svg-car-broken-active" style="width: 61px; height: 33px;" ></div><hr/>
+			<pre><code>.icon-svg-car-broken:</code></pre><div class="icon-svg-car-broken" style="width: 76px; height: 40px;" ></div><hr/>
+			<pre><code>.icon-svg-car-white:</code></pre><div class="icon-svg-car-white" style="width: 61px; height: 35px;" ></div><hr/>
+			<pre><code>.icon-svg-car:</code></pre><div class="icon-svg-car" style="width: 60px; height: 33px;" ></div><hr/>
+			<pre><code>.icon-svg-card:</code></pre><div class="icon-svg-card" style="width: 230px; height: 158px;" ></div><hr/>
+			<pre><code>.icon-svg-caret-black:</code></pre><div class="icon-svg-caret-black" style="width: 12px; height: 9px;" ></div><hr/>
+			<pre><code>.icon-svg-caret:</code></pre><div class="icon-svg-caret" style="width: 12px; height: 8px;" ></div><hr/>
+			<pre><code>.icon-svg-cellular:</code></pre><div class="icon-svg-cellular" style="width: 110px; height: 217px;" ></div><hr/>
+			<pre><code>.icon-svg-check:</code></pre><div class="icon-svg-check" style="width: 36px; height: 36px;" ></div><hr/>
+			<pre><code>.icon-svg-checked-null:</code></pre><div class="icon-svg-checked-null" style="width: 18px; height: 15px;" ></div><hr/>
+			<pre><code>.icon-svg-checked-ok:</code></pre><div class="icon-svg-checked-ok" style="width: 18px; height: 15px;" ></div><hr/>
+			<pre><code>.icon-svg-checked:</code></pre><div class="icon-svg-checked" style="width: 24px; height: 19px;" ></div><hr/>
+			<pre><code>.icon-svg-close:</code></pre><div class="icon-svg-close" style="width: 19px; height: 19px;" ></div><hr/>
+			<pre><code>.icon-svg-club:</code></pre><div class="icon-svg-club" style="width: 33px; height: 50px;" ></div><hr/>
+			<pre><code>.icon-svg-computer-mail:</code></pre><div class="icon-svg-computer-mail" style="width: 222px; height: 247px;" ></div><hr/>
+			<pre><code>.icon-svg-computer:</code></pre><div class="icon-svg-computer" style="width: 222px; height: 247px;" ></div><hr/>
+			<pre><code>.icon-svg-confianza:</code></pre><div class="icon-svg-confianza" style="width: 25px; height: 25px;" ></div><hr/>
+			<pre><code>.icon-svg-descarga:</code></pre><div class="icon-svg-descarga" style="width: 71px; height: 60px;" ></div><hr/>
+			<pre><code>.icon-svg-download:</code></pre><div class="icon-svg-download" style="width: 24px; height: 21px;" ></div><hr/>
+			<pre><code>.icon-svg-edit:</code></pre><div class="icon-svg-edit" style="width: 15px; height: 19px;" ></div><hr/>
+			<pre><code>.icon-svg-euro6000:</code></pre><div class="icon-svg-euro6000" style="width: 30px; height: 30px;" ></div><hr/>
+			<pre><code>.icon-svg-facebook-footer:</code></pre><div class="icon-svg-facebook-footer" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-svg-facebook:</code></pre><div class="icon-svg-facebook" style="width: 9px; height: 16px;" ></div><hr/>
+			<pre><code>.icon-svg-google-plus-footer:</code></pre><div class="icon-svg-google-plus-footer" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-svg-google-plus:</code></pre><div class="icon-svg-google-plus" style="width: 16px; height: 17px;" ></div><hr/>
+			<pre><code>.icon-svg-help-active:</code></pre><div class="icon-svg-help-active" style="width: 36px; height: 44px;" ></div><hr/>
+			<pre><code>.icon-svg-help-block-black:</code></pre><div class="icon-svg-help-block-black" style="width: 36px; height: 44px;" ></div><hr/>
+			<pre><code>.icon-svg-help-block:</code></pre><div class="icon-svg-help-block" style="width: 27px; height: 33px;" ></div><hr/>
+			<pre><code>.icon-svg-help:</code></pre><div class="icon-svg-help" style="width: 36px; height: 44px;" ></div><hr/>
+			<pre><code>.icon-svg-info-warning:</code></pre><div class="icon-svg-info-warning" style="width: 16px; height: 16px;" ></div><hr/>
+			<pre><code>.icon-svg-info:</code></pre><div class="icon-svg-info" style="width: 16px; height: 16px;" ></div><hr/>
+			<pre><code>.icon-svg-ko:</code></pre><div class="icon-svg-ko" style="width: 19px; height: 19px;" ></div><hr/>
+			<pre><code>.icon-svg-linkedin-footer:</code></pre><div class="icon-svg-linkedin-footer" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-svg-loading:</code></pre><div class="icon-svg-loading" style="width: 107.8px; height: 69.8px;" ></div><hr/>
+			<pre><code>.icon-svg-login:</code></pre><div class="icon-svg-login" style="width: 18px; height: 24px;" ></div><hr/>
+			<pre><code>.icon-svg-motorcicle-active:</code></pre><div class="icon-svg-motorcicle-active" style="width: 54px; height: 36px;" ></div><hr/>
+			<pre><code>.icon-svg-motorcycle-white:</code></pre><div class="icon-svg-motorcycle-white" style="width: 49px; height: 32px;" ></div><hr/>
+			<pre><code>.icon-svg-motorcycle:</code></pre><div class="icon-svg-motorcycle" style="width: 54px; height: 36px;" ></div><hr/>
+			<pre><code>.icon-svg-name-policie:</code></pre><div class="icon-svg-name-policie" style="width: 331px; height: 262px;" ></div><hr/>
+			<pre><code>.icon-svg-ok:</code></pre><div class="icon-svg-ok" style="width: 71px; height: 56px;" ></div><hr/>
+			<pre><code>.icon-svg-personal-data-active:</code></pre><div class="icon-svg-personal-data-active" style="width: 37px; height: 56px;" ></div><hr/>
+			<pre><code>.icon-svg-personal-data-alert:</code></pre><div class="icon-svg-personal-data-alert" style="width: 37px; height: 56px;" ></div><hr/>
+			<pre><code>.icon-svg-personal-data:</code></pre><div class="icon-svg-personal-data" style="width: 37px; height: 56px;" ></div><hr/>
+			<pre><code>.icon-svg-phone:</code></pre><div class="icon-svg-phone" style="width: 244px; height: 194px;" ></div><hr/>
+			<pre><code>.icon-svg-play:</code></pre><div class="icon-svg-play" style="width: 30px; height: 30px;" ></div><hr/>
+			<pre><code>.icon-svg-search:</code></pre><div class="icon-svg-search" style="width: 27px; height: 28px;" ></div><hr/>
+			<pre><code>.icon-svg-shut-off:</code></pre><div class="icon-svg-shut-off" style="width: 19px; height: 20px;" ></div><hr/>
+			<pre><code>.icon-svg-thawte:</code></pre><div class="icon-svg-thawte" style="width: 50px; height: 13px;" ></div><hr/>
+			<pre><code>.icon-svg-time:</code></pre><div class="icon-svg-time" style="width: 36px; height: 36px;" ></div><hr/>
+			<pre><code>.icon-svg-twitter-footer:</code></pre><div class="icon-svg-twitter-footer" style="width: 400px; height: 300px;" ></div><hr/>
+			<pre><code>.icon-svg-twitter-white:</code></pre><div class="icon-svg-twitter-white" style="width: 16px; height: 13px;" ></div><hr/>
+			<pre><code>.icon-svg-twitter:</code></pre><div class="icon-svg-twitter" style="width: 16px; height: 13px;" ></div><hr/>
+			<pre><code>.icon-svg-warning:</code></pre><div class="icon-svg-warning" style="width: 41px; height: 35px;" ></div><hr/>
+			<pre><code>.icon-svg-youtube-footer:</code></pre><div class="icon-svg-youtube-footer" style="width: 400px; height: 300px;" ></div><hr/>
+
+		<h2 id="embedded-svg-option">Embedded SVG option</h2>
+		<p>(The <code>data-grunticon-embed</code> attribute tells grunticon to inject SVG inline):</p>
+
+		<pre><code>icon-burger:</code></pre><div class="icon-burger" data-grunticon-embed style="width: px; height: px;" ></div><hr/>
+
+		<style>
+			.icon-burger {
+				width: 32px;
+				height: 30px;
+				display: inline-block;
+			}
+			  .icon-burger.alt .cheese {
+		                fill: red;
+		            }
+				 .icon-burger.alt .buns {
+		                fill: orange;
+		            }
+				  .icon-burger.alt .burger {
+		                fill: yellow;
+		            }
+		 		 .icon-burger.alt .lettuce {
+		                fill: green;
+		            }
+
+		</style>
+
+		<pre><code>icon-burger (styled variation):</code></pre><div class="icon-burger alt" data-grunticon-embed></div><hr/>
+
+
+
+</body>
+</html>

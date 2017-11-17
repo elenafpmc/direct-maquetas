@@ -1,0 +1,101 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public" role="main">
+			<div class="fake-bg"></div>
+			<button type="button" class="btn btn-close" id="btn-close">
+				<span class="icon-svg-close xs" data-grunticon-embed></span>
+			</button>	
+												
+			
+			<section>
+					
+					<div class="container" id="container-holder">
+				
+						<!--box-->
+						<div class="col-md-12 col-xs-12 js-box-layout">
+							
+
+							<div class="block-white">
+
+								<h1 class="h1 margin-b-15">Hola</h1>
+								<div class="row">
+									<div class="col-sm-12 margin-b-15">
+										<h2 class="h2">Lo sentimos, pero los datos de tu tarjeta no se han podido actualizar.</h2>
+										
+										
+										
+									</div>	
+
+									
+									
+								</div><!-- row -->
+
+								
+								
+								
+								<div class="row margin-b-50">
+									<div class="col-sm-6 col-md-4">
+										<button type="button" class="btn btn-block btn-default">Volver a intentar</button>
+										
+									</div>	
+								</div><!-- row -->
+								
+								
+								<div class="row margin-b-15">
+									<div class="col-sm-12 margin-b-25">
+										<h2 class="h2">¿Quieres que te llamemos?</h2>
+										<p>O si lo prefieres, puedes llamarnos al <strong>902 400 800</strong>, estaremos encantados de atenderte. </p>
+									</div>	
+
+									
+								</div><!-- row -->								
+								<div class="row margin-b-15">
+	
+									<div class="col-sm-6 col-md-4">
+										<button type="button" class="btn btn-block btn-default">Te llamamos gratis</button>
+										
+									</div>									
+									
+									
+								</div><!-- row -->															
+								
+
+							</div>
+
+							
+							
+
+						</div><!--// box-->						
+					
+						
+						
+										
+				    </div><!-- container -->
+				    
+			</section><!-- container-fluid -->
+			
+	    </main>	
+
+	    
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+    
+  <script type="text/javascript">
+
+	setTimeout(function(){
+		$( "#datos-personales .block-white .box-collapses" ).trigger( "click" );
+
+		
+		
+		
+	}, 300);
+
+</script>
+  
+    
+	    
+{{= it.include("core/html-end.html") }}

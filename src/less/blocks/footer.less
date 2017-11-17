@@ -1,0 +1,97 @@
+/* -------------------------------------------------- 
+	Footer
+---------------------------------------------------*/	
+
+footer	{
+	background: @color-black;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	
+	hr{
+		border-color:@color-white;
+		margin-bottom: 20px;
+		margin-top: 15px;		
+		
+	}
+	.h2, .h3{
+		color:@color-white;
+	}
+	.list-icons{
+		[class*="icon-"] {
+			text-indent: -3000px;
+			overflow: hidden;
+		}	
+		
+		a{
+			display: block;
+			width: 30px;
+			height: 30px;
+			@media (max-width: @screen-max-xs) {
+				width: 20px;
+				
+				span{
+					background-size: 80%!important;
+				}
+			  
+			}				
+
+			
+			
+		}
+		li{
+			@media (max-width: @screen-max-xs) {
+				width: 10%;
+				display: inline-block;
+			
+			  
+			}	
+		}
+		&.payments{
+			li{
+				display: inline-block;
+				width: 40px;
+			}
+			span{
+				display: block;
+				width: 40px;
+				height: 40px;
+				top:-20px;
+			}
+		}
+		
+	}
+	
+	.list-inline{
+		color:@color-grey;
+		font-size: 12px;
+		li:before{
+			content:"";
+		}
+		li:after{
+			content: " | ";
+			color:@color-grey;
+		}
+		li:last-child:after{
+			content: "";
+		}
+		li{
+			list-style: none;
+			padding-right:0;		
+		}
+		
+		a{
+			color:@color-grey;
+			text-decoration: none;
+		}
+	}
+	
+}
+
+
+@media (max-width: @screen-max-xs) {
+	.text-center-xs{
+		text-align: center!important;
+	}
+
+  
+}	

@@ -1,0 +1,107 @@
+/*	----------------------------------------------------------------------------------------------------
+*
+*	 Bloque datos poliza
+*
+------------------------------------------------------------------------------------------------------ */
+
+
+#help {
+	
+	@media (max-width: @screen-max-xs) {
+
+		.block-white{
+			display: block!important;
+			border-bottom: 0;
+		}
+
+	}		
+
+	.back-button{
+		
+		@media (max-width: @screen-max-xs) {
+			left: 10px;
+		    position: absolute;
+		    top: -25px;
+		}
+	}	
+
+
+	p{
+		margin-bottom: 15px;
+		display: inline-block;
+	}
+	
+
+
+
+
+
+}
+
+#help{
+	@media (min-width: @screen-max-xs) {
+		display: none;
+
+		
+	}
+	 -webkit-transition: all 1s ease-in-out;
+	  -moz-transition: all 1s ease-in-out;
+	  -o-transition: all 1s ease-in-out;
+	  transition: all 1s ease-in-out;	
+}
+
+#help-form{
+	
+}
+#help-message-error{
+	//display: none;
+}
+#block-help{
+	
+	.selectedBox{
+		.icon-svg-help{
+			background-image:url(@icon-svg-help-active);
+
+		}
+		
+		
+		
+		
+	}	
+	
+}
+
+#iframe-container{
+	
+	 outline: 0;
+	
+	height: 550px;
+	overflow: hidden;	
+	display: none;
+
+	 -webkit-transition: all 1s ease-in-out;
+	  -moz-transition: all 1s ease-in-out;
+	  -o-transition: all 1s ease-in-out;
+	  transition: all 1s ease-in-out;	
+
+	&.fadeIn{
+		display: block;
+	}
+
+	iframe{
+		border:0;
+		width: 100%;
+
+		
+
+	}	
+	
+
+}
+body::-moz-focus-inner,
+iframe::-moz-focus-inner,
+input::-moz-focus-inner,
+html	{
+	outline: 0!important;
+	border:0;
+}

@@ -1,0 +1,42 @@
+/*	----------------------------------------------------------------------------------------------------
+*
+*	 Bloque datos poliza
+*
+------------------------------------------------------------------------------------------------------ */
+
+
+#motorcicle{
+	
+	.selectedBox{
+		.icon-svg-motorcycle{
+			background-image:url(@motorcicle-active);
+
+		}
+		
+		
+		&.has-alert{
+
+			@media (max-width: @screen-max-xs) {
+				.icon-svg-car{
+					background-image:url(@icon-car-alert);
+		
+				}	
+	
+			}	
+			
+		}
+		
+	}
+	
+
+	
+}
+.nav > li > a {
+    position: relative;
+	display: block;
+	padding: 10px;
+}
+
+.nav-tabs > li.active > a {
+	font-size: 17px;
+}

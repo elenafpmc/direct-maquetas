@@ -1,0 +1,167 @@
+/*	--------------------------------------------------
+	Textos, titulos y enlaces
+-------------------------------------------------- */
+
+//Selección de textos
+::-moz-selection { /* Code for Firefox */
+    color: @color-white;
+    background: @color-text;
+}
+
+::selection {
+    color: @color-white;
+    background: @color-text;
+}
+
+//Base para calcular las fuentes en REMs
+html {
+  font-size: 62.5%; // 1.6rem = 16px, 20rem = 20px, etc... 
+	@media (max-width: @screen-max-xs) {
+		font-size: 60%; // Reducimos el tamaño en móvil.
+	}	
+  
+}
+
+body {
+	margin: 0;
+	font-size: 1.4rem;
+	font-family: Tahoma, arial, helvetica;
+	color: @color-text;
+	font-smoothing: antialiased;
+}
+
+//Reset a los Hx para que no tengan valores, se les pasará mediante clases
+h1, h2, h3, h4, h5, h6 { font-size: inherit;  margin: 0; width: auto; color: @color-text }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	display: block;
+	margin: 0;
+	text-decoration: none;
+	font-size: inherit;
+	margin: 0;
+	width: auto;
+	color: @color-text
+}
+.h1 { font-size: 4.0rem; font-family: Futura-pt; color: @color-text; padding-bottom: 30px; font-weight: bold; }
+.h2 { font-size: 2.5rem; font-family:Futura-pt; color: @color-text; padding-bottom: 15px; font-weight: bold; }
+.h3 { font-size: 2.0rem; font-family:Futura-pt; color: @color-text; padding-bottom: 20px; font-weight: bold; }
+.h4 { font-size: 1.8rem; font-family: Tahoma, arial, helvetica; color: @color-text; padding-bottom: 18px; font-weight: bold; }
+.h5 { font-size: 1.6rem; font-family: Tahoma, arial, helvetica; color: @color-text; padding-bottom: 16px; font-weight: bold; }
+.h6 { font-size: 1.4rem; font-family: Tahoma, arial, helvetica; color: @color-text; padding-bottom: 14px; font-weight: bold; }
+
+
+//Titulares con enlace
+a.h1,
+a.h2,
+a.h3,
+a.h4,
+a.h5,
+a.h6{
+	text-decoration: none;
+	&:hover{ }
+}
+
+//Enlaces
+span.link,
+a, a:link, a:visited, button.link{
+	color: @color-primary;
+	text-decoration: underline;
+	transition:.2s;
+	
+	&:active,
+	&.active{
+		color: @color-primary;
+		font-weight: bold;
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0) inset;
+	}
+	
+	a:hover{ color: @color-text }
+	
+	&.back-button{
+		text-decoration: none;
+		font-weight: bold;
+		[class*="icon-"]{
+			margin-right: 5px;
+
+				
+		}		
+	
+	}
+	
+	&.color-black{
+		color:@color-black;
+	}
+}
+
+
+#help {
+	.back-button{
+		
+		@media (max-width: @screen-max-xs) {
+			left: 10px;
+		    position: absolute;
+		    top: -25px;
+		}
+	}	
+}
+
+
+span,
+a.link	{
+	
+	&.mail	{
+		color:@color-black;
+		font-size: 18px;
+		text-decoration: none;
+	}
+}
+a.no-link-appareance	{
+	color:@color-black;
+	text-decoration: none;
+}
+// Boton con aspecto de link
+button.link {
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+//Parrafos
+p {
+	padding-bottom: 20px;
+	margin: 0;
+	line-height: 140%;
+}
+
+p.lead {
+	margin-bottom: 0;
+	font-size: 1.8rem;
+	font-weight: lighter;
+}
+
+small, .small{
+	font-size: 1.0rem;
+	font-family: Tahoma, arial, helvetica
+	
+}
+
+@media (max-width: @screen-max-xs) {
+	.text-left-xs{
+		text-align: left!important;
+	}
+}	
+
+
+
+.text-overflow{
+	display: inline-block;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}

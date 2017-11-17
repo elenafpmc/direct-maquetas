@@ -1,0 +1,438 @@
+@import "mixins.less";
+
+//	--------------------------------------------------
+//	 Grid visible
+// 	--------------------------------------------------
+
+#grid {left: 0; right: 0; position: absolute; z-index: -1 }
+#grid .bg { min-height: 50px; opacity: 0.1; background: green; }
+
+
+
+// --------------------------------------------------
+//	Container grande
+// --------------------------------------------------
+
+.container-full{
+
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	@media (max-width: @screen-max-md) {
+		width: 100%;
+	}
+
+	//Para que no baile el scroll lateral no puede haber paddings ni margins de bootstrap
+	.row{
+		.row-no-padding;
+
+		[class*="col-"]:first-child{ padding-left: 0 !important }
+		[class*="col-"]:last-child{ padding-right: 0 !important }
+	}
+
+
+}
+
+
+
+// --------------------------------------------------
+//	Cambios en la visibilidad
+// --------------------------------------------------
+
+.hide-xs {
+	@media (max-width: @screen-max-xs) {
+		display: none !important;
+	}
+}
+
+.hide-sm {
+	@media (max-width: @screen-max-sm) {
+		display: none !important;
+	}
+}
+
+.hide-md {
+	@media (max-width: @screen-max-md) {
+		display: none !important;
+	}
+}
+
+.hide-lg {
+	@media (min-width: @screen-max-md) {
+		display: none !important;
+	}
+}
+
+.show-xs {
+	@media (max-width: @screen-max-xs) {
+		display: block !important;
+	}
+}
+
+.show-sm {
+	@media (max-width: @screen-max-sm) {
+		display: block !important;
+	}
+}
+
+.show-md {
+	@media (max-width: @screen-max-md) {
+		display: block !important;
+	}
+}
+
+.display-none { display: none }
+
+html.touch .hide-touch { display: none }
+
+.hidden { display: none; visibility: visible }
+
+
+// --------------------------------------------------
+//	Cambios en position
+// --------------------------------------------------
+
+.initial { position: initial }
+.relative { position: relative }
+.absolute {
+	position: absolute;
+
+	&.md{
+		@media (max-width: @screen-max-md) {
+			position:relative;
+		}
+	}
+
+
+	&.sm{
+		@media (max-width: @screen-max-sm) {
+			position:relative;
+		}
+	}
+	&.middle{
+		top:0;
+		bottom:0;
+		display: block;
+		margin: auto;
+	}
+	&.center{
+		left:0;
+		right:0;
+		display: block;
+		margin: auto;
+	}
+
+	&.right{
+		right: 0;
+	}
+
+	&.bottom {
+		bottom: 0;
+		@media (max-width: @screen-max-xs) {
+			width: auto;
+			position: relative; margin-top: 20px; bottom: auto !important;
+		}
+	}
+}
+
+
+// --------------------------------------------------
+//	Textos
+// --------------------------------------------------
+
+.v-middle { vertical-align: middle}
+.v-top { vertical-align: top}
+.v-super { vertical-align: super}
+.v-bottom { vertical-align: bottom }
+.caps { text-transform: uppercase }
+.bold { font-weight: bold !important }
+.text-ellipsis { text-overflow: ellipsis }
+a.no-decoration { text-decoration: none !important }
+
+@media (max-width: @screen-max-xs) {
+	.text-xs-left { text-align: left !important}
+	.text-xs-right { text-align: right !important}
+	.text-xs-center { text-align: center !important}
+}
+
+
+// --------------------------------------------------
+//	Displays
+// --------------------------------------------------
+
+.display-table{
+	display: table;
+	width: 100%;
+	margin: 0 !important;
+	@media (max-width: @screen-max-xs) {display: block;}
+}
+
+.display-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	float: none !important;
+	@media (max-width: @screen-max-xs) {display: block;}
+}
+
+.display-block { display: block }
+
+.display-inline-block {
+	display: inline-block;
+	&[class*="col-"] { float: none; margin-right: -4px; }
+	@media (max-width: @screen-max-xs) {
+		display: block;
+
+		&.display-inline-block-xs{
+			display: inline-block;
+		}
+	}
+	&.xs-default{
+		@media (max-width: @screen-max-xs) {
+			&[class*="col-"] { float: left; margin-right: 0; }
+		}
+	}
+ }
+
+.display-inline { display: inline !important }
+
+.display-block-xs{
+	@media (max-width: @screen-max-xs) {
+		display: block;
+	}
+
+}
+.display-flex{
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+// --------------------------------------------------
+//	Márgenes y paddings
+// --------------------------------------------------
+
+.margin-auto{
+	margin: auto;
+}
+.margin-tb-15{
+	margin-top:15px;
+	margin-bottom: 25px;
+}
+
+
+.no-padding { padding-bottom: 0 !important; margin-bottom: 0 !important }
+	.margin-b-0{
+		margin-bottom: 0px !important
+	}
+	.margin-b-5{
+		margin-bottom: 5px !important
+	}
+	.margin-b-10{
+		margin-bottom: 10px !important
+	}
+	.margin-b-15{
+		margin-bottom: 15px !important
+	}
+	.margin-b-20{
+		margin-bottom: 20px !important
+	}
+	.margin-b-25{
+		margin-bottom: 25px !important
+	}
+	.margin-b-30{
+		margin-bottom: 30px !important
+	}
+	.margin-b-35{
+		margin-bottom: 35px !important
+	}
+	.margin-b-40{
+		margin-bottom: 40px !important
+	}
+	.margin-b-50{
+		margin-bottom: 50px !important
+	}
+	.margin-b-80{
+		margin-bottom: 80px !important
+	}
+	.margin-b-100{
+		margin-bottom: 100px !important
+	}
+
+@media (max-width: @screen-max-md) {
+	.margin-md-b-5{
+		margin-bottom: 5px !important
+	}
+	.margin-md-b-10{
+		margin-bottom: 10px !important
+	}
+	.margin-md-b-15{
+		margin-bottom: 15px !important
+	}
+	.margin-md-b-20{
+		margin-bottom: 20px !important
+	}
+	.margin-md-b-25{
+		margin-bottom: 25px !important
+	}
+	.margin-md-b-30{
+		margin-bottom: 30px !important
+	}
+	.margin-md-b-35{
+		margin-bottom: 35px !important
+	}
+	.margin-md-b-40{
+		margin-bottom: 40px !important
+	}
+	.margin-md-b-50{
+		margin-bottom: 50px !important
+	}
+}
+@media (max-width: @screen-max-sm) {
+
+	.margin-sm-b-5{
+		margin-bottom: 5px !important
+	}
+	.margin-sm-b-10{
+		margin-bottom: 10px !important
+	}
+	.margin-sm-b-15{
+		margin-bottom: 15px !important
+	}
+	.margin-sm-b-20{
+		margin-bottom: 20px !important
+	}
+	.margin-sm-b-25{
+		margin-bottom: 25px !important
+	}
+	.margin-sm-b-30{
+		margin-bottom: 30px !important
+	}
+	.margin-sm-b-35{
+		margin-bottom: 35px !important
+	}
+	.margin-sm-b-40{
+		margin-bottom: 40px !important
+	}
+	.margin-sm-b-50{
+		margin-bottom: 50px !important
+	}
+
+}
+@media (max-width: @screen-max-xs) {
+	.margin-xs-b-0{
+		margin-bottom: 0px !important
+	}
+	.margin-xs-b-5{
+		margin-bottom: 5px !important
+	}
+	.margin-xs-b-10{
+		margin-bottom: 10px !important
+	}
+	.margin-xs-b-15{
+		margin-bottom: 15px !important
+	}
+	.margin-xs-b-20{
+		margin-bottom: 20px !important
+	}
+	.margin-xs-b-25{
+		margin-bottom: 25px !important
+	}
+	.margin-xs-b-30{
+		margin-bottom: 30px !important
+	}
+	.margin-xs-b-35{
+		margin-bottom: 35px !important
+	}
+	.margin-xs-b-40{
+		margin-bottom: 40px !important
+	}
+	.margin-xs-b-50{
+		margin-bottom: 50px !important
+	}
+
+}
+
+//	--------------------------------------------------
+//	 Rows sin padding interior
+// 	--------------------------------------------------
+.row-no-padding {
+  margin-left: 0;
+  margin-right: 0;
+
+  > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+//	--------------------------------------------------
+//	 Rows con columnas con la misma altura
+// 	--------------------------------------------------
+
+.row-same-height {
+	overflow: hidden;
+	.same-height{
+		margin-bottom: -100%;
+		padding-bottom: 100%;
+	}
+
+}
+
+// --------------------------------------------------
+//	Varios
+// --------------------------------------------------
+
+.overflow {
+	overflow: hidden;
+	&.scroll{
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+.clear-both	{clear:both;}
+.caret.in { transform: rotate(180deg); transition: 0.5s }
+.caret.out { transition: 0.5s }
+
+// --------------------------------------------------
+//	Helpers de bg
+// --------------------------------------------------
+.createColorBGClasses();
+
+// --------------------------------------------------
+//	Helpers de texto
+// --------------------------------------------------
+.createColorTextClasses();
+.h1{
+	&.text-color-secondary{
+		color:@color-secondary;
+	}
+
+}
+
+@import "helpers_temp.less";
+
+// --------------------------------------------------
+//	Placeholder falso para input type month, date
+// --------------------------------------------------
+
+
+.js-fake-placeholder{
+	display: none;
+	@media (max-width: @screen-max-sm) {
+		position: absolute;
+		display: block;
+		pointer-events: none;
+		margin-top:8px;
+		margin-left: 12px;
+		z-index: 1;
+		color: @color-text;
+	}
+
+}
+
+
+// --------------------------------------------------
+//	Helpers colorear iconos
+// --------------------------------------------------
+	.createIconBGColor();

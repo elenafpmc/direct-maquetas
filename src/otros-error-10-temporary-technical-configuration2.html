@@ -1,0 +1,87 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public" role="main">
+			<div class="fake-bg"></div>
+			<button type="button" class="btn btn-close" id="btn-close">
+				<span class="icon-svg-close xs" data-grunticon-embed></span>
+			</button>	
+												
+			
+			<section>
+					
+					<div class="container" id="container-holder">
+				
+						<!--box-->
+						<div class="col-md-12 col-xs-12 js-box-layout">
+							
+
+							<div class="block-white">
+
+								<h1 class="h1 margin-b-15">¡Ups! Algo ha fallado</h1>
+								<p class="h4 font-normal margin-b-25">Tu sesión ha caducado y no hemos podido finalizar el pago.</p>
+								<div class="row margin-b-50">
+									<div class="col-sm-12 margin-b-25">
+										<h2 class="h2">Inténtalo de nuevo</h2>
+										<p> Introduce de nuevo los datos en la pasarela de pago seguro.</p>
+									</div>	
+									<div class="col-sm-6 col-md-4">
+										<button type="button" class="btn btn-block btn-default">Pagar con tarjeta</button>
+										
+									</div>
+									
+									
+								</div><!-- row -->
+								
+								<div class="row margin-b-50">
+									<div class="col-sm-12 margin-b-25">
+										<h2 class="h2">Para finalizar tu pago habla con uno de nuestros asesores</h2>
+										<p>Nos pondremos en contacto contigo para ayudarte en lo que necesites. </p>
+									</div>	
+									<div class="col-sm-6 col-md-4">
+										<button type="button" class="btn btn-block btn-default">Te llamamos gratis</button>
+										
+									</div>
+									
+									
+								</div><!-- row -->								
+								
+
+							</div>
+
+							
+							
+
+						</div><!--// box-->						
+					
+						
+						
+										
+				    </div><!-- container -->
+				    
+			</section><!-- container-fluid -->
+			
+	    </main>	
+
+	    
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+    
+  <script type="text/javascript">
+
+	setTimeout(function(){
+		$( "#datos-personales .block-white .box-collapses" ).trigger( "click" );
+
+		
+		
+		
+	}, 300);
+
+</script>
+  
+    
+	    
+{{= it.include("core/html-end.html") }}

@@ -1,0 +1,65 @@
+/* Custom */
+
+/* Helpers */
+.text-center { text-align: center }
+.text-right { text-align: right }
+.middle { vertical-align: middle }
+
+.no-padding { padding-top: 0 !important; padding-bottom: 0 !important }
+
+
+
+
+/* Colores */
+.club-darkest-grey {  background: #404040; }
+.brand-club-grey { background: #c2c2c2 }
+.brand-darkest-grey { background: #555 }
+.brand-grey { background: #f2f4f5 }
+.brand-red { background: #d7192d }
+.brand-dark-red { background: #a80e1f }
+
+.text-club-darkest-grey {  color: #404040; }
+.text-club-grey { color: #c2c2c2 }
+.text-darkest-grey { color: #555 }
+.text-grey { color: #f2f4f5 }
+.text-red { color: #d7192d }
+.text-dark-red { color: #a80e1f }
+
+
+/* textos */
+p.lead { font-family : 'Verdana'; font-size: 16px; }
+.h1 { font-family : 'Verdana'; font-size: 20px;  }
+.h2 { font-family : 'Verdana';  font-size: 15px;  }
+.h3 { font-family : 'Verdana';  }
+.h4 { font-family : 'Verdana';  }
+.border{ border-bottom: 1px solid #d7192d }
+
+/* botones y links */
+a, a:visited { text-decoration: underline; }
+/* table.button a { color: #fff !important } */
+
+
+
+/* Estructura */
+.header{ padding: 20px 0px;  }
+.header .wrapper { padding-left: 0px }
+.body { font-family: 'Verdana'; font-size: 12px }
+
+.footer{ padding: 10px; } 
+
+.footer a img{ float: none; clear: none; display: inline-block }
+
+
+.hero { padding: 30px 0 }
+.crossed { text-decoration: line-through }
+.price { font-family: 'Verdana'; font-size: 24px; }
+
+
+@media only screen and (max-width: 600px) {
+
+	img.blank { width: auto; height: auto  }
+	
+	table[class="body"] .footer .columns td.one { width: 30px !important }
+
+}				
+ 

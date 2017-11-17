@@ -1,0 +1,304 @@
+{{= it.include("core/html-start.html") }}
+
+    {{= it.include("blocks/header.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+
+		<main class="wrapper public" role="main">
+			<div class="fake-bg"></div>
+			<button type="button" class="btn btn-close" id="btn-close">
+				<span class="icon-svg-close xs" data-grunticon-embed></span>
+			</button>
+
+			<section>
+
+  			<div class="container client-area" id="container-holder">
+          <section class="block-white">
+
+            <div class="row margin-b-50">
+							<div class="col-sm-12">
+								<button type="button" class="btn link pull-left no-decoration back-button" data-target="#general-recibos"><span data-grunticon-embed="" class="icon-svg-arrow-back xs pull-left"></span>Volver a partes</button>
+							</div>
+						</div>
+
+            <div class="row margin-b-40">
+              <div class="col-md-12">
+                <h3 class="h2 no-padding-b">Abrir nuevo parte: Daños de aparcamiento</h3>
+              </div>
+            </div>
+
+            <div class="row margin-b-40">
+              <div class="col-sm-12">
+                <ul class="progress-nav">
+                  <li class="progress-nav-step progress-nav-step-completed">
+                    <a href="#1">
+                      <span class="progress-nav-step-number">1</span>
+                      <span class="progress-nav-step-text">Datos del siniestro</span>
+                    </a>
+                  </li>
+                  <li class="progress-nav-step progress-nav-step-current">
+                    <a href="#2">
+                      <span class="progress-nav-step-number">2</span>
+                      <span class="progress-nav-step-text">Daños del vehículo</span>
+                    </a>
+                  </li>
+                  <li class="progress-nav-step">
+                    <a href="#3">
+                      <span class="progress-nav-step-number">3</span>
+                      <span class="progress-nav-step-text">Selección de taller</span>
+                    </a>
+                  </li>
+                  <li class="progress-nav-step">
+                    <a href="#4">
+                      <span class="progress-nav-step-number">4</span>
+                      <span class="progress-nav-step-text">Resumen y confirmación</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <form action="" method="post" accept-charset="utf-8">
+
+              <div class="row margin-b-20">
+                <div class="col-sm-12">
+                  <p class="h4 font-normal">Indica cuándo ocurrió el incidente:</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-4 margin-b-40">
+                  <div class="form-group with-icon no-label">
+                    <label for="fecha" class="hidden">Fecha del siniestro:</label>
+                    <input name="input-datepicker" class="js-datepicker form-control" data-provide="datepicker" value="DD/MM/YYYY" data-date-format="dd/mm/yyyy" readonly>
+                    <span data-grunticon-embed="" class="icon-svg-calendar sm no-height auto absolute right"></span>
+
+                    <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-ok xs form-control-feedback" aria-hidden="true"></span>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row margin-b-40">
+                <div class="col-md-12">
+                  <div class="block-alert relative" style="display: block;">
+                    <div class="alert-danger font-normal margin-b-10">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="message">
+                              <span class="icon-svg-warning sm" data-grunticon-embed=""></span>
+                              <span class="text-message fullwidth-message">
+                                Lo sentimos, con las coberturas contratadas actualmente <strong>no es posible continuar abriendo el parte</strong>. Si tienes cualquier duda contacta con nosotros en el <strong>918 378 902</strong>.
+                              </span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- row -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row margin-b-20">
+                <div class="col-sm-12">
+                  <p class="h4 font-normal">Uy, parece que tienes un siniestro similar en curso. <strong>¿Seguro que quieres abrir un parte nuevo?</strong></p>
+                </div>
+              </div>
+
+              <div class="row margin-b-40">
+                <div class="col-sm-12">
+                  <div class="block-direct primary padding-30 margin-b-15">
+                      <div class="row">
+                          <div class="col-md-2 col-sm-3 margin-sm-b-15">
+                              <p>Fecha:</p>
+                              <strong class="text-overflow">05 - 07 - 2015</strong>
+                          </div>
+                          <div class="col-md-2 col-sm-3 margin-sm-b-15">
+                              <p>Nº de siniestro:</p>
+                              <strong class="text-overflow">012345678</strong>
+                          </div>
+                          <div class="col-md-3 col-sm-3 margin-sm-b-15 padding-left">
+                              <p>Causa:</p>
+                              <strong class="text-overflow">Daños estando aparcado</strong>
+                          </div>
+                          <div class="col-md-2 col-sm-3 margin-sm-b-15">
+                              <p>Póliza:</p>
+                              <strong class="text-overflow">012345678</strong>
+                          </div>
+                          <div class="col-md-2 col-sm-3 margin-sm-b-15">
+                              <p>Vehiculo afectado:</p>
+                              <strong class="text-overflow">1234XYZ</strong>
+                          </div>
+                      </div>
+                      <!-- row -->
+                    </div>
+                  <div class="block-direct primary padding-30 margin-b-15">
+                      <div class="row">
+                          <div class="col-md-2 col-sm-3 margin-sm-b-15">
+                              <p>Fecha:</p>
+                              <strong class="text-overflow">05 - 07 - 2015</strong>
+                          </div>
+                          <div class="col-md-2 col-sm-3 margin-sm-b-15">
+                              <p>Nº de siniestro:</p>
+                              <strong class="text-overflow">012345678</strong>
+                          </div>
+                          <div class="col-md-3 col-sm-3 margin-sm-b-15 padding-left">
+                              <p>Causa:</p>
+                              <strong class="text-overflow">Daños estando aparcado</strong>
+                          </div>
+                          <div class="col-md-2 col-sm-3 margin-sm-b-15">
+                              <p>Póliza:</p>
+                              <strong class="text-overflow">012345678</strong>
+                          </div>
+                          <div class="col-md-2 col-sm-3 margin-sm-b-15">
+                              <p>Vehiculo afectado:</p>
+                              <strong class="text-overflow">1234XYZ</strong>
+                          </div>
+                      </div>
+                      <!-- row -->
+                    </div>
+                </div>
+              </div>
+
+              <div class="row margin-b-40">
+                <div class="col-sm-12">
+                  <p class="h4 font-normal">Si tienes cualquier duda contacta con nosotros en el <strong>918 378 902</strong>.</p>
+                </div>
+              </div>
+
+              <div class="row margin-b-40">
+                <div class="col-sm-6">
+
+                  <div class="row margin-b-20">
+                    <div class="col-md-12">
+                      <h4 class="h3 no-padding-b">Donde ocurrió el accidente:</h3>
+                    </div>
+                  </div>
+
+                  <div class="row margin-b-20">
+                    <div class="col-md-12">
+                      <div class="form-group with-icon">
+                        <label for="city">Ciudad:</label>
+                        <input data-error="Por favor revisa el campo" type="text" required class="form-control" id="city" name="city" placeholder="">
+                        <span data-grunticon-embed="" class="icon-svg-edit sm no-height auto absolute right"></span>
+
+                        <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-ok xs form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row margin-b-20">
+                    <div class="col-md-12">
+                      <div class="form-group with-icon has-error">
+                        <label for="province">Provincia:</label>
+                        <input data-error="Por favor revisa el campo" type="text" required class="form-control" id="province" name="province" placeholder="">
+                        <span data-grunticon-embed="" class="icon-svg-edit sm no-height auto absolute right"></span>
+
+                        <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-ok xs form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors">
+                          <span>Por favor revisa el campo.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row margin-b-20">
+                    <div class="col-md-12">
+                      <p class="padding-tb-15"><sup>*</sup> Si el siniestro ha tenido lugar en otro país, contacta con nosotros en el <strong>918 378 902</strong>.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-sm-6">
+
+                  <div class="row margin-b-20">
+                    <div class="col-md-12">
+                      <h4 class="h3 no-padding-b">Datos de contacto para la gestión del parte:</h3>
+                    </div>
+                  </div>
+
+                  <div class="row margin-b-20">
+                    <div class="col-md-12">
+                      <div class="form-group with-icon">
+                        <label for="telephone">Teléfono:</label>
+                        <input data-error="Por favor revisa el campo" type="text" required class="form-control" id="telephone" name="telephone" placeholder="">
+                        <span data-grunticon-embed="" class="icon-svg-edit sm no-height auto absolute right"></span>
+
+                        <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-ok xs form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row margin-b-20">
+                    <div class="col-md-12">
+                      <div class="form-group with-icon has-error">
+                        <label for="email">Email:</label>
+                        <input data-error="Por favor revisa el campo" type="text" required class="form-control" id="email" name="email" placeholder="">
+                        <span data-grunticon-embed="" class="icon-svg-edit sm no-height auto absolute right"></span>
+
+                        <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-ok xs form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors">
+                          <span>Por favor revisa el campo.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row margin-b-20">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <div class="block-direct secondary display-inline-block">
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2">
+                              Quiero cambiar mis datos de contacto <strong>en todas mis pólizas</strong>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </form>
+
+            <div class="row margin-b-15">
+              <div class="visible-xs col-xs-5">
+							  <a href="" class="black-link">Atrás</a>
+							</div>
+              <div class="visible-xs col-xs-7">
+							  <a href="" class="pull-right black-link">Cancelar apertura</a>
+							</div>
+							<div class="col-sm-4 col-xs-12 pull-right">
+								<button class="btn btn-block btn-black caps" type="button">Siguiente</button>
+							</div>
+              <div class="col-sm-4 hidden-xs pull-right">
+							  <a href="" class="pull-right black-link">Cancelar apertura</a>
+							</div>
+              <div class="col-sm-4 hidden-xs pull-left">
+							  <a href="" class="black-link">Atrás</a>
+							</div>
+						</div>
+
+          </section>
+  		  </div><!-- container -->
+
+			</section><!-- container-fluid -->
+
+	  </main>
+
+
+    {{= it.include("blocks/footer.html") }}
+
+    {{= it.include("core/plugins.js.html") }}
+
+
+{{= it.include("core/html-end.html") }}

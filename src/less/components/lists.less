@@ -1,0 +1,81 @@
+/*	--------------------------------------------------
+	 Listas
+-------------------------------------------------- */
+//Con bullets
+ul {
+	padding: 0;
+	li {
+		list-style: none;
+		position: relative;
+		padding-left: 10px;
+		&:before {
+			content: "• ";
+			color: @color-text;
+			position: absolute;
+			left: 2px;
+		}
+	}
+	
+	&.list-inline{
+		
+		li{
+			padding-left: 0;
+			&:before {
+				position: static;
+				left: auto;
+			}
+			
+		}
+		
+		&.no-bullets	{
+			margin-left: 0;
+		
+			li{
+				padding-right: 0;
+				&:before {
+					position: static;
+					left: auto;
+					content: " | ";
+					color:@color-grey-li;
+				}
+			}
+			:first-child	{
+				&:before {
+				content: "";
+				}
+			}
+		}
+		
+		
+		
+	}
+}
+
+//Sin bullets
+ul.list-unstyled li:before,
+ul.list-icons li:before
+{ content:''; display: none  }
+
+
+//Con Iconos
+.list-icons{
+	position: relative;
+	> * {display: inline-block; position: relative }
+	
+	&.lg-icons > *{
+		padding-left: @icon-lg+@icon-lg/2; min-height:@icon-lg; 
+	}
+	&.md-icons > *{
+		padding-left: @icon-md+@icon-md/2; min-height:@icon-md;
+	}
+	&.sm-icons > *{
+		padding-left: @icon-sm+@icon-sm/2; min-height:@icon-sm;
+	}
+	&.xs-icons > *{
+		padding-left: @icon-xs+@icon-xs/2; min-height:@icon-xs;
+	}
+	
+	> * > div.text{ display: table-cell; vertical-align: middle }
+	[class*="icon-"] { position: absolute; left: 0; top: 0; text-align: center }
+	
+}

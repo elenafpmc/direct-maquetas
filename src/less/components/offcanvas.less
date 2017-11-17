@@ -1,0 +1,222 @@
+
+/* -------------------------------------------------- 
+	Nav off canvas
+---------------------------------------------------*/	
+
+.off-canvas, button.navbar-toggle {
+	display: none;
+}
+
+@media (max-width: @screen-max-xs) {
+		
+	button.navbar-toggle {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		display: none;
+		top:26px;
+		border-radius: 0px;
+		
+		@media (max-width: @screen-max-xs) {
+			top: 15px;	
+		}
+		
+		&.right{
+			right: 15px;
+		}
+		
+		.icon-bar {
+			height: 1px;
+			background: @color-text;
+			display: block !important;
+			width: 40px;
+			& + .icon-bar {
+				
+				margin-top: 8px;
+				
+			}
+		}
+		
+		.title{
+			font-size: 0.8rem;
+			
+		}
+		
+		@media (max-width: @screen-max-xs) {
+			
+			.icon-bar { height: 1px;  width: 22px;}
+		}				
+		
+		
+	}
+	
+	
+	.off-canvas {
+		display: block;
+		background: @color-text;
+		width: 250px;
+		width: 80%;
+		height: 100%;
+		left: -80%;
+		position: fixed; //fixed para evitar que el off derecho se salga del body
+		z-index: 999;
+		overflow: auto;
+		
+		
+		@media (max-width: @screen-max-sm) {
+			width: 320px;
+			left: -320px;
+			-webkit-overflow-scrolling: touch;
+		}				
+
+		@media (max-width: @screen-max-xs) {
+			width: 80%;
+			left: -80%;
+		}	
+		
+		//Version derecha
+		&[data-side="right"]{
+			
+			left: auto;
+			right: -80%;
+			@media (max-width: @screen-max-sm) {
+				width: 320px;
+				left: -320px;
+			}				
+	
+			@media (max-width: @screen-max-xs) {
+				width: 80%;
+				left: auto;
+				right: -80%;
+			}	
+			
+		}		
+		
+		//Version top
+		&[data-side="top"]{
+			left: auto;
+			right: auto;
+			top:-100%;
+			width: 100%;
+		}		
+		&[data-side="bottom"]{
+			left: auto;
+			right: auto;
+			bottom:-100%;
+			width: 100%;
+		}		
+	}
+	
+	
+	html.out, body.out{
+		left: 0px;
+	}
+	
+	.canvas-wrap { 
+		display: none;
+		width: 100%;
+		position: absolute;
+		z-index: 99999;
+		background: rgba(0,0,0,.2);
+		transition: .5s;
+	}
+	
+	html, body{
+		left: 0;
+		transition-property: left,right, top, bottom;
+		transition-duration: 0.5s, 0.5s, 0.5s, 0.5s;
+		
+	}
+	
+	html.out .off-canvas{
+		transition-property: left,right, top, bottom;
+		transition-duration: 0.5s, 0.5s, 0.5s, 0.5s;
+	}
+	
+	.canvas-wrap { z-index: 88; }
+	
+	//Ponemos el off-canvas en absolute para poder animarlo
+	body.in, body.out{
+		.off-canvas { position: absolute; }
+	}
+	
+	// Opción 1. El body se oculta para mostrar el off-canvas
+	html.in, html.out {
+	  //overflow: hidden;
+	  height: 100%;
+	  width: 100%;
+	  position: relative;
+	  transition-property: left,right, top, bottom;
+	  transition-duration: 0.5s, 0.5s, 0.5s, 0.5s;
+	}
+	body.in, body.out{
+	  left: 80%;
+	  position: fixed;
+	  height: 100%;
+	  width: 100%;
+	  transition-property: left,right, top, bottom;
+	  transition-duration: 0.5s, 0.5s, 0.5s, 0.5s;
+	  
+	  &.right{
+	  	left: auto;
+	  	right: 80%;
+	  }
+	  &.top{
+	  	left: auto;
+	  	top: 100%;
+	  }
+	  &.bottom{
+	  	left: auto;
+	  	bottom: 100%;
+	  }
+	}	
+	
+	body.out{
+	  left: 0;
+	  &.right{
+	  	left: auto;
+	  	right: 0;
+	  }
+	}
+	//FIN Opcion 1.
+	
+	//Opcion 2. El off-canvas aparece por encima del body
+	//html.in, html.out { overflow: hidden; height: 100%; width: 100%; position: relative; }
+	//body.in,
+	//body.out {
+	//  position: fixed;
+	//  height: 100%;
+	//  width: 100%;
+	//}
+	//
+	//html.in .off-canvas.out{
+	//  transition-property: left,right, top, bottom;
+	//  transition-duration: 0.5s, 0.5s, 0.5s, 0.5s;
+	//  left: 0;
+	//  z-index: 99;
+	//  &[data-side="right"]{
+	//  		left: auto;
+	//  		right: 0;
+	//  		
+	//  }
+	//  &[data-side="top"]{
+	//  		left: auto;
+	//  		right: auto;
+	//  		top: 100%;
+	//  }
+	//  &[data-side="bottom"]{
+	//  		left: auto;
+	//  		right: auto;
+	//  		bottom: 100%;
+	//  }
+	//}
+	//.off-canvas{ 
+	//  padding-top: @mobileHeaderHeight+10; //Altura del header en mobile
+	//}
+	//FIN Opcion 2.
+
+
+
+	
+
+}		

@@ -1,0 +1,85 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public" role="main">
+			<div class="fake-bg"></div>
+			<button type="button" class="btn btn-close" id="btn-close">
+				<span class="icon-svg-close xs" data-grunticon-embed></span>
+			</button>	
+												
+			
+			<section>
+					
+					<div class="container" id="container-holder">
+				
+						<!--box-->
+						<div class="col-md-12 col-xs-12 js-box-layout">
+							
+
+							<div class="block-white">
+
+								<h1 class="h1 margin-b-15">Servicio no disponible temporalmente</h1>
+								<div class="row">
+									<div class="col-sm-12 margin-b-15">
+										<h2 class="h2">Prueba lo siguiente</h2>
+										
+										<p class="h4 font-normal">Vuelve a cargar la página más tarde, haz click en el botón "Atrás" del navegador o vuelve a la página inicio.</p>
+										
+										
+									</div>	
+
+									
+									
+								</div><!-- row -->
+
+								
+								
+								
+								<div class="row">
+									<div class="col-sm-8 col-md-5">
+										<button type="button" class="btn btn-block btn-default">Ir a la página de inicio</button>
+										
+									</div>	
+								</div><!-- row -->
+								
+								
+								
+
+							</div>
+
+							
+							
+
+						</div><!--// box-->						
+					
+						
+						
+										
+				    </div><!-- container -->
+				    
+			</section><!-- container-fluid -->
+			
+	    </main>	
+
+	    
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+    
+  <script type="text/javascript">
+
+	setTimeout(function(){
+		$( "#datos-personales .block-white .box-collapses" ).trigger( "click" );
+
+		
+		
+		
+	}, 300);
+
+</script>
+  
+    
+	    
+{{= it.include("core/html-end.html") }}

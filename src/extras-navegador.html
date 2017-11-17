@@ -1,0 +1,104 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header-ie8.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public" role="main">
+			<div class="fake-bg"></div>
+			<button type="button" class="btn btn-close" id="btn-close">
+				<span class="icon-svg-close xs" data-grunticon-embed></span>
+			</button>	
+												
+			
+			<section>
+					
+					<div class="container" id="container-holder">
+				
+						<!--box-->
+						<div class="col-md-12 col-xs-12 js-box-layout">
+							
+
+							<div class="block-white">
+
+								<h1 class="h1 margin-b-15">Direct te recomienda que actualices tu navegador.</h1>
+								<p class="h4 font-normal margin-b-25">Es <span class="block-direct secondary">totalmente gratuito</span>  y muy fácil. </p>
+								<div class="row">
+									<div class="col-sm-3">
+										<a class="block-grey display-inline-block btn-block text-center no-decoration" href="">
+											
+											<img src="img/logo-explorer.png" alt="" class="display-block margin-auto img-navegador">
+											<strong>Actualizar navegador</strong>
+											
+										</a>
+									</div>	
+								</div><!-- row -->
+								
+								
+								
+								<p class="h4 font-normal margin-b-25">¿Tienes algún problema para poder descargártelo? prueba con alguno de los siguientes navegadores gratuitos:</p>
+								<div class="row">
+									<div class="col-sm-3">
+										<a class="block-grey display-inline-block btn-block text-center no-decoration" href="">
+											
+											<img src="img/logo-chrome.png" alt="" class="display-block margin-auto img-navegador">
+											<strong>Descargar Chrome</strong>
+											
+										</a>
+									</div>
+									<div class="col-sm-3">
+										<a class="block-grey display-inline-block btn-block text-center no-decoration" href="">
+											
+											<img src="img/logo-firefox.png" alt="" class="display-block margin-auto img-navegador">
+											<strong>Descargar Firefox</strong>
+											
+										</a>
+									</div>									
+									
+										
+								</div><!-- row -->								
+								
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="block-direct secondary padding-10"><strong>No te olvides</strong> que para entrar de nuevo en Internet tendrás que acceder a través del <strong>nuevo icono.</strong></div>								
+									</div>
+								</div><!-- row -->
+								
+								
+								
+								
+							</div>
+
+							
+							
+
+						</div><!--// box-->						
+					
+						
+						
+										
+				    </div><!-- container -->
+				    
+			</section><!-- container-fluid -->
+			
+	    </main>	
+
+	    
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+    
+  <script type="text/javascript">
+
+	setTimeout(function(){
+		$( "#datos-personales .block-white .box-collapses" ).trigger( "click" );
+
+		
+		
+		
+	}, 300);
+
+</script>
+  
+    
+	    
+{{= it.include("core/html-end.html") }}

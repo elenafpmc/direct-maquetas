@@ -1,0 +1,81 @@
+/*	--------------------------------------------------
+	Tabs
+-------------------------------------------------- */
+/* Reset bullets */
+
+.nav-tabs {
+	border-bottom: 0;	
+	li{
+		
+		&.active{
+			
+			 background: none;
+			 border:0;
+			 font-size: 18px;
+			 font-family: Tahoma, arial, helvetica;
+			 font-weight: bold;
+			 text-decoration: none;
+		}
+		
+		//Reset bullets
+		&:before{
+			content: '';
+			display: none;
+		}
+		
+		> a{
+			background: none;
+			border:0;
+			font-size: 18px;
+			font-family: Tahoma, arial, helvetica;
+			font-weight: normal;
+			text-decoration: none;	
+			 color:@color-primary-opacity;			
+			&:hover{
+				background: none;
+				border: 0;
+				color:@color-black;
+				
+			}
+		}		
+	
+		
+		
+		
+	}
+	> li {
+		
+		
+		&.active{
+			 background: none;
+			> a{
+					background: none;
+					 border:0;
+					 font-size: 18px;
+					 font-family: Tahoma, arial, helvetica;
+					 font-weight: bold;
+					 text-decoration: none;	
+					  color:@color-black;			
+				&:hover{
+					 background: none;
+					 border: 0;
+					 color:@color-black;
+					
+				}
+				&:focus{
+					 background: none;
+					 border: 0;
+					 color:@color-black;					
+				}
+			}
+			
+			
+		}
+	}
+	
+}
+
+.tab-content { 
+	
+}
+

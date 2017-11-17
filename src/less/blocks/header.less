@@ -1,0 +1,71 @@
+/* -------------------------------------------------- 
+	Header
+---------------------------------------------------*/	
+
+//Usar siempre la variable para darle altura en mobile.
+@mobileHeaderHeight:50px;
+
+header{
+    color: #ffffff;
+    font-family: Futura-pt;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 48px;	
+	
+	&.affix{
+		width: 100%;
+		z-index: 9990;
+	}
+	
+	@media (max-width: @screen-max-xs) {
+		height: @mobileHeaderHeight;
+	}				
+	
+
+	.top-header-bar	{
+		height: 50px;
+		background: @color-black;
+	}
+	a{
+		&.text-link	{
+		color:@color-white;
+		}	
+	}
+
+
+	.btn-link{
+		display: inline-block;
+		color:@color-white;
+		padding: 10px;
+		margin-top: -5px;
+		&:hover{
+			text-decoration: none;
+			color:@color-white;
+		}
+		
+		[class*="icon-"]{
+			margin-right: 10px;
+			float: left;
+		}
+	}
+
+	
+}
+
+.header-bar	{
+	height: 160px;
+	background: @color-primary;
+	padding-top:30px;
+	
+	.h4	{
+		margin-top: 55px;
+		font-family: Futura-pt;
+			
+		@media (max-width: @screen-max-xs) {
+			margin-top: 15px;
+
+		}	
+		
+	}
+}
+

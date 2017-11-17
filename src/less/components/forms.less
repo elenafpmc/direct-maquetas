@@ -1,0 +1,425 @@
+
+/* -------------------------------------------------- 
+	Formularios
+---------------------------------------------------*/	
+
+.form-control{
+	box-shadow: none !important;	
+	border-radius: 0;
+	background: @color-grey;
+	border: 0;
+	height: 60px;
+	
+	&:focus{ 
+		
+		
+	} 
+	
+
+}
+
+.input-group-addon{
+	border-radius: 0;
+	background: @color-black;
+	border: 0;
+}
+
+.form-group{
+	label{
+		font-size: 14px;
+		font-weight: normal;
+		margin-bottom: 5px;
+	}
+	
+	input{
+		
+		&[disabled] {
+			cursor: pointer;
+		}
+		
+		font-size:16px;
+		font-weight: bold;
+		font-family: tahoma, arial, verdana;
+		color:@color-black;
+		padding-right: 40px;
+	}
+	
+	.glyphicon{
+		display: none;
+	}
+	.form-control-feedback {
+	    position: absolute;
+	    right: 30px;
+	    top: 45px;
+	}		
+	.help-block{
+		display: none;
+	}
+	&.has-error {
+		@media (max-width: @screen-max-xs) {
+			 min-height: 0px;
+	
+		}			
+		min-height: 115px;
+		.form-control{
+			background: @color-danger-opacity;
+			color:@color-danger;
+		}
+		
+	
+		.glyphicon-ko{
+			display: block;
+		}
+		
+		.bootstrap-select > .btn.btn-default{
+			background: @color-danger-opacity;
+		}		
+		.help-block{
+			text-overflow: ellipsis;
+			overflow: hidden;
+			font-size: 12px;
+			display: block;
+			width: 100%;
+			 white-space: nowrap;
+		}
+	}
+	
+	&.has-success {
+		
+		.help-block{
+			display: none;
+		}
+		
+		@media (max-width: @screen-max-xs) {
+			 min-height: 0px;
+	
+		}			
+		min-height: 115px;
+		.form-control{
+			background: @color-success-opacity;
+			color:@color-success;
+		}
+		
+	
+		.glyphicon-ok{
+			display: block;
+		}	
+		
+		.bootstrap-select > .btn.btn-default{
+			background: @color-success-opacity;
+		}
+		
+		
+	}
+
+
+
+}
+
+
+
+
+textarea{
+	width: 100%;
+	resize: none;
+	border:0;
+	background: @color-grey;
+	color: @color-black;
+	padding: 15px;
+	padding-top: 10px;
+	height: 85px;
+	@media (max-width: @screen-max-sm) {
+		height: 185px;
+
+	}		
+	
+	&:focus{
+		 outline: none;
+	}
+	
+}
+
+.cont-characters{
+	color:@color-danger;
+    bottom: 25px;
+    position: absolute;
+    right: 30px;	
+}
+
+/* -------------------------------------------------- 
+	Select
+---------------------------------------------------*/	
+.btn-group.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){ width: 100% }
+.btn-group.open .dropdown-toggle {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0) inset;
+}
+.bootstrap-select{
+	>.btn{
+		white-space: nowrap;
+		&.btn-default{
+			background: @color-grey;
+			border: 0px solid @color-text;
+			color: @color-black;
+			font-weight: bold;
+			height: 60px;
+			font-size: 16px;
+			font-family: tahoma, arial, verdana;
+			padding-left: 15px;
+			text-transform: none;
+			&:hover{
+				background: @color-soft-grey;
+			}
+		}
+	}
+	
+	.dropdown-menu{
+		border-radius: 0;
+		margin-top: -1px;
+		box-shadow: none;
+		background: @color-soft-grey;
+		border-bottom:0;
+		border-right:0;
+		border-left:0;
+		
+		li{
+			padding-left: 0;
+		}
+		a{
+			background: none;
+		}
+	}
+	
+}
+
+.dropdown-menu.selectpicker > li > a{
+	padding-left: 15px;
+	font-size: 16px;
+	font-family: tahoma, arial, verdana;	
+}
+
+.bootstrap-select.btn-group .btn .caret{
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%229%22%20viewBox%3D%220%200%2012%209%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3EImported%20Layers%203%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23181717%22%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath%20d%3D%22M12%202.7l-6%206-6-6%202-2%204%204%204-4%202%202z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    border:0;
+    width: 15px;
+    height: 15px;
+	
+}
+
+//Selects móvil
+select.selectpicker{
+	background: @color-white;
+	border: 1px solid @color-text;
+	color: @color-text;
+	font-weight: normal;
+	border-radius: 0;
+	padding: 10px 30px;
+	position: relative;
+	background: url(@caret) no-repeat;
+	background-size: 100% 100%;
+	background-color: #fff;
+	background-size: 8px 8px;
+	background-position: right 12px center;	
+}
+
+/* -------------------------------------------------- 
+	Checkbox y radio
+---------------------------------------------------*/	
+
+.no-legacy-ie {	// personalizados sólo en IE > 9
+	
+
+	.radio label, .checkbox label{ 
+		padding-left: 0;
+		margin-bottom: 0;
+		
+	}
+
+	// Checkbocks
+	.checkbox, .checkbox-inline {
+		padding-left: 24px;
+		position: relative;
+		@media (max-width: @screen-max-sm) {
+			padding-left: 30px;
+			padding-top: 1px;
+		}
+	
+	}
+	.checkbox label:before, .checkbox-inline label:before {  
+	    content: "";  
+	    background:  @color-white;
+	    display: inline-block;  
+	    width: 18px;  
+	    height: 18px;  
+	    position: absolute;  
+	    left: 0;
+	    bottom: auto;
+	    //top:10px;
+	    @media (max-width: @screen-max-xs) {
+	    }				
+	    
+	    margin-right: 8px;
+		@media (max-width: @screen-max-sm) {
+			height: 20px; width: 20px;
+			margin-right: 20px;
+		    vertical-align: sub;
+		}
+	    
+	} 
+	.checkbox label.check-top:before { 
+		top:7px; bottom: auto;
+	}
+	.checkbox-inline label.check-top:before { top:0; bottom: 0px }
+	
+	.checkbox-inline label { margin-bottom: 0; font-weight: normal; padding-top: 1px }
+	
+	.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] { display: none;  }
+	.checkbox input[type=checkbox]:checked + label::before, .checkbox-inline input[type=checkbox]:checked + label::before{  
+	    content: "";  
+	    background: url(@check) @color-white;
+	    background-size: 80%;
+	    background-position: center center; 
+	    background-repeat: no-repeat;
+	    font-size: 15px;  
+	    color: @color-text;  
+	    text-align: center;  
+	    line-height: 10px;
+		//top:7px;
+	
+		@media (max-width: @screen-max-sm) {
+		    font-size: 22px;  
+		    line-height: 22px;
+	    }
+	    
+	}	
+	
+	// Radio-button
+	.radio {
+		position: relative;
+		padding-left: 0;
+		width: 100%;
+		height: 100%;
+		@media (max-width: @screen-max-sm) {
+			padding-left: 30px;
+			padding-top: 3px;
+		}
+		
+	}
+	
+	
+	.radio label { padding-right: 10px; }
+	.radio label:before {  
+	    content: "";
+		background: url(@radio);	
+	    background-size: contain;
+	    background-repeat: no-repeat;		    
+	    display: inline-block;  
+	    width: 18px;  
+	    height: 18px;  
+	    //margin-right: 10px;
+		@media (max-width: @screen-max-sm) {
+			font-size:19px;
+		}
+	    
+	} 
+	
+	.radio label.radio-top:before, .radio-inline label.radio-top:before {  
+		top:7px; bottom: auto;
+	}	
+	.radio input[type=radio] {  
+	    display: none;  
+	}
+	.radio input[type=radio]:checked + label:before {  
+	    content: "";  
+	    background: url(@radio-checked);
+	    background-size: contain;
+	    background-repeat: no-repeat;	    
+		color: @color-text;
+	} 
+	
+	.radio, .checkbox { line-height: 20px; margin: 0 }
+	
+	.form-inline .checkbox label:before, 
+	.form-inline .radio label:before { position: static }
+	
+}
+
+	// Datepicker
+
+
+.datepicker table tr td, .datepicker table tr th{
+	
+	padding: 13px;
+	
+
+	@media (max-width: @screen-max-xs) {
+		padding: 0;
+	}	
+	
+}
+
+.js-datepicker[readonly]{
+	cursor: pointer;
+	background: @color-grey;
+}
+
+
+.datepicker thead th.next	{
+	text-indent: -3000px;
+	overflow:hidden;
+	background-image: url(@navigation-next);
+	background-position:center center;	
+	background-repeat:no-repeat;
+	background-size: 10px;
+}
+.datepicker thead th.prev	{
+	text-indent: -3000px;
+	overflow:hidden;
+	background-image: url(@navigation-prev);
+	background-position:center center;	
+	background-repeat:no-repeat;
+	background-size: 10px;
+}
+
+.datepicker thead tr:first-child th.next:hover, .datepicker tfoot tr th.next:hover{
+	background: #eee url(@navigation-next);
+	background-repeat:  no-repeat; 
+	background-position:center center;	
+	background-repeat:no-repeat;
+	background-size: 10px;
+}
+
+.datepicker thead tr:first-child th.prev:hover, .datepicker tfoot tr th.prev:hover{
+	background: #eee url(@navigation-prev);
+	background-repeat:  no-repeat; 
+	background-position:center center;	
+	background-repeat:no-repeat;
+	background-size: 10px;
+}
+
+
+
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom{
+	padding: 20px;
+}
+
+.datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active.focus, .datepicker table tr td.active.focus:hover, .datepicker table tr td.active.disabled.focus, .datepicker table tr td.active.disabled.focus:hover, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.active:hover, .open > .dropdown-toggle.datepicker table tr td.active, .open > .dropdown-toggle.datepicker table tr td.active:hover, .open > .dropdown-toggle.datepicker table tr td.active.disabled, .open > .dropdown-toggle.datepicker table tr td.active.disabled:hover{
+	background-color: @color-secondary!important;
+    border:0!important;
+    color: @color-black!important;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+.has-error
+.form-control:focus {
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px #fff!important;
+}
+

@@ -1,0 +1,88 @@
+/*	--------------------------------------------------
+	Acordeon
+-------------------------------------------------- */
+
+@media (max-width: @screen-max-xs) {
+	
+	
+	.accordion-group {
+		
+		&[class*="col-"]{
+			margin: 0;
+			padding: 0;
+		}
+		
+		&.text-center{
+			text-align: left;
+		}
+		
+	}
+	.accordion-inner{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	.accordion-heading{
+		border-top:1px solid #C7E2EA;
+		padding: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+		position: relative;
+		background: @color-primary;
+		margin-left: -20px;
+		margin-right: -20px;
+		text-align: left;
+
+		a{
+			
+			&:link{
+				font-size: 18px;
+				color:@color-black;
+				text-decoration: none;
+				display: block;
+			}
+			
+			&:before{
+				display: block;
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				right: 10px;
+				top:0;
+				bottom: 0;
+				content:" ";
+				margin: auto;
+				background: url(@arrow-navigation) no-repeat;
+				background-size: contain;
+				-webkit-transform: rotate(90deg);
+				-moz-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				-o-transform: rotate(90deg);
+				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-3);				
+				
+			}
+					
+			&.collapsed{
+				
+				&:before{
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+					
+				}
+									
+			}			
+			
+		}
+		
+
+
+		
+		
+	}
+
+
+
+}
