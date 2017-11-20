@@ -8497,13 +8497,13 @@ html {
   font-size: 16px;
   line-height: 30px;
   padding: 10px 0;
-  color: #000;
+  color: #181512;
 }
 .client-area a.black-link:hover,
 .client-area a.black-link:active {
   font-size: 16px;
   line-height: 30px;
-  color: #000;
+  color: #181512;
 }
 .client-area .form-group.with-icon {
   position: relative;
@@ -8626,7 +8626,7 @@ html {
   border-color: #9BC8DB;
 }
 .client-area .progress-nav .progress-nav-step.progress-nav-step-current .progress-nav-step-text {
-  color: #000;
+  color: #181512;
   font-weight: bold;
 }
 .client-area .progress-nav .progress-nav-step.progress-nav-step-completed:before {
@@ -8694,7 +8694,7 @@ html {
   padding: 30px;
   text-align: left;
   background: #FFF;
-  color: #000;
+  color: #181512;
   padding-top: 30px;
   font-size: 16px;
   position: absolute;
@@ -8716,7 +8716,7 @@ html {
 }
 .client-area .popup .popup-content .popup-close:before {
   content: " ";
-  background: #000;
+  background: #181512;
   width: 18px;
   height: 6px;
   display: block;
@@ -8728,7 +8728,7 @@ html {
 }
 .client-area .popup .popup-content .popup-close:after {
   content: " ";
-  background: #000;
+  background: #181512;
   width: 18px;
   height: 6px;
   display: block;
@@ -8740,7 +8740,7 @@ html {
 .client-area .popup .popup-content .popup-btn {
   display: block;
   padding: 11px 33px;
-  background: #000;
+  background: #181512;
   border: 1px solid #e2e2e2;
   border-bottom: 3px solid #e2e2e2;
   margin: 0;
@@ -8769,7 +8769,7 @@ html {
 }
 .client-area #tabs-damages li.active a {
   background-color: #F2F2F2;
-  color: #000;
+  color: #181512;
 }
 .client-area #tabs-damages li a {
   display: block;
@@ -8785,7 +8785,7 @@ html {
   transition: all 0.3s ease-out 0s;
 }
 .client-area #tabs-damages li a:hover {
-  color: #000;
+  color: #181512;
 }
 .client-area #content-damages {
   background-color: #F2F2F2;
