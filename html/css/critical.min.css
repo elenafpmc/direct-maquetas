@@ -8675,13 +8675,13 @@ html {
 }
 .client-area .popup {
   display: block;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(24, 21, 18, 0.9);
   width: 100%;
   height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
-  font-family: futura-pt;
+  font-family: Futura-pt;
 }
 .client-area .popup.popup-alert .popup-content {
   background-color: #F2958D;
@@ -8747,6 +8747,7 @@ html {
   font-family: Tahoma;
   font-weight: 700;
   text-align: center;
+  margin-top: 80px;
 }
 .client-area #tabs-damages {
   display: block;
