@@ -68,40 +68,141 @@
               <div class="row margin-b-40">
                 <div class="col-sm-12">
                   <ul class="nav nav-tabs responsive" role="tablist" id="tabs-damages">
-  									<li role="presentation" class="text-center active"><a href="#damage-front" role="tab" data-toggle="tab" aria-expanded="true">Frontal</a></li>
+  									<li role="presentation" class="text-center"><a href="#damage-front" role="tab" data-toggle="tab" aria-expanded="true">Frontal</a></li>
   									<li role="presentation" class="text-center"><a href="#damage-back" role="tab" data-toggle="tab" aria-expanded="false">Trasera</a></li>
-  									<li role="presentation" class="text-center"><a href="#damage-left" role="tab" data-toggle="tab" aria-expanded="false">Lado izquierdo</a></li>
+  									<li role="presentation" class="text-center active"><a href="#damage-left" role="tab" data-toggle="tab" aria-expanded="false">Lado izquierdo</a></li>
   									<li role="presentation" class="text-center"><a href="#damage-right" role="tab" data-toggle="tab" aria-expanded="false">Lado derecho</a></li>
   									<li role="presentation" class="text-center"><a href="#damage-topbottom" role="tab" data-toggle="tab" aria-expanded="false">Superior e Inferior</a></li>
   								</ul>
                 </div>
                 <div class="col-sm-12">
                   <div class="tab-content responsive hidden-xs" id="content-damages">
-      							<div role="tabpanel" class="tab-pane active" id="damage-front">
-                      Daño Parte Frontal
-                      <div class="damage-car">
 
-                      </div>
-                      <div class="damage-list">
+                    <div role="tabpanel" class="tab-pane tab-damages" id="damage-front">
+                      Daño Parte Trasera
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane tab-damages" id="damage-back">
+                      Daño Lado Izquierdo
+                    </div>
+
+      							<div role="tabpanel" class="tab-pane tab-damages active" id="damage-left">
+                      <div class="car-damages">
                         <div class="row margin-b-40">
+                          <div class="col-md-12">
+                            <img src="img/damages_left.svg" class="car-damages-img" alt="">
+                            <div class="car-damages-area car-damages-area-1 active">1</div>
+                            <div class="car-damages-area car-damages-area-2">2</div>
+                            <div class="car-damages-area car-damages-area-3">3</div>
+                            <div class="car-damages-area car-damages-area-4">4</div>
+                            <div class="car-damages-area car-damages-area-5">5</div>
+                            <div class="car-damages-area car-damages-area-6">6</div>
+                            <div class="car-damages-area car-damages-area-7">7</div>
+                            <div class="car-damages-area car-damages-area-8">8</div>
+                            <div class="car-damages-area car-damages-area-9">9</div>
+                            <div class="car-damages-area car-damages-area-10">10</div>
+                            <div class="car-damages-area car-damages-area-11">11</div>
+                            <div class="car-damages-area car-damages-area-12">12</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-damages">
+                        <div class="row margin-b-20">
                           <div class="col-md-12">
                             <h3 class="h2 no-padding-b">Lado izquierdo</h3>
                           </div>
                         </div>
+                        <div class="row margin-b-20">
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-1">
+															<input type="checkbox" id="damages1" checked>
+															<label for="damages1">
+																1. Cristal puerta delantera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-2">
+															<input type="checkbox" id="damages2">
+															<label for="damages2">
+																2. Cristal puerta trasera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-3">
+															<input type="checkbox" id="damages3">
+															<label for="damages3">
+																3. Cristal de custodia
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-4">
+															<input type="checkbox" id="damages4">
+															<label for="damages4">
+																4. Retrovisor
+															</label>
+														</div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-5">
+															<input type="checkbox" id="damages5">
+															<label for="damages5">
+																5. Aleta delantera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-6">
+															<input type="checkbox" id="damages6">
+															<label for="damages6">
+																6. Aleta trasera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-7">
+															<input type="checkbox" id="damages7">
+															<label for="damages7">
+																7. Puerta delantera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-8">
+															<input type="checkbox" id="damages8">
+															<label for="damages8">
+																8. Puerta trasera
+															</label>
+														</div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-9">
+															<input type="checkbox" id="damages9">
+															<label for="damages9">
+                                9. Rueda delantera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-10">
+															<input type="checkbox" id="damages10">
+															<label for="damages10">
+                                10. Rueda trasera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-11">
+															<input type="checkbox" id="damages11">
+															<label for="damages11">
+                                11. Tirador/Cerradura
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-12">
+															<input type="checkbox" id="damages12">
+															<label for="damages12">
+                                12. Estribo
+															</label>
+														</div>
+                          </div>
+                        </div>
                       </div>
       							</div>
-      							<div role="tabpanel" class="tab-pane" id="damage-back">
-      								Daño Parte Trasera
-      							</div>
-      							<div role="tabpanel" class="tab-pane" id="damage-left">
-      								Daño Lado Izquierdo
-      							</div>
-      							<div role="tabpanel" class="tab-pane" id="damage-right">
+
+      							<div role="tabpanel" class="tab-pane tab-damages" id="damage-right">
       								Daño Lado Derecho
       							</div>
-      							<div role="tabpanel" class="tab-pane" id="damage-topbottom">
+
+      							<div role="tabpanel" class="tab-pane tab-damages" id="damage-topbottom">
       								Daño Parte Superior e Inferior
       							</div>
+
   						    </div>
                 </div>
               </div>

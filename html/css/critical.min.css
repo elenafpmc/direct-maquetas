@@ -8735,6 +8735,7 @@ html {
 }
 .client-area #tabs-damages li.active a {
   background-color: #F2F2F2;
+  color: #000;
 }
 .client-area #tabs-damages li a {
   display: block;
@@ -8756,9 +8757,95 @@ html {
   background-color: #F2F2F2;
   padding: 40px;
 }
-.client-area #content-damages .tab-pane {
+.client-area #content-damages .tab-damages {
   width: 100%;
 }
-.client-area #content-damages .tab-pane.active {
+.client-area #content-damages .tab-damages.active {
   display: block;
+}
+.client-area #content-damages .tab-damages .car-damages {
+  display: block;
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.client-area #content-damages .tab-damages .car-damages-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.client-area #content-damages .tab-damages .car-damages-area {
+  display: block;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border: 5px solid #F2958D;
+  border-radius: 50%;
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #F2958D;
+  padding: 6px 0;
+  background-color: #FFF;
+  cursor: pointer;
+  transform: translate(-20px, -20px);
+}
+.client-area #content-damages .tab-damages .car-damages-area.active {
+  color: #FFF;
+  background-color: #F2958D;
+}
+.client-area #content-damages .tab-damages .list-damages-area {
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.client-area #content-damages #damage-left .car-damages-area-1 {
+  top: 28%;
+  left: 48%;
+}
+.client-area #content-damages #damage-left .car-damages-area-2 {
+  top: 28%;
+  left: 63%;
+}
+.client-area #content-damages #damage-left .car-damages-area-3 {
+  top: 29%;
+  left: 71%;
+}
+.client-area #content-damages #damage-left .car-damages-area-4 {
+  top: 40%;
+  left: 39%;
+}
+.client-area #content-damages #damage-left .car-damages-area-5 {
+  top: 54%;
+  left: 26%;
+}
+.client-area #content-damages #damage-left .car-damages-area-6 {
+  top: 46%;
+  left: 85%;
+}
+.client-area #content-damages #damage-left .car-damages-area-7 {
+  top: 63%;
+  left: 43%;
+}
+.client-area #content-damages #damage-left .car-damages-area-8 {
+  top: 63%;
+  left: 63%;
+}
+.client-area #content-damages #damage-left .car-damages-area-9 {
+  top: 78.5%;
+  left: 21.25%;
+}
+.client-area #content-damages #damage-left .car-damages-area-10 {
+  top: 78.5%;
+  left: 77.25%;
+}
+.client-area #content-damages #damage-left .car-damages-area-11 {
+  top: 47%;
+  left: 48%;
+}
+.client-area #content-damages #damage-left .car-damages-area-12 {
+  top: 85%;
+  left: 51%;
 }
