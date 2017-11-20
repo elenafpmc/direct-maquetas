@@ -304,29 +304,34 @@
 
 			.popup-close {
 		    position: absolute;
-		    right: 10px;
-		    top: 17px;
+				display: block;
+				width: 18px;
+				height: 18px;
+		    right: 20px;
+		    top: 22px;
 		    text-decoration: none;
+				z-index:2;
 
 				&:before {
 			    content: " ";
 			    background: #000;
-			    width: 22px;
-			    height: 4px;
+			    width: 18px;
+			    height: 6px;
 			    display: block;
 			    -ms-transform: rotate(45deg);
 			    -webkit-transform: rotate(45deg);
 			    transform: rotate(45deg);
 			    position: relative;
+					top: 6px;
 				}
 				&:after {
 					content: " ";
 			    background: #000;
-			    width: 22px;
-			    height: 4px;
+			    width: 18px;
+			    height: 6px;
 			    display: block;
 			    position: relative;
-			    top: -4px;
+
 			    -ms-transform: rotate(-45deg);
 			    -webkit-transform: rotate(-45deg);
 			    transform: rotate(-45deg);
@@ -337,6 +342,7 @@
 				display: block;
 		    padding: 11px 33px;
 		    background: #000;
+		    border: 1px solid #e2e2e2;
 		    border-bottom: 3px solid #e2e2e2;
 		    margin: 0;
 		    color: #FFF;
