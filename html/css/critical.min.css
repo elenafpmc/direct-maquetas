@@ -8456,6 +8456,10 @@ html {
 .client-area .h6:not(.font-normal) {
   font-family: Futura;
 }
+.client-area .info-message {
+  font-size: 16px;
+  line-height: 19px;
+}
 .client-area .block-alert .message .text-message {
   top: -12px;
   position: relative;
