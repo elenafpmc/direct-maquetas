@@ -8,6 +8,17 @@
 .client-area{
 	margin-bottom: 50px;
 
+	/* Temporary fix for font */
+	h1:not(.font-normal), .h1:not(.font-normal),
+	h2:not(.font-normal), .h2:not(.font-normal),
+	h3:not(.font-normal), .h3:not(.font-normal),
+	h4:not(.font-normal), .h4:not(.font-normal),
+	h5:not(.font-normal), .h5:not(.font-normal),
+	h6:not(.font-normal), .h6:not(.font-normal) {
+		font-family: Futura;
+	}
+
+
 	.block-alert .message {
 		.text-message {
 	    top: -12px;
@@ -84,6 +95,12 @@
 			[class*="icon-svg"].absolute.right {
 				margin-top: 8px;
 			}
+		}
+
+		.bootstrap-select .selectpicker
+		.disabled,
+		[disabled] {
+			display: none;
 		}
 	}
 
@@ -279,6 +296,7 @@
 		  top: 50%;
 		  -webkit-transform: translate(-50%,-50%);
 		  transform: translate(-50%,-50%);
+			font-family: Tahoma;
 
 			.popup-close {
 		    position: absolute;
@@ -321,6 +339,10 @@
 				text-transform: uppercase;
 		    text-decoration: none;
 		    font-size: 14px;
+				line-height: 22px;
+				font-family: Tahoma;
+				font-weight: 700;
+				text-align: center;
 			}
 		}
 	}
@@ -424,6 +446,18 @@
 			}
 		}
 
+		#damage-front {
+			.car-damages-area-1 {
+				top: 0%;
+				left: 0%;
+			}
+		}
+		#damage-back {
+			.car-damages-area-1 {
+				top: 0%;
+				left: 0%;
+			}
+		}
 		#damage-left {
 			.car-damages-area-1 {
 				top: 28%;

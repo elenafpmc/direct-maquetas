@@ -8440,6 +8440,21 @@ html {
 * ------------------------------------------------------------------------------------------------------ */
 .client-area {
   margin-bottom: 50px;
+  /* Temporary fix for font */
+}
+.client-area h1:not(.font-normal),
+.client-area .h1:not(.font-normal),
+.client-area h2:not(.font-normal),
+.client-area .h2:not(.font-normal),
+.client-area h3:not(.font-normal),
+.client-area .h3:not(.font-normal),
+.client-area h4:not(.font-normal),
+.client-area .h4:not(.font-normal),
+.client-area h5:not(.font-normal),
+.client-area .h5:not(.font-normal),
+.client-area h6:not(.font-normal),
+.client-area .h6:not(.font-normal) {
+  font-family: Futura;
 }
 .client-area .block-alert .message .text-message {
   top: -12px;
@@ -8507,6 +8522,10 @@ html {
 }
 .client-area .form-group.no-label [class*="icon-svg"].absolute.right {
   margin-top: 8px;
+}
+.client-area .form-group .bootstrap-select .selectpicker .disabled,
+.client-area .form-group [disabled] {
+  display: none;
 }
 .client-area .progress-nav {
   display: flex;
@@ -8679,6 +8698,7 @@ html {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  font-family: Tahoma;
 }
 .client-area .popup .popup-content .popup-close {
   position: absolute;
@@ -8719,6 +8739,10 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
+  line-height: 22px;
+  font-family: Tahoma;
+  font-weight: 700;
+  text-align: center;
 }
 .client-area #tabs-damages {
   display: block;
@@ -8800,6 +8824,14 @@ html {
   display: block;
   padding-left: 30px;
   margin-bottom: 10px;
+}
+.client-area #content-damages #damage-front .car-damages-area-1 {
+  top: 0%;
+  left: 0%;
+}
+.client-area #content-damages #damage-back .car-damages-area-1 {
+  top: 0%;
+  left: 0%;
 }
 .client-area #content-damages #damage-left .car-damages-area-1 {
   top: 28%;

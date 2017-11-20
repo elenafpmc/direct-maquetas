@@ -3,7 +3,7 @@
     {{= it.include("blocks/header.html") }}
 		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
 
-		<main class="wrapper public" role="main">
+		<main class="wrapper public client-area" role="main">
 			<div class="fake-bg"></div>
 			<button type="button" class="btn btn-close" id="btn-close">
 				<span class="icon-svg-close xs" data-grunticon-embed></span>
@@ -11,7 +11,7 @@
 
 			<section>
 
-  			<div class="container client-area" id="container-holder">
+  			<div class="container" id="container-holder">
           <section class="block-white">
 
             <div class="row margin-b-50">
@@ -101,7 +101,7 @@
 
               <div class="row margin-b-20">
                 <div class="col-sm-12">
-                  <p class="h4 font-normal">Uy, parece que tienes un siniestro similar en curso. <strong>¿Seguro que quieres abrir un parte nuevo?</strong></p>
+                  <p class="h4 font-normal">¡Upps!, parece que tienes un siniestro similar en curso. <strong>¿Seguro que quieres abrir un parte nuevo?</strong></p>
                 </div>
               </div>
 
@@ -178,7 +178,7 @@
                   <div class="row margin-b-20">
                     <div class="col-md-12">
                       <div class="form-group with-icon">
-                        <label for="city">Ciudad:</label>
+                        <label for="city">Población:</label>
                         <input data-error="Por favor revisa el campo" type="text" required class="form-control" id="city" name="city" placeholder="">
                         <span data-grunticon-embed="" class="icon-svg-edit sm no-height auto absolute right"></span>
 
@@ -207,7 +207,7 @@
 
                   <div class="row margin-b-20">
                     <div class="col-md-12">
-                      <p class="padding-tb-15"><sup>*</sup> Si el siniestro ha tenido lugar en otro país, contacta con nosotros en el <strong>918 378 902</strong>.</p>
+                      <p class="padding-tb-15"><sup>*</sup> Si el siniestro ha tenido lugar en otro país, contacta con nosotros en el <strong class="text-nowrap">918 378 902</strong>.</p>
                     </div>
                   </div>
 
@@ -279,6 +279,23 @@
 							</div>
 							<div class="col-sm-4 col-xs-12 pull-right">
 								<button class="btn btn-block btn-black caps" type="button">Siguiente</button>
+							</div>
+              <div class="col-sm-4 hidden-xs pull-right">
+							  <a href="" class="pull-right black-link">Cancelar apertura</a>
+							</div>
+              <div class="col-sm-4 hidden-xs pull-left">
+							  <a href="" class="black-link">Atrás</a>
+							</div>
+						</div>
+            <div class="row margin-b-15">
+              <div class="visible-xs col-xs-5">
+							  <a href="" class="black-link">Atrás</a>
+							</div>
+              <div class="visible-xs col-xs-7">
+							  <a href="" class="pull-right black-link">Cancelar apertura</a>
+							</div>
+							<div class="col-sm-4 col-xs-12 pull-right">
+								<button class="btn btn-block btn-black caps disabled" disabled type="button">Siguiente</button>
 							</div>
               <div class="col-sm-4 hidden-xs pull-right">
 							  <a href="" class="pull-right black-link">Cancelar apertura</a>

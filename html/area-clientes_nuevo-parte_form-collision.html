@@ -205,7 +205,7 @@
 		</div>
 		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
 
-		<main class="wrapper public" role="main">
+		<main class="wrapper public client-area" role="main">
 			<div class="fake-bg"></div>
 			<button type="button" class="btn btn-close" id="btn-close">
 				<span class="icon-svg-close xs" data-grunticon-embed></span>
@@ -213,7 +213,7 @@
 
 			<section>
 
-  			<div class="container client-area" id="container-holder">
+  			<div class="container" id="container-holder">
           <section class="block-white">
 
             <div class="row margin-b-50">
@@ -230,7 +230,7 @@
 
             <div class="row margin-b-40">
               <div class="col-sm-12">
-                <p class="h4 font-normal">Si tienes que dar un parte, completa este formulario previo a la declaración. Una vez lo recibamos, nos pondremos en contacto contigo lo antes posible.</p>
+                <p class="h4 font-normal">Si quieres abrir un parte para este tipo de siniestro, rellena el siguiente formulario. Una vez lo recibamos, nos pondremos en contacto contigo lo antes posible para completar la apertura.</p>
               </div>
             </div>
 
@@ -279,7 +279,7 @@
                 <div class="col-sm-6 margin-b-20">
                   <div class="form-group with-icon">
                     <label for="fecha">Fecha del siniestro:</label>
-                    <input name="input-datepicker" class="js-datepicker form-control" data-provide="datepicker" value="DD/MM/YYYY" data-date-format="dd/mm/yyyy" readonly>
+                    <input name="input-datepicker" class="js-datepicker form-control" data-provide="datepicker" value="DD/MM/YYYY" data-date-format="dd/mm/yyyy">
                     <span data-grunticon-embed="" class="icon-svg-calendar sm no-height auto absolute right"></span>
 
                     <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
@@ -289,8 +289,8 @@
                 </div>
                 <div class="col-sm-6 margin-b-20">
                   <div class="form-group with-icon has-error">
-                    <label for="direccion">Dirección del siniestro:</label>
-                    <input data-error="Por favor revisa el campo" type="text" required class="form-control" id="direccion" placeholder="">
+                    <label for="direccion">Lugar de ocurrencia:</label>
+                    <input data-error="Por favor revisa el campo" type="text" required class="form-control" id="direccion" placeholder="" value="c/ Mayor 1">
                     <span data-grunticon-embed="" class="icon-svg-edit sm no-height auto absolute right"></span>
 
                     <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
@@ -305,7 +305,7 @@
               <div class="row">
                 <div class="col-sm-6 margin-b-20">
   								<div class="form-group">
-  									<label for="locality">Localidad:</label>
+  									<label for="locality">Población:</label>
   									<select role="listbox" name="locality" id="locality" class="selectpicker">
   										<option role="option" value="">Localidad 1</option>
   										<option role="option" value="">Localidad 2</option>
@@ -337,7 +337,7 @@
 
               <div class="row margin-b-40">
                 <div class="col-md-12">
-                  <p><sup>*</sup> Si el siniestro ha tenido lugar en otro país, contacta con nosotros en el <strong>918 378 902</strong>.</p>
+                  <p><sup>*</sup> Si el siniestro ha tenido lugar en otro país, contacta con nosotros en el <strong class="text-nowrap">918 378 902</strong>.</p>
                 </div>
               </div>
 
@@ -368,6 +368,23 @@
 							</div>
 							<div class="col-sm-4 col-xs-12 pull-right">
 								<button class="btn btn-block btn-black caps" type="button">Enviar</button>
+							</div>
+              <div class="col-sm-4 hidden-xs pull-right">
+							  <a href="" class="pull-right black-link">Cancelar apertura</a>
+							</div>
+              <div class="col-sm-4 hidden-xs pull-left">
+							  <a href="" class="black-link">Atrás</a>
+							</div>
+						</div>
+            <div class="row margin-b-15">
+              <div class="visible-xs col-xs-5">
+							  <a href="" class="black-link">Atrás</a>
+							</div>
+              <div class="visible-xs col-xs-7">
+							  <a href="" class="pull-right black-link">Cancelar apertura</a>
+							</div>
+							<div class="col-sm-4 col-xs-12 pull-right">
+								<button class="btn btn-block btn-black caps disabled" disabled type="button">Enviar</button>
 							</div>
               <div class="col-sm-4 hidden-xs pull-right">
 							  <a href="" class="pull-right black-link">Cancelar apertura</a>
