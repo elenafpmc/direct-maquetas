@@ -9074,3 +9074,11 @@ html {
   top: 85%;
   left: 49%;
 }
+.client-area #content-damages #damage-topbottom .car-damages-area-1 {
+  top: 49%;
+  left: 57%;
+}
+.client-area #content-damages #damage-topbottom .car-damages-area-2 {
+  top: 50%;
+  left: 50%;
+}
