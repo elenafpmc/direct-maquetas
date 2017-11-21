@@ -4329,6 +4329,9 @@ a.no-decoration {
 .margin-b-50 {
   margin-bottom: 50px !important;
 }
+.margin-b-60 {
+  margin-bottom: 60px !important;
+}
 .margin-b-80 {
   margin-bottom: 80px !important;
 }
@@ -8442,19 +8445,16 @@ html {
   margin-bottom: 50px;
   /* Temporary fix for font */
 }
-.client-area h1:not(.font-normal),
-.client-area .h1:not(.font-normal),
-.client-area h2:not(.font-normal),
-.client-area .h2:not(.font-normal),
-.client-area h3:not(.font-normal),
-.client-area .h3:not(.font-normal),
-.client-area h4:not(.font-normal),
-.client-area .h4:not(.font-normal),
-.client-area h5:not(.font-normal),
-.client-area .h5:not(.font-normal),
-.client-area h6:not(.font-normal),
-.client-area .h6:not(.font-normal) {
+.client-area h1,
+.client-area .h1,
+.client-area h2,
+.client-area .h2,
+.client-area h3,
+.client-area .h3 {
   font-family: Futura;
+}
+.client-area .font-tahoma {
+  font-family: Tahoma;
 }
 .client-area .info-message {
   font-size: 16px;
@@ -8531,6 +8531,15 @@ html {
 .client-area .form-group [disabled] {
   display: none;
 }
+.client-area .vehicle-data p {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.client-area .vehicle-data p strong {
+  font-size: 18px;
+  font-weight: bold;
+}
 .client-area .progress-nav {
   display: flex;
   flex-direction: row;
@@ -8558,7 +8567,7 @@ html {
   content: '';
   display: block;
   position: absolute;
-  left: 2%;
+  left: 1%;
   right: 50%;
   top: 22px;
   height: 0;
@@ -8570,7 +8579,7 @@ html {
   display: block;
   position: absolute;
   left: 50%;
-  right: 2%;
+  right: 1%;
   top: 22px;
   height: 0;
   border-top: 6px dashed #C0C0C0;
@@ -8596,6 +8605,7 @@ html {
   font-family: Tahoma;
   font-size: 24px;
   line-height: 24px;
+  font-weight: bold;
   color: #C0C0C0;
   background-color: #FFF;
   border: 6px solid #C0C0C0;
@@ -8606,7 +8616,7 @@ html {
 .client-area .progress-nav .progress-nav-step .progress-nav-step-text {
   display: block;
   max-width: 50%;
-  margin: 20px auto;
+  margin: 15px auto;
   font-family: Tahoma;
   font-size: 18px;
   line-height: 20px;
@@ -8771,6 +8781,20 @@ html {
   background-color: #F2F2F2;
   color: #181512;
 }
+.client-area #tabs-damages li.has-damage a:before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2224%22%20height%3D%2219%22%20viewBox%3D%220%200%2024%2019%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Echeck%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23181717%22%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath%20d%3D%22M7.137%2016.57L.067%209.5%204.31%205.258l4.948%204.95%209.898-9.9%204.242%204.243-14.14%2014.14-2.12-2.12z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: -2px;
+  left: -2px;
+  margin-bottom: -7px;
+}
 .client-area #tabs-damages li a {
   display: block;
   background-color: #9BC8DB;
@@ -8781,11 +8805,8 @@ html {
   font-size: 18px;
   line-height: 20px;
   border-right: 1px solid rgba(255, 255, 255, 0.7);
-  color: #CDE5ED;
-  transition: all 0.3s ease-out 0s;
-}
-.client-area #tabs-damages li a:hover {
   color: #181512;
+  transition: all 0.3s ease-out 0s;
 }
 .client-area #content-damages {
   background-color: #F2F2F2;
@@ -8800,7 +8821,7 @@ html {
 .client-area #content-damages .tab-damages .car-damages {
   display: block;
   position: relative;
-  max-width: 85%;
+  max-width: 100%;
   margin: 0 auto;
   padding-top: 40px;
 }
@@ -8808,6 +8829,7 @@ html {
   display: block;
   width: 100%;
   max-width: 100%;
+  max-height: 350px;
 }
 .client-area #content-damages .tab-damages .car-damages-area {
   display: block;
@@ -8825,10 +8847,51 @@ html {
   background-color: #FFF;
   cursor: pointer;
   transform: translate(-20px, -20px);
+  z-index: 1;
+}
+.client-area #content-damages .tab-damages .car-damages-area:hover {
+  z-index: 2;
+}
+.client-area #content-damages .tab-damages .car-damages-area:hover .car-damages-area-tooltip {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 .client-area #content-damages .tab-damages .car-damages-area.active {
   color: #FFF;
   background-color: #F2958D;
+}
+.client-area #content-damages .tab-damages .car-damages-area-tooltip {
+  display: block;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  background-color: #FFF;
+  color: #181512;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 10px;
+  line-height: 12px;
+  padding: 10px 15px;
+  z-index: 2;
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  -moz-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  transition: all 0.3s ease-out 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+.client-area #content-damages .tab-damages .car-damages-area-tooltip:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  height: 0;
+  width: 0;
+  border-bottom: 5px solid #FFF;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  transform: translateX(-4px);
 }
 .client-area #content-damages .tab-damages .list-damages-area {
   display: block;
@@ -8836,12 +8899,84 @@ html {
   margin-bottom: 10px;
 }
 .client-area #content-damages #damage-front .car-damages-area-1 {
-  top: 0%;
-  left: 0%;
+  top: 28%;
+  left: 50%;
+}
+.client-area #content-damages #damage-front .car-damages-area-2 {
+  top: 80%;
+  left: 43%;
+}
+.client-area #content-damages #damage-front .car-damages-area-3 {
+  top: 58%;
+  left: 40.5%;
+}
+.client-area #content-damages #damage-front .car-damages-area-4 {
+  top: 58%;
+  left: 59.5%;
+}
+.client-area #content-damages #damage-front .car-damages-area-5 {
+  top: 42%;
+  left: 50%;
+}
+.client-area #content-damages #damage-front .car-damages-area-6 {
+  top: 60%;
+  left: 34.5%;
+}
+.client-area #content-damages #damage-front .car-damages-area-7 {
+  top: 60%;
+  left: 65.5%;
+}
+.client-area #content-damages #damage-front .car-damages-area-8 {
+  top: 77%;
+  left: 36%;
+}
+.client-area #content-damages #damage-front .car-damages-area-9 {
+  top: 77%;
+  left: 64%;
+}
+.client-area #content-damages #damage-front .car-damages-area-10 {
+  top: 72%;
+  left: 50%;
+}
+.client-area #content-damages #damage-front .car-damages-area-11 {
+  top: 59%;
+  left: 50%;
+}
+.client-area #content-damages #damage-front .car-damages-area-12 {
+  top: 85%;
+  left: 50%;
 }
 .client-area #content-damages #damage-back .car-damages-area-1 {
-  top: 0%;
-  left: 0%;
+  top: 28%;
+  left: 50%;
+}
+.client-area #content-damages #damage-back .car-damages-area-2 {
+  top: 76%;
+  left: 50%;
+}
+.client-area #content-damages #damage-back .car-damages-area-3 {
+  top: 58%;
+  left: 40.5%;
+}
+.client-area #content-damages #damage-back .car-damages-area-4 {
+  top: 58%;
+  left: 59.5%;
+}
+.client-area #content-damages #damage-back .car-damages-area-5 {
+  top: 41%;
+  left: 44%;
+}
+.client-area #content-damages #damage-back .car-damages-area-6 {
+  top: 53.5%;
+  left: 34.5%;
+}
+.client-area #content-damages #damage-back .car-damages-area-7 {
+  top: 53.5%;
+  left: 65.5%;
+}
+.client-area #content-damages #damage-back .car-damages-area-8 {
+  top: 53.5%;
+  left: 50%;
 }
 .client-area #content-damages #damage-left .car-damages-area-1 {
   top: 28%;
@@ -8877,11 +9012,11 @@ html {
 }
 .client-area #content-damages #damage-left .car-damages-area-9 {
   top: 78.5%;
-  left: 21.25%;
+  left: 21.5%;
 }
 .client-area #content-damages #damage-left .car-damages-area-10 {
   top: 78.5%;
-  left: 77.25%;
+  left: 76.75%;
 }
 .client-area #content-damages #damage-left .car-damages-area-11 {
   top: 47%;
@@ -8890,4 +9025,52 @@ html {
 .client-area #content-damages #damage-left .car-damages-area-12 {
   top: 85%;
   left: 51%;
+}
+.client-area #content-damages #damage-right .car-damages-area-1 {
+  top: 28%;
+  left: 52%;
+}
+.client-area #content-damages #damage-right .car-damages-area-2 {
+  top: 28%;
+  left: 37%;
+}
+.client-area #content-damages #damage-right .car-damages-area-3 {
+  top: 29%;
+  left: 29%;
+}
+.client-area #content-damages #damage-right .car-damages-area-4 {
+  top: 40%;
+  left: 61%;
+}
+.client-area #content-damages #damage-right .car-damages-area-5 {
+  top: 54%;
+  left: 74%;
+}
+.client-area #content-damages #damage-right .car-damages-area-6 {
+  top: 46%;
+  left: 15%;
+}
+.client-area #content-damages #damage-right .car-damages-area-7 {
+  top: 63%;
+  left: 57%;
+}
+.client-area #content-damages #damage-right .car-damages-area-8 {
+  top: 63%;
+  left: 37%;
+}
+.client-area #content-damages #damage-right .car-damages-area-9 {
+  top: 78.5%;
+  left: 78.5%;
+}
+.client-area #content-damages #damage-right .car-damages-area-10 {
+  top: 78.5%;
+  left: 23%;
+}
+.client-area #content-damages #damage-right .car-damages-area-11 {
+  top: 47%;
+  left: 52%;
+}
+.client-area #content-damages #damage-right .car-damages-area-12 {
+  top: 85%;
+  left: 49%;
 }

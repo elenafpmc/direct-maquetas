@@ -270,9 +270,9 @@
               <div class="row margin-b-40">
                 <div class="col-sm-12">
                   <ul class="nav nav-tabs responsive" role="tablist" id="tabs-damages">
-  									<li role="presentation" class="text-center"><a href="#damage-front" role="tab" data-toggle="tab" aria-expanded="true">Frontal</a></li>
-  									<li role="presentation" class="text-center"><a href="#damage-back" role="tab" data-toggle="tab" aria-expanded="false">Trasera</a></li>
-  									<li role="presentation" class="text-center active"><a href="#damage-left" role="tab" data-toggle="tab" aria-expanded="false">Lado izquierdo</a></li>
+  									<li role="presentation" class="text-center active has-damage"><a href="#damage-front" role="tab" data-toggle="tab" aria-expanded="true">Frontal</a></li>
+  									<li role="presentation" class="text-center has-damage"><a href="#damage-back" role="tab" data-toggle="tab" aria-expanded="false">Trasera</a></li>
+  									<li role="presentation" class="text-center"><a href="#damage-left" role="tab" data-toggle="tab" aria-expanded="false">Lado izquierdo</a></li>
   									<li role="presentation" class="text-center"><a href="#damage-right" role="tab" data-toggle="tab" aria-expanded="false">Lado derecho</a></li>
   									<li role="presentation" class="text-center"><a href="#damage-topbottom" role="tab" data-toggle="tab" aria-expanded="false">Superior e Inferior</a></li>
   								</ul>
@@ -280,31 +280,211 @@
                 <div class="col-sm-12">
                   <div class="tab-content responsive hidden-xs" id="content-damages">
 
-                    <div role="tabpanel" class="tab-pane tab-damages" id="damage-front">
-                      Daño Parte Trasera
+                    <div role="tabpanel" class="tab-pane tab-damages active" id="damage-front">
+                      <div class="car-damages">
+                        <div class="row margin-b-40">
+                          <div class="col-md-12">
+                            <img src="img/damages_front.svg" class="car-damages-img" alt="">
+                            <div class="car-damages-area car-damages-area-1 active">1<span class="car-damages-area-tooltip">Parabrisas</spa></div>
+                            <div class="car-damages-area car-damages-area-2">2<span class="car-damages-area-tooltip">Paragolpes</spa></div>
+                            <div class="car-damages-area car-damages-area-3">3<span class="car-damages-area-tooltip">Faro derecho</spa></div>
+                            <div class="car-damages-area car-damages-area-4">4<span class="car-damages-area-tooltip">Faro izquierdo</spa></div>
+                            <div class="car-damages-area car-damages-area-5">5<span class="car-damages-area-tooltip">Capó</spa></div>
+                            <div class="car-damages-area car-damages-area-6">6<span class="car-damages-area-tooltip">Intermitente derecho</spa></div>
+                            <div class="car-damages-area car-damages-area-7">7<span class="car-damages-area-tooltip">Intermitente izquierdo</spa></div>
+                            <div class="car-damages-area car-damages-area-8">8<span class="car-damages-area-tooltip">Antiniebla derecho</spa></div>
+                            <div class="car-damages-area car-damages-area-9">9<span class="car-damages-area-tooltip">Antiniebla izquierdo</spa></div>
+                            <div class="car-damages-area car-damages-area-10">10<span class="car-damages-area-tooltip">Matrícula</spa></div>
+                            <div class="car-damages-area car-damages-area-11">11<span class="car-damages-area-tooltip">Rejilla</spa></div>
+                            <div class="car-damages-area car-damages-area-12">12<span class="car-damages-area-tooltip">Spoiler</spa></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-damages">
+                        <div class="row margin-b-20">
+                          <div class="col-md-12">
+                            <h3 class="h2 no-padding-b">Frontal</h3>
+                          </div>
+                        </div>
+                        <div class="row margin-b-20">
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-1">
+															<input type="checkbox" id="damages1" checked>
+															<label for="damages1">
+																1. Parabrisas
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-2">
+															<input type="checkbox" id="damages2">
+															<label for="damages2">
+																2. Paragolpes
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-3">
+															<input type="checkbox" id="damages3">
+															<label for="damages3">
+																3. Faro derecho
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-4">
+															<input type="checkbox" id="damages4">
+															<label for="damages4">
+																4. Faro izquierdo
+															</label>
+														</div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-5">
+															<input type="checkbox" id="damages5">
+															<label for="damages5">
+																5. Capó
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-6">
+															<input type="checkbox" id="damages6">
+															<label for="damages6">
+																6. Intermitente derecho
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-7">
+															<input type="checkbox" id="damages7">
+															<label for="damages7">
+																7. Intermitente izquierdo
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-8">
+															<input type="checkbox" id="damages8">
+															<label for="damages8">
+																8. Antiniebla derecho
+															</label>
+														</div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-9">
+															<input type="checkbox" id="damages9">
+															<label for="damages9">
+                                9. Antiniebla izquierdo
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-10">
+															<input type="checkbox" id="damages10">
+															<label for="damages10">
+                                10. Matrícula
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-11">
+															<input type="checkbox" id="damages11">
+															<label for="damages11">
+                                11. Rejilla
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-12">
+															<input type="checkbox" id="damages12">
+															<label for="damages12">
+                                12. Spoiler
+															</label>
+														</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
                     <div role="tabpanel" class="tab-pane tab-damages" id="damage-back">
-                      Daño Lado Izquierdo
+                      <div class="car-damages">
+                        <div class="row margin-b-40">
+                          <div class="col-md-12">
+                            <img src="img/damages_back.svg" class="car-damages-img" alt="">
+                            <div class="car-damages-area car-damages-area-1 active">1<span class="car-damages-area-tooltip">Luneta</spa></div>
+                            <div class="car-damages-area car-damages-area-2">2<span class="car-damages-area-tooltip">Paragolpes</spa></div>
+                            <div class="car-damages-area car-damages-area-3">3<span class="car-damages-area-tooltip">Piloto derecho</spa></div>
+                            <div class="car-damages-area car-damages-area-4">4<span class="car-damages-area-tooltip">Piloto izquierdo</spa></div>
+                            <div class="car-damages-area car-damages-area-5">5<span class="car-damages-area-tooltip">Capó/Portón</spa></div>
+                            <div class="car-damages-area car-damages-area-6">6<span class="car-damages-area-tooltip">Intermitente derecho</spa></div>
+                            <div class="car-damages-area car-damages-area-7">7<span class="car-damages-area-tooltip">Intermitente izquierdo</spa></div>
+                            <div class="car-damages-area car-damages-area-8">8<span class="car-damages-area-tooltip">Matrícula</spa></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-damages">
+                        <div class="row margin-b-20">
+                          <div class="col-md-12">
+                            <h3 class="h2 no-padding-b">Trasera</h3>
+                          </div>
+                        </div>
+                        <div class="row margin-b-20">
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-1">
+															<input type="checkbox" id="damages1" checked>
+															<label for="damages1">
+																1. Luneta
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-2">
+															<input type="checkbox" id="damages2">
+															<label for="damages2">
+																2. Paragolpes
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-3">
+															<input type="checkbox" id="damages3">
+															<label for="damages3">
+																3. Piloto derecho
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-4">
+															<input type="checkbox" id="damages4">
+															<label for="damages4">
+																4. Piloto izquierdo
+															</label>
+														</div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-5">
+															<input type="checkbox" id="damages5">
+															<label for="damages5">
+																5. Capó/Portón
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-6">
+															<input type="checkbox" id="damages6">
+															<label for="damages6">
+																6. Intermitente derecho
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-7">
+															<input type="checkbox" id="damages7">
+															<label for="damages7">
+																7. Intermitente izquierdo
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-8">
+															<input type="checkbox" id="damages8">
+															<label for="damages8">
+																8. Matrícula
+															</label>
+														</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
-      							<div role="tabpanel" class="tab-pane tab-damages active" id="damage-left">
+      							<div role="tabpanel" class="tab-pane tab-damages" id="damage-left">
                       <div class="car-damages">
                         <div class="row margin-b-40">
                           <div class="col-md-12">
                             <img src="img/damages_left.svg" class="car-damages-img" alt="">
-                            <div class="car-damages-area car-damages-area-1 active">1</div>
-                            <div class="car-damages-area car-damages-area-2">2</div>
-                            <div class="car-damages-area car-damages-area-3">3</div>
-                            <div class="car-damages-area car-damages-area-4">4</div>
-                            <div class="car-damages-area car-damages-area-5">5</div>
-                            <div class="car-damages-area car-damages-area-6">6</div>
-                            <div class="car-damages-area car-damages-area-7">7</div>
-                            <div class="car-damages-area car-damages-area-8">8</div>
-                            <div class="car-damages-area car-damages-area-9">9</div>
-                            <div class="car-damages-area car-damages-area-10">10</div>
-                            <div class="car-damages-area car-damages-area-11">11</div>
-                            <div class="car-damages-area car-damages-area-12">12</div>
+                            <div class="car-damages-area car-damages-area-1 active">1<span class="car-damages-area-tooltip">Cristal puerta delantera</spa></div>
+                            <div class="car-damages-area car-damages-area-2">2<span class="car-damages-area-tooltip">Cristal puerta trasera</spa></div>
+                            <div class="car-damages-area car-damages-area-3">3<span class="car-damages-area-tooltip">Cristal de custodia</spa></div>
+                            <div class="car-damages-area car-damages-area-4">4<span class="car-damages-area-tooltip">Retrovisor</spa></div>
+                            <div class="car-damages-area car-damages-area-5">5<span class="car-damages-area-tooltip">Aleta delantera</spa></div>
+                            <div class="car-damages-area car-damages-area-6">6<span class="car-damages-area-tooltip">Aleta trasera</spa></div>
+                            <div class="car-damages-area car-damages-area-7">7<span class="car-damages-area-tooltip">Puerta delantera</spa></div>
+                            <div class="car-damages-area car-damages-area-8">8<span class="car-damages-area-tooltip">Puerta trasera</spa></div>
+                            <div class="car-damages-area car-damages-area-9">9<span class="car-damages-area-tooltip">Rueda delantera</spa></div>
+                            <div class="car-damages-area car-damages-area-10">10<span class="car-damages-area-tooltip">Rueda trasera</spa></div>
+                            <div class="car-damages-area car-damages-area-11">11<span class="car-damages-area-tooltip">Tirador/cerradura</spa></div>
+                            <div class="car-damages-area car-damages-area-12">12<span class="car-damages-area-tooltip">Estribo</spa></div>
                           </div>
                         </div>
                       </div>
@@ -398,7 +578,112 @@
       							</div>
 
       							<div role="tabpanel" class="tab-pane tab-damages" id="damage-right">
-      								Daño Lado Derecho
+                      <div class="car-damages">
+                        <div class="row margin-b-40">
+                          <div class="col-md-12">
+                            <img src="img/damages_right.svg" class="car-damages-img" alt="">
+                            <div class="car-damages-area car-damages-area-1 active">1<span class="car-damages-area-tooltip">Cristal puerta delantera</spa></div>
+                            <div class="car-damages-area car-damages-area-2">2<span class="car-damages-area-tooltip">Cristal puerta trasera</spa></div>
+                            <div class="car-damages-area car-damages-area-3">3<span class="car-damages-area-tooltip">Cristal de custodia</spa></div>
+                            <div class="car-damages-area car-damages-area-4">4<span class="car-damages-area-tooltip">Retrovisor</spa></div>
+                            <div class="car-damages-area car-damages-area-5">5<span class="car-damages-area-tooltip">Aleta delantera</spa></div>
+                            <div class="car-damages-area car-damages-area-6">6<span class="car-damages-area-tooltip">Aleta trasera</spa></div>
+                            <div class="car-damages-area car-damages-area-7">7<span class="car-damages-area-tooltip">Puerta delantera</spa></div>
+                            <div class="car-damages-area car-damages-area-8">8<span class="car-damages-area-tooltip">Puerta trasera</spa></div>
+                            <div class="car-damages-area car-damages-area-9">9<span class="car-damages-area-tooltip">Rueda delantera</spa></div>
+                            <div class="car-damages-area car-damages-area-10">10<span class="car-damages-area-tooltip">Rueda trasera</spa></div>
+                            <div class="car-damages-area car-damages-area-11">11<span class="car-damages-area-tooltip">Tirador/cerradura</spa></div>
+                            <div class="car-damages-area car-damages-area-12">12<span class="car-damages-area-tooltip">Estribo</spa></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-damages">
+                        <div class="row margin-b-20">
+                          <div class="col-md-12">
+                            <h3 class="h2 no-padding-b">Lado derecho</h3>
+                          </div>
+                        </div>
+                        <div class="row margin-b-20">
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-1">
+															<input type="checkbox" id="damages1" checked>
+															<label for="damages1">
+																1. Cristal puerta delantera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-2">
+															<input type="checkbox" id="damages2">
+															<label for="damages2">
+																2. Cristal puerta trasera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-3">
+															<input type="checkbox" id="damages3">
+															<label for="damages3">
+																3. Cristal de custodia
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-4">
+															<input type="checkbox" id="damages4">
+															<label for="damages4">
+																4. Retrovisor
+															</label>
+														</div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-5">
+															<input type="checkbox" id="damages5">
+															<label for="damages5">
+																5. Aleta delantera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-6">
+															<input type="checkbox" id="damages6">
+															<label for="damages6">
+																6. Aleta trasera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-7">
+															<input type="checkbox" id="damages7">
+															<label for="damages7">
+																7. Puerta delantera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-8">
+															<input type="checkbox" id="damages8">
+															<label for="damages8">
+																8. Puerta trasera
+															</label>
+														</div>
+                          </div>
+                          <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="checkbox list-damages-area list-damage-area-9">
+															<input type="checkbox" id="damages9">
+															<label for="damages9">
+                                9. Rueda delantera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-10">
+															<input type="checkbox" id="damages10">
+															<label for="damages10">
+                                10. Rueda trasera
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-11">
+															<input type="checkbox" id="damages11">
+															<label for="damages11">
+                                11. Tirador/Cerradura
+															</label>
+														</div>
+                            <div class="checkbox list-damages-area list-damage-area-12">
+															<input type="checkbox" id="damages12">
+															<label for="damages12">
+                                12. Estribo
+															</label>
+														</div>
+                          </div>
+                        </div>
+                      </div>
       							</div>
 
       							<div role="tabpanel" class="tab-pane tab-damages" id="damage-topbottom">
