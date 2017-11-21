@@ -8461,7 +8461,7 @@ html {
   line-height: 19px;
 }
 .client-area .block-alert .message .text-message {
-  top: -12px;
+  top: -11px;
   position: relative;
   display: inline-block;
   width: 85%;
@@ -8472,7 +8472,10 @@ html {
 }
 .client-area .block-alert .message .text-message.long-message {
   top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+}
+.client-area .block-alert .message .text-message.short-message {
+  top: -15px;
 }
 @media (max-width: 991px) {
   .client-area .block-alert .message .text-message {
@@ -8492,18 +8495,9 @@ html {
     width: 100%;
   }
 }
-.client-area a.black-link {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 30px;
-  padding: 10px 0;
-  color: #181512;
-}
-.client-area a.black-link:hover,
-.client-area a.black-link:active {
-  font-size: 16px;
-  line-height: 30px;
-  color: #181512;
+.client-area .block-direct.info {
+  padding: 5px 10px 5px 40px;
+  position: relative;
 }
 .client-area .form-group.with-icon {
   position: relative;
@@ -8528,8 +8522,37 @@ html {
   margin-top: 8px;
 }
 .client-area .form-group .bootstrap-select .selectpicker .disabled,
-.client-area .form-group [disabled] {
+.client-area .form-group .bootstrap-select .selectpicker [disabled] {
   display: none;
+}
+.client-area a.black-link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 10px 0;
+  color: #181512;
+}
+.client-area a.black-link:hover,
+.client-area a.black-link:active {
+  font-size: 16px;
+  line-height: 30px;
+  color: #181512;
+}
+.client-area .btn.btn-secondary {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 20px;
+}
+.client-area .btn.btn-secondary.text-left {
+  text-align: left;
+}
+.client-area .block-grey {
+  background: #fafafa;
+  border-bottom: 3px solid #e3e1e5;
+  padding: 20px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  position: relative;
 }
 .client-area .vehicle-data p {
   font-size: 16px;

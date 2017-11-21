@@ -26,18 +26,21 @@
 
 	.block-alert .message {
 		.text-message {
-	    top: -12px;
+	    top: -11px;
 	    position: relative;
 	    display: inline-block;
 	    width: 85%;
 	    vertical-align: middle;
 
-			&.fullwidth-message{
+			&.fullwidth-message {
 				width: 92.5%;
 			}
 			&.long-message {
 				top: 0;
-				margin-bottom: 5px;
+				margin-bottom: 6px;
+			}
+			&.short-message {
+				top: -15px;
 			}
 		}
 		@media(max-width: @screen-max-sm){
@@ -59,22 +62,22 @@
 		}
 	}
 
-	a.black-link {
-		display: inline-block;
-		font-size: 16px;
-		line-height: 30px;
-		padding: 10px 0;
-		color: #181512;
-		&:hover,
-		&:active {
-			font-size: 16px;
-			line-height: 30px;
-			color: #181512;
+	.block-direct {
+		&.info {
+			padding: 5px 10px 5px 40px;
+			position: relative;
+
+			// [class*="icon-"] {  TODO: Porque peta?!?!?
+			// 	display: block;
+			// 	position: absolute;
+			// 	left: 10px;
+			// 	top; 7px;
+			// }
 		}
 	}
 
-	.form-group{
-		&.with-icon{
+	.form-group {
+		&.with-icon {
 			position: relative;
 
 			[class*="icon-svg"].absolute.right {
@@ -102,10 +105,47 @@
 			}
 		}
 
-		.bootstrap-select .selectpicker
-		.disabled,
-		[disabled] {
-			display: none;
+		.bootstrap-select .selectpicker {
+			.disabled,
+			[disabled] {
+				display: none;
+			}
+		}
+	}
+
+	a.black-link {
+		display: inline-block;
+		font-size: 16px;
+		line-height: 30px;
+		padding: 10px 0;
+		color: #181512;
+		&:hover,
+		&:active {
+			font-size: 16px;
+			line-height: 30px;
+			color: #181512;
+		}
+	}
+
+	.btn.btn-secondary {
+    font-size: 14px;
+		line-height: 20px;
+		padding: 20px;
+
+		&.text-left {
+			text-align: left;
+		}
+	}
+
+	.block-grey {
+    background: #fafafa;
+    border-bottom: 3px solid #e3e1e5;
+    padding: 20px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    position: relative;
+		strong {
+
 		}
 	}
 
