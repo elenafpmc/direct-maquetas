@@ -8975,6 +8975,18 @@ html {
   top: 85%;
   left: 50%;
 }
+@media (max-width: 1199px) {
+  .client-area #content-damages #damage-front .car-damages-area-1 {
+    top: 0%;
+    left: 0%;
+  }
+}
+@media (max-width: 991px) {
+  .client-area #content-damages #damage-front .car-damages-area-1 {
+    top: 100%;
+    left: 100%;
+  }
+}
 .client-area #content-damages #damage-back .car-damages-area-1 {
   top: 28%;
   left: 50%;
