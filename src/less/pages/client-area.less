@@ -77,6 +77,13 @@
 	}
 
 	.form-group {
+
+		input, input:focus,
+		button, button:focus,
+		textarea, textarea:focus {
+			outline: none !important;
+		}
+
 		&.with-icon {
 			position: relative;
 
@@ -105,10 +112,23 @@
 			}
 		}
 
-		.bootstrap-select .selectpicker {
-			.disabled,
-			[disabled] {
-				display: none;
+		.bootstrap-select {
+
+			.dropdown-menu {
+				background-color: #E3E1E5;
+				padding: 0;
+				margin: 0;
+
+				a {
+					font-size: 14px;
+					line-height: 18px;
+					padding: 11px 0px 11px 10px;
+				}
+
+				.disabled,
+				[disabled] {
+					display: none;
+				}
 			}
 		}
 	}
@@ -413,9 +433,8 @@
 		}
 	}
 
-
 	#tabs-damages {
-		display: block;
+		display: block !important;
 
 		li {
 			display: inline-block;
@@ -469,6 +488,7 @@
 		}
 	}
 	#content-damages {
+		display: block !important;
 		background-color: #F2F2F2;
 		padding: 40px;
 
@@ -795,7 +815,7 @@
 			}
 			ul {
 				margin: 0;
-				
+
 				li {
 					display: block;
 					padding-left: 20px;

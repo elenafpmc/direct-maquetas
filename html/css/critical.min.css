@@ -8505,6 +8505,14 @@ html {
   left: 10px;
   top: 7px;
 }
+.client-area .form-group input,
+.client-area .form-group input:focus,
+.client-area .form-group button,
+.client-area .form-group button:focus,
+.client-area .form-group textarea,
+.client-area .form-group textarea:focus {
+  outline: none !important;
+}
 .client-area .form-group.with-icon {
   position: relative;
 }
@@ -8527,8 +8535,18 @@ html {
 .client-area .form-group.no-label [class*="icon-svg"].absolute.right {
   margin-top: 8px;
 }
-.client-area .form-group .bootstrap-select .selectpicker .disabled,
-.client-area .form-group .bootstrap-select .selectpicker [disabled] {
+.client-area .form-group .bootstrap-select .dropdown-menu {
+  background-color: #E3E1E5;
+  padding: 0;
+  margin: 0;
+}
+.client-area .form-group .bootstrap-select .dropdown-menu a {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px 0px 11px 10px;
+}
+.client-area .form-group .bootstrap-select .dropdown-menu .disabled,
+.client-area .form-group .bootstrap-select .dropdown-menu [disabled] {
   display: none;
 }
 .client-area a.black-link {
@@ -8794,7 +8812,7 @@ html {
   margin-top: 80px;
 }
 .client-area #tabs-damages {
-  display: block;
+  display: block !important;
 }
 .client-area #tabs-damages li {
   display: inline-block;
@@ -8838,6 +8856,7 @@ html {
   transition: all 0.3s ease-out 0s;
 }
 .client-area #content-damages {
+  display: block !important;
   background-color: #F2F2F2;
   padding: 40px;
 }
