@@ -9123,3 +9123,21 @@ html {
   top: 50%;
   left: 50%;
 }
+.client-area #summary-damages .summary-damages-col {
+  display: none;
+  position: relative;
+  width: 20%;
+  float: left;
+}
+.client-area #summary-damages .summary-damages-col.active {
+  display: block;
+}
+.client-area #summary-damages .summary-damages-col p {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.client-area #summary-damages .summary-damages-col ul li {
+  padding-left: 20px;
+}
