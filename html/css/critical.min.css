@@ -8499,6 +8499,12 @@ html {
   padding: 5px 10px 5px 40px;
   position: relative;
 }
+.client-area .block-direct.info [class*="icon-svg"] {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
 .client-area .form-group.with-icon {
   position: relative;
 }
