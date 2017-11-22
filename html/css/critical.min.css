@@ -8812,7 +8812,7 @@ html {
   margin-top: 80px;
 }
 .client-area #tabs-damages {
-  display: block !important;
+  display: block;
 }
 .client-area #tabs-damages li {
   display: inline-block;
@@ -8856,7 +8856,7 @@ html {
   transition: all 0.3s ease-out 0s;
 }
 .client-area #content-damages {
-  display: block !important;
+  display: block;
   background-color: #F2F2F2;
   padding: 40px;
 }
