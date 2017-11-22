@@ -9138,6 +9138,12 @@ html {
   font-weight: bold;
   margin-bottom: 10px;
 }
+.client-area #summary-damages .summary-damages-col ul {
+  margin: 0;
+}
 .client-area #summary-damages .summary-damages-col ul li {
+  display: block;
   padding-left: 20px;
+  font-size: 14px;
+  line-height: 20px;
 }
