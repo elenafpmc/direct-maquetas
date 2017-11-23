@@ -9143,6 +9143,30 @@ html {
   top: 50%;
   left: 50%;
 }
+.client-area #content-damages #damage-moto .car-damages-img {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  max-height: 232px;
+  padding: 0 6px;
+  margin: 50px 0;
+}
+.client-area #content-damages #damage-moto .car-damages-area-1 {
+  top: 25%;
+  left: 18%;
+}
+.client-area #content-damages #damage-moto .car-damages-area-2 {
+  top: 5%;
+  left: 43.2%;
+}
+.client-area #content-damages #damage-moto .car-damages-area-3 {
+  top: 5%;
+  left: 56.2%;
+}
+.client-area #content-damages #damage-moto .car-damages-area-4 {
+  top: 25%;
+  left: 82%;
+}
 .client-area #summary-damages .summary-damages-col {
   display: none;
   position: relative;
