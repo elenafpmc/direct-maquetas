@@ -8824,6 +8824,11 @@ html {
 .client-area #tabs-damages li:last-child a {
   border: none;
 }
+@media (max-width: 991px) {
+  .client-area #tabs-damages li:last-child a {
+    padding: 15px 0;
+  }
+}
 .client-area #tabs-damages li.active a {
   background-color: #F2F2F2;
   color: #181512;
@@ -8964,7 +8969,7 @@ html {
   left: 59.5%;
 }
 .client-area #content-damages #damage-front .car-damages-area-5 {
-  top: 42%;
+  top: 45%;
   left: 50%;
 }
 .client-area #content-damages #damage-front .car-damages-area-6 {
@@ -8997,14 +9002,102 @@ html {
 }
 @media (max-width: 1199px) {
   .client-area #content-damages #damage-front .car-damages-area-1 {
-    top: 0%;
-    left: 0%;
+    top: 28%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-2 {
+    top: 80%;
+    left: 41%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-3 {
+    top: 58%;
+    left: 37.5%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-4 {
+    top: 58%;
+    left: 62.5%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-5 {
+    top: 45%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-6 {
+    top: 60%;
+    left: 31%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-7 {
+    top: 60%;
+    left: 69%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-8 {
+    top: 77%;
+    left: 33%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-9 {
+    top: 77%;
+    left: 67%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-10 {
+    top: 72%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-11 {
+    top: 59%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-12 {
+    top: 85%;
+    left: 50%;
   }
 }
 @media (max-width: 991px) {
   .client-area #content-damages #damage-front .car-damages-area-1 {
-    top: 100%;
-    left: 100%;
+    top: 28%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-2 {
+    top: 80%;
+    left: 38%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-3 {
+    top: 58%;
+    left: 33.5%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-4 {
+    top: 58%;
+    left: 66.5%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-5 {
+    top: 45%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-6 {
+    top: 60%;
+    left: 24%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-7 {
+    top: 60%;
+    left: 76%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-8 {
+    top: 77%;
+    left: 27%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-9 {
+    top: 77%;
+    left: 73%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-10 {
+    top: 72%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-11 {
+    top: 59%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-front .car-damages-area-12 {
+    top: 85%;
+    left: 50%;
   }
 }
 .client-area #content-damages #damage-back .car-damages-area-1 {
@@ -9038,6 +9131,74 @@ html {
 .client-area #content-damages #damage-back .car-damages-area-8 {
   top: 53.5%;
   left: 50%;
+}
+@media (max-width: 1199px) {
+  .client-area #content-damages #damage-back .car-damages-area-1 {
+    top: 28%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-2 {
+    top: 76%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-3 {
+    top: 58%;
+    left: 37.5%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-4 {
+    top: 58%;
+    left: 62.5%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-5 {
+    top: 41%;
+    left: 44%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-6 {
+    top: 53.5%;
+    left: 30.5%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-7 {
+    top: 53.5%;
+    left: 69.5%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-8 {
+    top: 53.5%;
+    left: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .client-area #content-damages #damage-back .car-damages-area-1 {
+    top: 28%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-2 {
+    top: 76%;
+    left: 50%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-3 {
+    top: 58%;
+    left: 32.5%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-4 {
+    top: 58%;
+    left: 67.5%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-5 {
+    top: 41%;
+    left: 44%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-6 {
+    top: 53.5%;
+    left: 23.5%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-7 {
+    top: 53.5%;
+    left: 76.5%;
+  }
+  .client-area #content-damages #damage-back .car-damages-area-8 {
+    top: 53.5%;
+    left: 50%;
+  }
 }
 .client-area #content-damages #damage-left .car-damages-area-1 {
   top: 28%;
@@ -9134,6 +9295,9 @@ html {
 .client-area #content-damages #damage-right .car-damages-area-12 {
   top: 85%;
   left: 49%;
+}
+.client-area #content-damages #damage-topbottom img:first-child {
+  margin-bottom: 15px;
 }
 .client-area #content-damages #damage-topbottom .car-damages-area-1 {
   top: 49%;
