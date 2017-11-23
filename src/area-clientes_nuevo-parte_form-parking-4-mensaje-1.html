@@ -1,0 +1,101 @@
+{{= it.include("core/html-start.html") }}
+
+    {{= it.include("blocks/header.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+
+		<main class="wrapper public client-area" role="main">
+			<div class="fake-bg"></div>
+			<button type="button" class="btn btn-close" id="btn-close">
+				<span class="icon-svg-close xs" data-grunticon-embed></span>
+			</button>
+
+			<section>
+
+  			<div class="container" id="container-holder">
+          <section class="block-white">
+
+            <div class="row margin-b-50">
+							<div class="col-sm-12">
+								<button type="button" class="btn link pull-left no-decoration back-button" data-target=""><span data-grunticon-embed="" class="icon-svg-arrow-back xs pull-left"></span>Volver a partes</button>
+								<button type="button" class="btn link pull-right no-decoration" data-target=""><span data-grunticon-embed="" class="icon-svg-close xs pull-left"></span></button>
+							</div>
+						</div>
+
+            <div class="row margin-b-40">
+              <div class="col-md-12">
+                <h3 class="h2 no-padding-b">Abrir nuevo parte: Daños de aparcamiento</h3>
+              </div>
+            </div>
+
+            <div class="row margin-b-40">
+              <div class="col-sm-12">
+                <ul class="progress-nav">
+                  <li class="progress-nav-step progress-nav-step-completed">
+                    <a href="#1">
+                      <span class="progress-nav-step-number">1</span>
+                      <span class="progress-nav-step-text">Datos del siniestro</span>
+                    </a>
+                  </li>
+                  <li class="progress-nav-step progress-nav-step-completed">
+                    <a href="#2">
+                      <span class="progress-nav-step-number">2</span>
+                      <span class="progress-nav-step-text">Daños del vehículo</span>
+                    </a>
+                  </li>
+                  <li class="progress-nav-step progress-nav-step-completed">
+                    <a href="#3">
+                      <span class="progress-nav-step-number">3</span>
+                      <span class="progress-nav-step-text">Selección de taller</span>
+                    </a>
+                  </li>
+                  <li class="progress-nav-step progress-nav-step-current">
+                    <a href="#4">
+                      <span class="progress-nav-step-number">4</span>
+                      <span class="progress-nav-step-text">Resumen y confirmación</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="block-direct secondary padding-20 margin-b-30">
+              <span class="icon-svg-warning sm" data-grunticon-embed=""></span>
+              <p class="text-message fullwidth-message">
+                Te confirmamos que <strong>tu parte por Daños de aparcamiento</strong> para el vehículo <strong>SEAT LEON 2.9 TDI</strong>, con matrícula 1234XYZ <strong>se ha abierto correctamente</strong>.
+              </p>
+              <p class="text-message fullwidth-message">
+                El número de siniestro es el <strong>2017-10-11-0012345.</strong>
+              </p>
+              <p class="text-message fullwidth-message">
+                Podrás ver más información sobre tu parte en un plazo de 24 horas en tu <strong>Área Cliente.</strong>
+              </p>
+              <p class="text-message fullwidth-message">
+                <strong>Gracias por confiar en Direct.</strong>
+              </p>
+            </div>
+
+
+
+            <div class="row">
+              
+							<div class="col-sm-4 col-xs-12 pull-right">
+								<button class="btn btn-block btn-black caps" type="button">Volver a partes</button>
+							</div>
+              
+						</div>
+
+          </section>
+  		  </div><!-- container -->
+
+			</section><!-- container-fluid -->
+
+	  </main>
+
+
+    {{= it.include("blocks/footer.html") }}
+
+    {{= it.include("core/plugins.js.html") }}
+
+
+{{= it.include("core/html-end.html") }}
