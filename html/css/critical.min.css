@@ -8487,19 +8487,20 @@ html {
     margin: 0;
     padding: 20px;
   }
-  .client-area .block-alert .message [class*="icon-"] {
+  .client-area .block-alert .message [class*="icon-svg-"] {
     display: none;
   }
   .client-area .block-alert .message .text-message {
     top: 0;
     width: 100%;
+    margin-top: 0;
   }
 }
 .client-area .block-direct.info {
   padding: 5px 10px 5px 40px;
   position: relative;
 }
-.client-area .block-direct.info [class*="icon-svg"] {
+.client-area .block-direct.info [class*="icon-svg-"] {
   display: block;
   position: absolute;
   left: 10px;
@@ -9340,6 +9341,58 @@ html {
 .client-area #content-damages #damage-moto .car-damages-area-4 {
   top: 25%;
   left: 82%;
+}
+.client-area .collapse-damages-mobile .block-direct {
+  display: block;
+  position: relative;
+  padding: 20px 10px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.client-area .collapse-damages-mobile .block-direct .arrow-click {
+  bottom: 20px;
+  right: 10px;
+}
+.client-area .collapse-damages-mobile ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.client-area .collapse-damages-mobile ul li {
+  display: block;
+  list-style: none;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 18px 10px;
+  border-bottom: 1px solid #CFCED1;
+}
+.client-area .collapse-damages-mobile ul li:nth-of-type(even) {
+  background-color: #FFF;
+}
+.client-area .collapse-damages-mobile ul li:nth-of-type(odd) {
+  background-color: #FAFAFA;
+}
+.client-area .collapse-damages-mobile ul li:before {
+  display: none;
+}
+.client-area .collapse-damages-mobile ul li [class*="icon-svg-"] {
+  display: block;
+  float: left;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+.client-area .collapse-damages-mobile ul li .checkbox-inline {
+  display: inline-block;
+  padding-left: 0;
+  padding-right: 30px;
+}
+.client-area .collapse-damages-mobile ul li .checkbox-inline label:before {
+  left: auto;
+  right: 0;
+  height: 24px;
+  width: 24px;
 }
 .client-area #summary-damages .summary-damages-col {
   display: none;
