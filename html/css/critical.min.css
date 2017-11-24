@@ -7580,6 +7580,12 @@ ul.list-icons li:before {
 .block-white p.h4 {
   line-height: 30px;
 }
+.block-white p.text-message {
+  padding-bottom: 20px;
+}
+.block-white p.text-message:last-of-type {
+  padding-bottom: 0;
+}
 .block-white .h1 {
   padding-bottom: 10px;
 }
@@ -8670,6 +8676,11 @@ html {
   line-height: 20px;
   color: #C0C0C0;
   text-align: center;
+}
+@media (max-width: 991px) {
+  .client-area .progress-nav .progress-nav-step .progress-nav-step-text {
+    max-width: 80%;
+  }
 }
 .client-area .progress-nav .progress-nav-step.progress-nav-step-current:before {
   left: 0;
