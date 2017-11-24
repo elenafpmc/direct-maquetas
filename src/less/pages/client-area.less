@@ -351,11 +351,18 @@
 		display: block;
 	  background: rgba(24,21,18,0.9); // #181512
 	  width: 100%;
-	  height: 100vh;
+	  min-height: 100vh;
 	  position: fixed;
-	  left: 0;
-	  top: 0;
-	  font-family: Futura-pt;
+		top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+		z-index: 3;
+		padding: 55px 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+
+	  font-family: 'Futura-pt';
 
 		&.popup-alert {
 			.popup-content {
@@ -363,10 +370,21 @@
 			}
 		}
 
+		&.popup-big {
+
+			.popup-content {
+				position: relative;
+				left: auto;
+				top: auto;
+				transform: none;
+			}
+		}
+
 		.popup-content {
 		  width: 90%;
 		  max-width: 580px;
 		  height: auto;
+			margin: 0 auto;
 		  box-sizing: border-box;
 		  padding: 30px;
 		  text-align: left;
@@ -380,6 +398,11 @@
 		  -webkit-transform: translate(-50%,-50%);
 		  transform: translate(-50%,-50%);
 			font-family: Tahoma;
+
+			&.no-padding-sides{
+				padding-right: 0px;
+				padding-left: 0px;	
+			}
 
 			.popup-close {
 		    position: absolute;
@@ -419,7 +442,7 @@
 
 			.popup-btn {
 				display: block;
-		    padding: 11px 33px;
+		    padding: 11px 13px;
 		    background: #181512;
 		    border: 1px solid #e2e2e2;
 		    border-bottom: 3px solid #e2e2e2;
@@ -433,6 +456,9 @@
 				font-weight: 700;
 				text-align: center;
 				margin-top:80px;
+				&.no-mt{
+					margin-top: 0;
+				}
 			}
 		}
 	}
@@ -1101,6 +1127,12 @@
 	}
 
 	#summary-damages {
+		.popup &{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
 		.summary-damages-col {
 			display: none;
 			position: relative;
@@ -1126,6 +1158,46 @@
 					line-height: 20px;
 				}
 			}
+		}
+	}
+
+
+	.popup #summary-damages {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	.summary-damages-col {
+		display: none;
+		position: relative;
+		float: none;
+		width: auto;
+
+		+ .summary-damages-col {
+			margin-top: 20px;
+		}
+
+		&.active {
+			display: block;
+		}
+
+		p {
+			padding: 0;
+		}
+	}
+}
+
+	.popup.popup-damages{
+
+		.damage-img{
+			margin-top: 40px;
+		}
+
+		.damage-title{
+			text-align: center;
+			font-size: 18px;
+			line-height: 22px;
+			font-family: tahoma;
 		}
 	}
 }
