@@ -1006,9 +1006,22 @@
 			font-size: 18px;
 			line-height: 22px;
 
+			&.active {
+				font-weight: bold;
+				.icon-svg-arrow-down{
+					transition: all 0.3s ease-out 0s;
+					transform: rotate(180deg);
+					transform-origin: 50% 50%;
+					background-image: url(@icon-svg-arrow-down);
+					background-size: contain;
+				}
+			}
 			.arrow-click {
 				bottom: 20px;
 				right: 10px;
+				.icon-svg-arrow-down{
+					transition: all 0.3s ease-out 0s;
+				}
 			}
 		}
 
@@ -1024,13 +1037,16 @@
 				font-size: 14px;
 				line-height: 24px;
 				padding: 18px 10px;
-				border-bottom: 1px solid #CFCED1;
+				border-top: 1px solid #CFCED1;
 
 				&:nth-of-type(even) {
 					background-color: #FFF;
 				}
 				&:nth-of-type(odd) {
 					background-color: #FAFAFA;
+				}
+				&:last-of-type {
+					border-bottom: 1px solid #CFCED1;
 				}
 				&:before {
 					display: none;

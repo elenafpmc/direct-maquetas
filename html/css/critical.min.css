@@ -9360,9 +9360,22 @@ html {
   font-size: 18px;
   line-height: 22px;
 }
+.client-area .collapse-damages-mobile .block-direct.active {
+  font-weight: bold;
+}
+.client-area .collapse-damages-mobile .block-direct.active .icon-svg-arrow-down {
+  transition: all 0.3s ease-out 0s;
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%229%22%20viewBox%3D%220%200%2012%209%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3EImported%20Layers%203%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cpath%20d%3D%22M12%202.7l-6%206-6-6%202-2%204%204%204-4%202%202z%22%20fill%3D%22%23181717%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+  background-size: contain;
+}
 .client-area .collapse-damages-mobile .block-direct .arrow-click {
   bottom: 20px;
   right: 10px;
+}
+.client-area .collapse-damages-mobile .block-direct .arrow-click .icon-svg-arrow-down {
+  transition: all 0.3s ease-out 0s;
 }
 .client-area .collapse-damages-mobile ul {
   display: block;
@@ -9376,13 +9389,16 @@ html {
   font-size: 14px;
   line-height: 24px;
   padding: 18px 10px;
-  border-bottom: 1px solid #CFCED1;
+  border-top: 1px solid #CFCED1;
 }
 .client-area .collapse-damages-mobile ul li:nth-of-type(even) {
   background-color: #FFF;
 }
 .client-area .collapse-damages-mobile ul li:nth-of-type(odd) {
   background-color: #FAFAFA;
+}
+.client-area .collapse-damages-mobile ul li:last-of-type {
+  border-bottom: 1px solid #CFCED1;
 }
 .client-area .collapse-damages-mobile ul li:before {
   display: none;
