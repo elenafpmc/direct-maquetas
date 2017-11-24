@@ -9394,16 +9394,37 @@ html {
   width: 24px;
   margin-right: 10px;
 }
+.client-area .collapse-damages-mobile ul li img {
+  display: block;
+  float: left;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
 .client-area .collapse-damages-mobile ul li .checkbox-inline {
   display: inline-block;
+  width: calc(100% - 34px);
   padding-left: 0;
   padding-right: 30px;
+}
+.client-area .collapse-damages-mobile ul li .checkbox-inline label {
+  width: 100%;
 }
 .client-area .collapse-damages-mobile ul li .checkbox-inline label:before {
   left: auto;
   right: 0;
   height: 24px;
   width: 24px;
+  margin: 0;
+  margin-left: 10px;
+  background-color: #E4E1E5;
+  border: 1px solid #C0C0C0;
+}
+.client-area .collapse-damages-mobile ul li .checkbox-inline input[type=checkbox]:checked + label:before {
+  background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2224%22%20height%3D%2219%22%20viewBox%3D%220%200%2024%2019%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Echeck%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23181717%22%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath%20d%3D%22M7.137%2016.57L.067%209.5%204.31%205.258l4.948%204.95%209.898-9.9%204.242%204.243-14.14%2014.14-2.12-2.12z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') #e4e1e5;
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: 50% 50%;
 }
 .client-area #summary-damages .summary-damages-col {
   display: none;

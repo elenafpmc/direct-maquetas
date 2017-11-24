@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled</title>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#181512" fill-rule="nonzero" cx="12" cy="12" r="12"></circle>
+        <path d="M13,10.0033278 L10,10.0033278 L10,19 L13,19 L13,10 L13,10.0033278 Z M11.502698,6 C10.6790591,6 10.002,6.6770591 10.002,7.500698 C10.002,8.3243369 10.6776631,9.001396 11.501302,9.001396 C12.3249409,9.001396 13.002,8.3243369 13.002,7.500698 C13.002,6.6770591 12.3249409,6 11.501302,6 L11.502698,6 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

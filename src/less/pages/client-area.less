@@ -1044,17 +1044,40 @@
 					margin-right: 10px;
 
 				}
+				img {
+					display: block;
+					float: left;
+					height: 24px;
+					width: 24px;
+					margin-right: 10px;
+				}
 				.checkbox-inline {
 					display: inline-block;
-					
+					width: ~"calc(100% - 34px)";
 					padding-left: 0;
 					padding-right: 30px;
 
-					label:before {
-						left: auto;
-						right: 0;
-						height: 24px;
-						width: 24px;
+					label {
+						width: 100%;
+
+						&:before {
+							left: auto;
+							right: 0;
+							height: 24px;
+							width: 24px;
+							margin: 0;
+							margin-left: 10px;
+							background-color: #E4E1E5;
+							border: 1px solid #C0C0C0;
+						}
+					}
+					input[type=checkbox]:checked + label{
+						&:before {
+							background: url(@check) #E4E1E5;
+							background-repeat: no-repeat;
+							background-size: 95%;
+							background-position: 50% 50%;
+						}
 					}
 				}
 			}
