@@ -9406,12 +9406,12 @@ html {
 }
 @media (max-width: 1199px) {
   .client-area #content-damages #damage-moto .car-damages-img {
-    max-height: 182px;
+    max-height: 176px;
   }
 }
 @media (max-width: 991px) {
   .client-area #content-damages #damage-moto .car-damages-img {
-    max-height: 130px;
+    max-height: 123px;
   }
 }
 .client-area #content-damages #damage-moto .car-damages-area-1 {
