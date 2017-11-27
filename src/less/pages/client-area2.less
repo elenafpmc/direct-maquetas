@@ -67,4 +67,48 @@
 			clear: both;
 		}
 	}
+	.available-workshop {
+		background-color: #F5F5F5;
+		margin-bottom: 20px;
+		.cnt-title {
+			background-color: #DBDBDB;
+			padding: 35px 20px 20px 20px;
+			text-align: center;
+			.workshop-title {
+				font-size: 1.8rem;
+				font-weight: bold;
+				margin-bottom: 18px;
+			}
+			.tools-img {
+				display: block;
+				margin: 0 auto 18px auto;
+			}
+			.checkbox {
+				display: inline-block;
+				label {
+					font-size: 1.6rem;
+				}
+				input:checked + label:before {
+					background-size: 100%;
+				}
+			}
+		}
+		.cnt-info {
+			padding: 35px 20px 20px 20px;
+			p {
+				font-size: 1.6rem;
+				margin-bottom: 8px;
+				strong {
+					display: block;
+					font-size: 1.8rem; line-height: 2.2rem;
+				}
+			}
+		}
+		.cnt-map {}
+		&.selected {
+			.cnt-title {
+				background-color: #9BC8DB;
+			}
+		}
+	}
 }
