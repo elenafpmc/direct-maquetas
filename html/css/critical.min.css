@@ -8466,6 +8466,43 @@ html {
   font-size: 16px;
   line-height: 19px;
 }
+.client-area .block-alert-wide {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.client-area .block-alert-wide-md {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 1199px) {
+  .client-area .block-alert-wide-md {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: auto;
+  }
+}
+.client-area .block-alert-wide-sm {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 991px) {
+  .client-area .block-alert-wide-sm {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: auto;
+  }
+}
+.client-area .block-alert-wide-xs {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  .client-area .block-alert-wide-xs {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: auto;
+  }
+}
 .client-area .block-alert .message .text-message {
   top: -11px;
   position: relative;
@@ -8519,6 +8556,9 @@ html {
 .client-area .form-group textarea,
 .client-area .form-group textarea:focus {
   outline: none !important;
+}
+.client-area .form-group textarea {
+  color: #181512;
 }
 .client-area .form-group.with-icon {
   position: relative;
@@ -8904,11 +8944,21 @@ html {
   display: block;
 }
 .client-area #content-damages .tab-damages .car-damages {
-  display: block;
   position: relative;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 450px;
+}
+.client-area #content-damages .tab-damages .car-damages > div {
+  display: block;
+  flex-basis: 100%;
 }
 .client-area #content-damages .tab-damages .car-damages-img {
   display: block;
@@ -8927,6 +8977,7 @@ html {
   font-family: Tahoma;
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
   text-align: center;
   color: #F2958D;
   padding: 6px 0;
@@ -8979,10 +9030,16 @@ html {
   border-right: 4px solid transparent;
   transform: translateX(-4px);
 }
+.client-area #content-damages .tab-damages .list-damages {
+  min-height: 170px;
+}
 .client-area #content-damages .tab-damages .list-damages-area {
   display: block;
   padding-left: 30px;
   margin-bottom: 10px;
+}
+.client-area #content-damages .tab-damages .list-damages-area label:before {
+  border: 1px solid #C0C0C0;
 }
 .client-area #content-damages #damage-front .car-damages-area-1 {
   top: 28%;
