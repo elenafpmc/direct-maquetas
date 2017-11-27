@@ -9648,3 +9648,45 @@ html {
   display: table;
   clear: both;
 }
+.client-area .available-workshop {
+  background-color: #F5F5F5;
+  margin-bottom: 20px;
+}
+.client-area .available-workshop .cnt-title {
+  background-color: #DBDBDB;
+  padding: 35px 20px 20px 20px;
+  text-align: center;
+}
+.client-area .available-workshop .cnt-title .workshop-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.client-area .available-workshop .cnt-title .tools-img {
+  display: block;
+  margin: 0 auto 18px auto;
+}
+.client-area .available-workshop .cnt-title .checkbox {
+  display: inline-block;
+}
+.client-area .available-workshop .cnt-title .checkbox label {
+  font-size: 1.6rem;
+}
+.client-area .available-workshop .cnt-title .checkbox input:checked + label:before {
+  background-size: 100%;
+}
+.client-area .available-workshop .cnt-info {
+  padding: 35px 20px 20px 20px;
+}
+.client-area .available-workshop .cnt-info p {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+.client-area .available-workshop .cnt-info p strong {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+.client-area .available-workshop.selected .cnt-title {
+  background-color: #9BC8DB;
+}
