@@ -8557,6 +8557,9 @@ html {
 .client-area .form-group textarea:focus {
   outline: none !important;
 }
+.client-area .form-group input::-ms-clear {
+  display: none;
+}
 .client-area .form-group textarea {
   color: #181512;
 }
