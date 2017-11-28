@@ -272,7 +272,7 @@
 
               <div class="row margin-b-40">
                 <div class="col-md-12">
-                  <h4 class="h3 font-tahoma no-padding-b">Cuándo y dónde ocurrió el accidente:</h3>
+                  <h4 class="h3 font-tahoma no-padding-b">Cuándo y dónde ocurrió el incidente:</h3>
                 </div>
               </div>
 
@@ -280,7 +280,7 @@
                 <div class="col-sm-6 margin-b-20">
                   <div class="form-group with-icon">
                     <label for="fecha">Fecha del siniestro:</label>
-                    <input name="input-datepicker" class="js-datepicker form-control" data-provide="datepicker" value="DD-MM-YYYY" data-date-format="dd-mm-yyyy">
+                    <input name="input-datepicker" class="js-datepicker form-control" data-provide="datepicker" value="DD-MM-YYYY" data-date-format="dd-mm-yyyy" readonly>
                     <span data-grunticon-embed="" class="icon-svg-calendar sm no-height auto absolute right"></span>
 
                     <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
@@ -304,22 +304,9 @@
               </div>
 
               <div class="row">
+
                 <div class="col-sm-6 margin-b-20">
   								<div class="form-group">
-  									<label for="locality">Población:</label>
-  									<select role="listbox" name="locality" id="locality" class="selectpicker">
-  										<option role="option" value="">Localidad 1</option>
-  										<option role="option" value="">Localidad 2</option>
-  										<option role="option" value="">Localidad 3</option>
-  										<option role="option" value="">Localidad 4</option>
-  										<option role="option" value="">Localidad 5</option>
-  									</select>
-
-  									<div class="help-block with-errors"></div>
-  								</div>
-								</div>
-                <div class="col-sm-6 margin-b-20">
-  								<div class="form-group has-error">
   									<label for="province">Provincia<sup>*</sup>:</label>
   									<select role="listbox" name="province" id="province" class="selectpicker">
                       <option role="option" value="">Provincia 1</option>
@@ -327,9 +314,31 @@
   										<option role="option" value="">Provincia 3</option>
   										<option role="option" value="">Provincia 4</option>
   										<option role="option" value="">Provincia 5</option>
+  										<option role="option" value="">Provincia 6</option>
+  										<option role="option" value="">Provincia 7</option>
+  										<option role="option" value="">Provincia 8</option>
   									</select>
 
   									<div class="help-block with-errors">
+  									  <span>Por favor revisa el campo.</span>
+  									</div>
+  								</div>
+								</div>
+                <div class="col-sm-6 margin-b-20">
+  								<div class="form-group has-error">
+  									<label for="locality">Localidad:</label>
+  									<select role="listbox" name="locality" id="locality" class="selectpicker">
+  										<option role="option" value="">Localidad 1</option>
+  										<option role="option" value="">Localidad 2</option>
+  										<option role="option" value="">Localidad 3</option>
+  										<option role="option" value="">Localidad 4</option>
+  										<option role="option" value="">Localidad 5</option>
+  										<option role="option" value="">Localidad 6</option>
+  										<option role="option" value="">Localidad 7</option>
+  										<option role="option" value="">Localidad 8</option>
+  									</select>
+
+                    <div class="help-block with-errors">
   									  <span>Por favor revisa el campo.</span>
   									</div>
   								</div>

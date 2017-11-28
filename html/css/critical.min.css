@@ -8586,6 +8586,8 @@ html {
   background-color: #E3E1E5;
   padding: 0;
   margin: 0;
+  max-height: 200px !important;
+  overflow-y: auto !important;
 }
 .client-area .form-group .bootstrap-select .dropdown-menu a {
   font-size: 14px;
@@ -8627,11 +8629,13 @@ html {
 }
 .client-area .vehicle-data p {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 28px;
   margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .client-area .vehicle-data p strong {
   font-size: 18px;
+  line-height: inherit;
   font-weight: bold;
 }
 .client-area .progress-nav {
