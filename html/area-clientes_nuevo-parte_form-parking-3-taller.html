@@ -263,7 +263,47 @@
             <form action="" method="post" accept-charset="utf-8">
 
               <p class="h4 margin-b-20">
-                Tú taller disponible:
+                Encuentra tu taller disponible más cercano:
+              </p>
+
+              <div class="row margin-b-40">
+                <div class="col-sm-4">
+                  <div class="margin-b-20">
+                    <div class="form-group with-icon">
+                      <label for="location">Indica la localidad:</label>
+                      <input data-error="Por favor revisa el campo" type="text" required class="form-control" id="location" name="location" placeholder="">
+                      <span data-grunticon-embed="" class="icon-svg-edit sm no-height auto absolute right"></span>
+
+                      <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-ok xs form-control-feedback" aria-hidden="true"></span>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="margin-b-20">
+                    <div class="form-group with-icon">
+                      <label for="fecha" >Indica cuándo irás al taller:</label>
+                      <input name="input-datepicker" class="js-datepicker form-control" data-provide="datepicker" value="DD-MM-YYYY" data-date-format="dd-mm-yyyy" readonly>
+                      <span data-grunticon-embed="" class="icon-svg-calendar sm no-height auto absolute right"></span>
+
+                      <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-ok xs form-control-feedback" aria-hidden="true"></span>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <label>&nbsp;</label>
+                  <button class="btn btn-block btn-black btn-lg caps" disabled type="button">Buscar</button>
+                </div>
+
+              </div>
+
+              <p class="h4 margin-b-20">
+                Tu taller disponible:
               </p>
 
               <div class="available-workshop js-same-height">
@@ -374,6 +414,10 @@
                   <span data-grunticon-embed="" class="icon-svg-info-dark xs"></span>
                   Una vez abierto el parte, y en un máximo de 24 horas, el taller seleccionado se pondrá en contacto contigo para concretar todos los detalles para la reparación de tu vehículo.
                 </p>
+              </div>
+
+              <div class="block-direct secondary padding-20 margin-b-30 clearfix">
+
               </div>
 
             </form>
