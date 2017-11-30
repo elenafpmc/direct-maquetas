@@ -8590,7 +8590,6 @@ html {
   padding: 0;
   margin: 0;
   max-height: 200px !important;
-  overflow-y: auto !important;
 }
 .client-area .form-group .bootstrap-select .dropdown-menu a {
   font-size: 14px;
