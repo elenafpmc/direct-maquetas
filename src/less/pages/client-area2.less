@@ -105,9 +105,32 @@
 			}
 		}
 		.cnt-map {}
+		& + .block-direct {
+			display: none;
+			margin-top: 20px;
+			margin-bottom: 30px;
+			position: relative;
+			&:before {
+				content: '';
+				background-color: #9BC8DB;
+				display: block;
+				width: 30px;
+				height: 30px;
+				transform: rotate(45deg);
+
+				position: absolute;
+				top: -5px;
+				left: 20px;
+				margin: auto;
+
+			}
+		}
 		&.selected {
 			.cnt-title {
 				background-color: #9BC8DB;
+			}
+			& + .block-direct  {
+				display: block;
 			}
 		}
 	}

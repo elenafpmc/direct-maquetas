@@ -9693,6 +9693,27 @@ html {
   font-size: 1.8rem;
   line-height: 2.2rem;
 }
+.client-area .available-workshop + .block-direct {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.client-area .available-workshop + .block-direct:before {
+  content: '';
+  background-color: #9BC8DB;
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  margin: auto;
+}
 .client-area .available-workshop.selected .cnt-title {
   background-color: #9BC8DB;
+}
+.client-area .available-workshop.selected + .block-direct {
+  display: block;
 }
