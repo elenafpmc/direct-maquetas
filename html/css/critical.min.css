@@ -6402,6 +6402,7 @@ textarea:focus {
 }
 .cont-characters {
   color: #f2958d;
+  color: #000000;
   bottom: 25px;
   position: absolute;
   right: 30px;
@@ -8650,6 +8651,34 @@ html {
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
+}
+.client-area .progress-nav .progress-arrow-back {
+  left: 0;
+  top: 13px;
+  position: absolute;
+}
+@media (max-width: 767px) {
+  .client-area .progress-nav .progress-arrow-back {
+    display: none;
+  }
+}
+.client-area .progress-nav .progress-arrow-back button {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+}
+.client-area .progress-nav .progress-arrow-back button [class*="icon-"] {
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+  background-size: contain;
+  background-position: center center;
+}
+.client-area .progress-nav .progress-arrow-back:before {
+  display: none;
 }
 .client-area .progress-nav .progress-nav-step {
   display: block;
@@ -8685,10 +8714,10 @@ html {
   border-top: 6px dashed #C0C0C0;
   z-index: 1;
 }
-.client-area .progress-nav .progress-nav-step:first-child:before {
+.client-area .progress-nav .progress-nav-step.first:before {
   display: none;
 }
-.client-area .progress-nav .progress-nav-step:last-child:after {
+.client-area .progress-nav .progress-nav-step.last:after {
   display: none;
 }
 .client-area .progress-nav .progress-nav-step a {
@@ -9407,7 +9436,7 @@ html {
   width: auto;
   height: 100%;
   max-height: 225px;
-  padding: 0 6px;
+  padding: 0 12px;
   margin: 50px 0;
 }
 @media (max-width: 1199px) {
@@ -9435,6 +9464,12 @@ html {
 .client-area #content-damages #damage-moto .car-damages-area-4 {
   top: 25%;
   left: 82%;
+}
+.client-area #content-damages #damage-moto .list-damages {
+  min-height: 0;
+}
+.client-area #content-damages.moto {
+  padding: 15px;
 }
 .client-area .collapse-damages-mobile .block-direct {
   display: block;
