@@ -9634,6 +9634,7 @@ html {
 .client-area .block-inner-section .inner-section-col {
   position: relative;
   width: 20%;
+  padding: 20px;
   float: left;
 }
 @media (max-width: 767px) {
@@ -9641,6 +9642,7 @@ html {
     width: 100%;
     float: none;
     margin-bottom: 20px;
+    padding: 0;
   }
   .client-area .block-inner-section .inner-section-col:last-child {
     margin-bottom: 0;
