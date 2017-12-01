@@ -9767,6 +9767,9 @@ html {
 .client-area .available-workshop.selected + .block-direct {
   display: block;
 }
+.client-area .other-workshop .checkbox label:before {
+  border: 1px solid #C0C0C0;
+}
 .client-area .title-integral {
   font-size: 1.8rem;
   padding-bottom: 10px;

@@ -1,25 +1,25 @@
 {{= it.include("core/html-start.html") }}
 
     {{= it.include("blocks/header.html") }}
-		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+    <!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
 
-		<main class="wrapper public client-area" role="main">
-			<div class="fake-bg"></div>
-			<button type="button" class="btn btn-close" id="btn-close">
-				<span class="icon-svg-close xs" data-grunticon-embed></span>
-			</button>
+    <main class="wrapper public client-area" role="main">
+      <div class="fake-bg"></div>
+      <button type="button" class="btn btn-close" id="btn-close">
+        <span class="icon-svg-close xs" data-grunticon-embed></span>
+      </button>
 
-			<section>
+      <section>
 
-  			<div class="container" id="container-holder">
+        <div class="container" id="container-holder">
           <section class="block-white">
 
             <div class="row margin-b-50">
-							<div class="col-sm-12">
-								<button type="button" class="btn link pull-left no-decoration back-button" data-target=""><span data-grunticon-embed="" class="icon-svg-arrow-back xs pull-left"></span>Volver a partes</button>
-								<button type="button" class="btn link pull-right no-decoration" data-target=""><span data-grunticon-embed="" class="icon-svg-close xs pull-left"></span></button>
-							</div>
-						</div>
+              <div class="col-sm-12">
+                <button type="button" class="btn link pull-left no-decoration back-button" data-target=""><span data-grunticon-embed="" class="icon-svg-arrow-back xs pull-left"></span>Volver a partes</button>
+                <button type="button" class="btn link pull-right no-decoration" data-target=""><span data-grunticon-embed="" class="icon-svg-close xs pull-left"></span></button>
+              </div>
+            </div>
 
             <div class="row margin-b-40">
               <div class="col-md-12">
@@ -61,62 +61,287 @@
               </div>
             </div>
 
+            <form action="" method="post" accept-charset="utf-8">
+
+              <p class="h4 margin-b-20">
+                Encuentra tu taller disponible más cercano:
+              </p>
+
+              <div class="row margin-b-40">
+                <div class="col-sm-4">
+                  <div class="margin-b-20">
+                    <div class="form-group with-icon">
+                      <label for="location">Indica la localidad o código postal:</label>
+                      <input data-error="Por favor revisa el campo" type="text" required class="form-control" id="location" name="location" placeholder="">
+                      <span data-grunticon-embed="" class="icon-svg-edit sm no-height auto absolute right"></span>
+
+                      <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-ok xs form-control-feedback" aria-hidden="true"></span>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="margin-b-20">
+                    <div class="form-group with-icon">
+                      <label for="fecha" >Indica cuándo irás al taller:</label>
+                      <input name="input-datepicker" class="js-datepicker form-control" data-provide="datepicker" value="DD-MM-YYYY" data-date-format="dd-mm-yyyy" readonly>
+                      <span data-grunticon-embed="" class="icon-svg-calendar sm no-height auto absolute right"></span>
+
+                      <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-ok xs form-control-feedback" aria-hidden="true"></span>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <label>&nbsp;</label>
+                  <button class="btn btn-block btn-black btn-lg caps" disabled type="button">Buscar</button>
+                </div>
+
+              </div>
+
+               <div class="row margin-b-30">
+                <div class="col-md-12">
+                  <div class="block-alert relative" style="display: block;">
+                    <div class="alert-danger font-normal">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="message">
+                              <span class="icon-svg-warning sm" data-grunticon-embed=""></span>
+                              <span class="text-message fullwidth-message">
+                                ¡Upps! Con los datos introducidos, <strong>no nos ha sido posible encontrar un taller adecuado.</strong> Termina de abrir el parte y contacta con nosotros en el <strong>918 378 902</strong> lo antes posible para darte una solución.
+                              </span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- row -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="h4 margin-b-20">
+                Tu taller disponible:
+              </p>
+
+              <div class="available-workshop js-same-height">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="cnt-title js-same">
+                      <p class="workshop-title">Hugo Bikes</p>
+                      <img src="img/tools.png" alt="" class="tools-img" />
+                      <div class="checkbox">
+                        <input type="checkbox" name="available-workshop" id="available-workshop-01" class="" />
+                        <label class="" for="available-workshop-01">Seleccionar</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="cnt-info js-same">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <p>
+                            Horario:
+                          </p>
+                          <p>
+                            <strong>08:00 - 20:00</strong>
+                          </p>
+                          <p>
+                            Teléfono:
+                          </p>
+                          <p>
+                            <strong>91 555 66 77</strong>
+                          </p>
+                        </div>
+                        <div class="col-sm-6">
+                          <p>
+                            Dirección:
+                          </p>
+                          <p>
+                            <strong>
+                              Av. de Filipinas 38,
+                              <br />
+                              28003. Madrid
+                            </strong>
+                          </p>
+                          <a href="#" class="black-link">¿Cómo llegar?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-2">
+                  </div> -->
+                  <div class="col-md-4 hidden-xs">
+                    <div class="cnt-map js-same">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5556505025274!2d-3.7097249840988855!3d40.440837179362376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422859824f744b%3A0xc3748c12825fe925!2sAv.+de+Filipinas%2C+38%2C+28003+Madrid!5e0!3m2!1ses!2ses!4v1511785974695" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-direct primary padding-20">
+                <p>
+                  <span data-grunticon-embed="" class="icon-svg-info-dark xs"></span>
+                  <strong>En un máximo de 24 horas, el taller contactará contigo</strong> para concretar todos los detalles para la reparación de tu vehículo.
+                </p>
+              </div>
+
+              <div class="available-workshop selected js-same-height">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="cnt-title js-same">
+                      <p class="workshop-title">Vallehermoso Wagen</p>
+                      <img src="img/tools.png" alt="" class="tools-img" />
+                      <div class="checkbox">
+                        <input type="checkbox" name="available-workshop" id="available-workshop-02" class="" checked />
+                        <label class="" for="available-workshop-02">Seleccionar</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="cnt-info js-same">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <p>
+                            Horario:
+                          </p>
+                          <p>
+                            <strong>08:30 - 19:30</strong>
+                          </p>
+                          <p>
+                            Teléfono:
+                          </p>
+                          <p>
+                            <strong>91 555 66 77</strong>
+                          </p>
+                        </div>
+                        <div class="col-sm-6">
+                          <p>
+                            Dirección:
+                          </p>
+                          <p>
+                            <strong>
+                              Calle Vallermoso 34,
+                              <br />
+                              28003. Madrid
+                            </strong>
+                          </p>
+                          <a href="#" class="black-link">¿Cómo llegar?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 hidden-xs">
+                    <div class="cnt-map js-same">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.874057363058!2d-3.710735184099058!3d40.43378757936306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42285de56a24a9%3A0xa0dfbfadaeee179c!2sCalle+Vallehermoso%2C+34%2C+28015+Madrid!5e0!3m2!1ses!2ses!4v1511788561687" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="block-direct primary padding-20">
+                <p>
+                  <span data-grunticon-embed="" class="icon-svg-info-dark xs"></span>
+                  Podrás llevar tu vehículo al taller <strong>dentro de su horario de atención</strong> en la fecha indicada. Si necesitaras cambiar la fecha, deberás contactar lo antes posible <strong>con el taller</strong> para comunicárselo.
+                </p>
+              </div>
+
+              <div class=" margin-b-30 clearfix">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="lead">
+                      Si no te interesa ninguno de los talleres anteriores, podrás continuar con la apertura del parte, pero <strong>deberás contactar con nosotros lo antes posible.</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="other-workshop margin-b-30 clearfix">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="checkbox">
+                      <input type="checkbox" name="other-workshop" id="other-workshop" class="" checked />
+                      <label class="" for="other-workshop">De acuerdo. Continuo sin seleccionar taller.</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" margin-b-30 clearfix">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="lead">
+                      Para continuar con la apertura del parte debes seleccionar uno de los talleres arriba indicados. Si tienes cualquier duda contacta con nosotros.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="block-direct secondary padding-20 margin-b-30 clearfix">
+                <p class="title-integral">
+                  Servicio de <span>reparación DIRECT:</span>
+                </p>
+                <p class="hidden-xs">
+                  Por ser cliente de Direct, tienes a tu disposición una red de talleres que ofrece un servicio integral de reparación con las siguientes ventajas:
+                </p>
+                <div class="cnt-integral">
+                  <div class="col-integral">
+                    <span data-grunticon-embed="" class="icon-svg-professional hidden-sm hidden-xs"></span>
+                    <span data-grunticon-embed="" class="icon-svg-checked visible-sm visible-xs"></span>
+                    <span class="text">Un gran equipo de profesionales a tu servicio</span>
+                  </div>
+                  <div class="col-integral">
+                    <span data-grunticon-embed="" class="icon-svg-guarantee-3 hidden-sm hidden-xs"></span>
+                    <span data-grunticon-embed="" class="icon-svg-checked visible-sm visible-xs"></span>
+                    <span class="text">Garantía de reparación de 3 años</span>
+                  </div>
+                  <div class="col-integral">
+                    <span data-grunticon-embed="" class="icon-svg-hand-up-car hidden-sm hidden-xs"></span>
+                    <span data-grunticon-embed="" class="icon-svg-checked visible-sm visible-xs"></span>
+                    <span class="text">Peritación Digital</span>
+                  </div>
+                  <div class="col-integral">
+                    <span data-grunticon-embed="" class="icon-svg-car-light hidden-sm hidden-xs"></span>
+                    <span data-grunticon-embed="" class="icon-svg-checked visible-sm visible-xs"></span>
+                    <span class="text">Tratamiento preferencial de tu vehículo</span>
+                  </div>
+                  <div class="col-integral">
+                    <span data-grunticon-embed="" class="icon-svg-car-wash hidden-sm hidden-xs"></span>
+                    <span data-grunticon-embed="" class="icon-svg-checked visible-sm visible-xs"></span>
+                    <span class="text">Limpieza completa</span>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+
             <div class="row">
-              <div class="col-md-12">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+              <div class="visible-xs col-xs-5">
+                <a href="" class="black-link">Atrás</a>
+              </div>
+              <div class="visible-xs col-xs-7">
+                <a href="" class="pull-right black-link">Cancelar apertura</a>
+              </div>
+              <div class="col-sm-4 col-xs-12 pull-right">
+                <button class="btn btn-block btn-black caps" type="button">Siguiente</button>
+              </div>
+              <div class="col-sm-4 hidden-xs pull-right">
+                <a href="" class="pull-right black-link">Cancelar apertura</a>
+              </div>
+              <div class="col-sm-4 hidden-xs pull-left">
+                <a href="" class="black-link">Atrás</a>
               </div>
             </div>
 
-            <div class="row">
-              <div class="visible-xs col-xs-5">
-							  <a href="" class="black-link">Atrás</a>
-							</div>
-              <div class="visible-xs col-xs-7">
-							  <a href="" class="pull-right black-link">Cancelar apertura</a>
-							</div>
-							<div class="col-sm-4 col-xs-12 pull-right">
-								<button class="btn btn-block btn-black caps" type="button">Siguiente</button>
-							</div>
-              <div class="col-sm-4 hidden-xs pull-right">
-							  <a href="" class="pull-right black-link">Cancelar apertura</a>
-							</div>
-              <div class="col-sm-4 hidden-xs pull-left">
-							  <a href="" class="black-link">Atrás</a>
-							</div>
-						</div>
-            <div class="row">
-              <div class="visible-xs col-xs-5">
-							  <a href="" class="black-link">Atrás</a>
-							</div>
-              <div class="visible-xs col-xs-7">
-							  <a href="" class="pull-right black-link">Cancelar apertura</a>
-							</div>
-							<div class="col-sm-4 col-xs-12 pull-right">
-								<button class="btn btn-block btn-black caps disabled" disabled type="button">Siguiente</button>
-							</div>
-              <div class="col-sm-4 hidden-xs pull-right">
-							  <a href="" class="pull-right black-link">Cancelar apertura</a>
-							</div>
-              <div class="col-sm-4 hidden-xs pull-left">
-							  <a href="" class="black-link">Atrás</a>
-							</div>
-						</div>
-
           </section>
-  		  </div><!-- container -->
+        </div><!-- container -->
 
-			</section><!-- container-fluid -->
+      </section><!-- container-fluid -->
 
-	  </main>
+    </main>
 
 
     {{= it.include("blocks/footer.html") }}
