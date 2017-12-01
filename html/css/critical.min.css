@@ -6382,6 +6382,9 @@ body {
 .form-group.has-success .bootstrap-select > .btn.btn-default {
   background: #f9fbea;
 }
+.form-group.no-label .form-control-feedback {
+  top: 20px;
+}
 textarea {
   width: 100%;
   resize: none;

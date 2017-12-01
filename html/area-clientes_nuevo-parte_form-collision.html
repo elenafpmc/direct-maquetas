@@ -278,14 +278,19 @@
 
               <div class="row">
                 <div class="col-sm-6 margin-b-20">
-                  <div class="form-group with-icon">
+                  <div class="form-group with-icon has-error">
                     <label for="fecha">Fecha del siniestro:</label>
                     <input name="input-datepicker" class="js-datepicker form-control" data-provide="datepicker" value="DD-MM-YYYY" data-date-format="dd-mm-yyyy" readonly>
                     <span data-grunticon-embed="" class="icon-svg-calendar sm no-height auto absolute right"></span>
 
                     <span class="glyphicon glyphicon-ko xs form-control-feedback" aria-hidden="true"></span>
                     <span class="glyphicon glyphicon-ok xs form-control-feedback" aria-hidden="true"></span>
-                    <div class="help-block with-errors"></div>
+                    <div class="help-block with-errors">
+                      <span>Fecha incorrecta. No puede haber pasado más de un año.</span>
+                    </div>
+                    <div class="help-block with-errors">
+                      <span>Fecha incorrecta. No puedes seleccionar una fecha futura.</span>
+                    </div>
                   </div>
                 </div>
                 <div class="col-sm-6 margin-b-20">
