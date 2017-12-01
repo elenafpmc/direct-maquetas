@@ -9755,3 +9755,38 @@ html {
 .client-area .available-workshop.selected + .block-direct {
   display: block;
 }
+.client-area .title-integral {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+.client-area .title-integral span {
+  background-color: #FFF;
+  padding: 0 10px;
+}
+.client-area .cnt-integral {
+  margin: 0 -20px;
+  padding: 20px 0;
+}
+.client-area .cnt-integral .col-integral {
+  width: 20%;
+  padding: 0 20px;
+  float: left;
+}
+.client-area .cnt-integral .col-integral [class*="icon-"] {
+  font-size: 47px;
+  height: 47px;
+  width: 47px;
+  float: left;
+}
+.client-area .cnt-integral .col-integral .icon-svg-professional {
+  height: 72px;
+  position: relative;
+  top: -10px;
+}
+.client-area .cnt-integral .col-integral .text {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  width: calc(100% - 60px);
+  float: left;
+}
