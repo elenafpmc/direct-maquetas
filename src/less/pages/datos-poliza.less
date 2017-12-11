@@ -30,12 +30,49 @@
 		}
 		
 	}
-	
+
 
 	
 
-	
+	.cnt-apply {
+		display: block;
+		width: 100%;
+		padding-top: 15px;
+
+		.btn-block {
+			float: right;
+			pointer-events: all;
+		}
+
+		.appy-success {
+		    background: #dae275;
+		    color: #000000;
+		    padding: 10px;
+		    padding-top: 5px;
+		    padding-bottom: 5px;
+		    display: inline-block;
+		    float: left;
+
+			.h4 {
+				display: inline-block;
+				padding-bottom: 0;
+			    font-family: Tahoma, arial, helvetica;
+				font-size: 1.8rem;
+			    font-weight: bold;
+			    color: #181512;
+
+				span {
+					display: inline-block;
+					position: relative;
+					margin-right: 3px;
+				}
+			}
+		}
+
+	}
+
 }
+
 .nav > li > a {
     position: relative;
 	display: block;
@@ -44,4 +81,109 @@
 
 .nav-tabs > li.active > a {
 	font-size: 17px;
+}
+
+
+
+#tabs-datospoliza {
+	background: #ebebeb;
+	margin: 0 -20px 2px;
+	li {
+		border-left: 1px solid #DBDBDB;
+		border-right: 1px solid #DBDBDB;
+		min-height: 52px;
+		padding: 10px 0;
+		width: 24.5%;
+		&:first-child{
+			border-left: 0;
+		}
+		&:last-child{
+			border-right: 0;
+			width: 26.5%;
+		}
+		&.active{
+			background: #FFF !important;
+		}
+		& > a{
+			color: #000; 
+	  		padding: 15px 0;
+		}
+	}
+
+}
+
+.col-xs-12.content-holder.block-white .btn-close {  
+	top: 5px;
+	right: 0;
+}
+.col-xs-12.content-holder.block-white {
+// padding: 0 20px 0;
+}
+
+@media only screen and (max-width : 1200px) {
+
+  #tabs-datospoliza li {
+    min-height: 92px;
+    padding: 10px 0 0;
+    width: 24%;
+	&:last-child {
+		width: 28%;
+	}
+	& > a{
+		padding: 0;
+	}
+  }
+  .collapse.in {
+    margin: 0 0 20px;
+  }
+
+}
+
+@media (max-width: 1023px ) {
+	.cnt-apply {
+		text-align: center;
+		.btn-block {
+			float: none;
+			margin-bottom: 15px;
+		}
+		.appy-success {
+			float: none;
+		}
+	}
+}
+
+@media only screen and (max-width : 960px) {
+
+  #tabs-datospoliza li{
+    min-height: 101px!important;
+    padding: 0;
+    width: 23.5%;
+	  &:last-child {
+	    width: 29.5%;
+	  }
+	  & > a {
+	    padding: 25px 0 0!important;
+	  }
+	  & > .documents {
+	    padding: 15px 0!important;
+	  }
+  }
+
+}
+
+
+@media only screen and (max-width : 767px) {
+	// #collapse-tabs-datospoliza{
+	// margin: 45px 0 0;
+	// }
+	// #collapse-tabs-datospoliza .accordion-heading.collapsed {
+	// background: #ebebeb;
+	// }
+	// #collapse-tabs-datospoliza .accordion-heading {
+	// background: #fff;
+	// border-top: 1px solid #ebebeb;
+	// } 
+	// #collapse-tabs-datospoliza .block-alert {
+	// display: block;
+	// }
 }
