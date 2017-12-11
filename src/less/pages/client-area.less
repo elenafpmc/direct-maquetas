@@ -76,6 +76,12 @@
 				}
 				&.short-message {
 					top: -15px;
+					@media(max-width: @screen-max-sm) {
+						top: -10px;
+					}
+					@media(max-width: @screen-max-xs) {
+						top: 0;
+					}
 				}
 			}
 			@media(max-width: @screen-max-sm){

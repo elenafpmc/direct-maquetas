@@ -8629,6 +8629,16 @@ html {
   top: -15px;
 }
 @media (max-width: 991px) {
+  .client-area .block-alert .message .text-message.short-message {
+    top: -10px;
+  }
+}
+@media (max-width: 767px) {
+  .client-area .block-alert .message .text-message.short-message {
+    top: 0;
+  }
+}
+@media (max-width: 991px) {
   .client-area .block-alert .message .text-message {
     top: -6px;
   }
