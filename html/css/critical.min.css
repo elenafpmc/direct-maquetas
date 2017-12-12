@@ -8948,8 +8948,8 @@ html {
   content: '';
   display: block;
   position: absolute;
-  left: 0%;
-  right: 0%;
+  left: 0;
+  right: 0;
   top: 22px;
   height: 0;
   border-top: 6px dashed #C0C0C0;
@@ -8960,13 +8960,11 @@ html {
     margin: 0 -10%;
     width: auto;
   }
-  .client-area .progress-nav .progress-nav-step:before {
+  .client-area .progress-nav:after {
+    border-width: 3px;
     top: 14px;
-    border-top: 3px dashed #C0C0C0;
-  }
-  .client-area .progress-nav .progress-nav-step:after {
-    top: 14px;
-    border-top: 3px dashed #C0C0C0;
+    right: calc(10% + 10px);
+    left: calc(10% + 10px);
   }
   .client-area .progress-nav .progress-nav-step .progress-nav-step-number {
     width: 32px;
@@ -8983,7 +8981,18 @@ html {
   .client-area .progress-nav .progress-nav-step.progress-nav-step-completed:before,
   .client-area .progress-nav .progress-nav-step.progress-nav-step-current:after,
   .client-area .progress-nav .progress-nav-step.progress-nav-step-completed:after {
-    border-top: 3px solid #9BC8DB !important;
+    border-width: 3px;
+    top: 14px;
+  }
+  .client-area .progress-nav .progress-nav-step.first:before {
+    border-width: 3px;
+    top: 14px;
+    left: 50px;
+  }
+  .client-area .progress-nav .progress-nav-step.last:after {
+    border-width: 3px;
+    top: 14px;
+    right: 50px;
   }
 }
 .client-area .popup {
@@ -10010,7 +10019,9 @@ html {
   border: 1px solid #C0C0C0;
 }
 .client-area .title-integral {
+  font-family: 'Futura-pt';
   font-size: 1.8rem;
+  font-weight: bold;
   padding-bottom: 10px;
 }
 .client-area .title-integral span {
