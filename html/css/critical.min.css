@@ -8459,6 +8459,22 @@ main.wrapper {
     padding: 5px 0;
     margin-bottom: 10px!important;
   }
+  .datepicker.datepicker-dropdown {
+    left: 25px!important;
+    right: 25px;
+  }
+  .datepicker.datepicker-dropdown .table-condensed {
+    width: 100%;
+  }
+  .datepicker.datepicker-dropdown .table-condensed thead th {
+    height: 50px;
+  }
+  .datepicker.datepicker-dropdown .table-condensed thead th.dow {
+    height: 37px;
+  }
+  .datepicker.datepicker-dropdown .table-condensed .day {
+    height: 37px;
+  }
 }
 /*	----------------------------------------------------------------------------------------------------
 *
