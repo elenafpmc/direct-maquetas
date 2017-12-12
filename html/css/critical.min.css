@@ -8448,6 +8448,18 @@ main.wrapper {
     padding: 15px 0!important;
   }
 }
+@media only screen and (max-width: 767px) {
+  .cnt-apply .appy-success {
+    height: 0;
+    padding: 0;
+    margin-bottom: 0!important;
+  }
+  .cnt-apply .appy-success.in {
+    height: auto;
+    padding: 5px 0;
+    margin-bottom: 10px!important;
+  }
+}
 /*	----------------------------------------------------------------------------------------------------
 *
 *	 Bloque datos poliza
