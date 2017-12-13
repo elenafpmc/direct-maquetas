@@ -8739,6 +8739,14 @@ html {
 .client-area .form-group.no-label [class*="icon-svg"].absolute.right {
   margin-top: 8px;
 }
+.client-area .form-group .bootstrap-select .btn.disabled {
+  background-color: #FFF;
+  border: 1px solid #E4E1E5;
+  color: #E4E1E5;
+}
+.client-area .form-group .bootstrap-select .btn.disabled .caret {
+  opacity: .2;
+}
 .client-area .form-group .bootstrap-select .dropdown-menu {
   background-color: #E3E1E5;
   padding: 0;
