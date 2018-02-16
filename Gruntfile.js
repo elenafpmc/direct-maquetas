@@ -273,7 +273,9 @@ module.exports = function(grunt) {
 		    },
 		    files: {
 			     "<%= globalConfig.system  %>/css/async.min.css": "<%= globalConfig.tplPath  %>/less/async.less",
+			     "<%= globalConfig.system  %>/css/async-new-vh.min.css": "<%= globalConfig.tplPath  %>/less/async-new-vh.less",
 			     "<%= globalConfig.system  %>/css/critical.min.css": "<%= globalConfig.tplPath  %>/less/critical.less",
+			     "<%= globalConfig.system  %>/css/critical-new-vh.min.css": "<%= globalConfig.tplPath  %>/less/critical-new-vh.less",
 			     "<%= globalConfig.system  %>/css/fonts.min.css": "<%= globalConfig.tplPath  %>/less/fonts.less",
 		    }
 		  }
