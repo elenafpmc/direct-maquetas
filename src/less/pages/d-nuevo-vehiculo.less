@@ -23,18 +23,21 @@
       top: 0;
       right: 0;
       width: 164px;
-      height: 164px;
       @media ( max-width: 767px ) {
         width: 80px;
         height: 80px;
         right: 15px;
-        img {
-          width: 100%;
-        }
+      }
+      img {
+        width: 100%;
       }
     }
   }
   .cnt-title-page {
+    max-width: ~"calc(100% - 164px)";
+    @media ( max-width: 767px ) {
+      max-width: 100%;
+    }
     .title {
       font-family: Futura-pt;
       font-size: 40px;
@@ -66,7 +69,7 @@
       font-size: 25px;
       font-weight: bold;
       color: #A9A7A8;
-      line-height: 25px;
+      line-height: 34px;
       @media ( max-width: 767px ) {
         display: block;
       }
@@ -83,6 +86,15 @@
   }
   .cnt-form {
     margin-bottom: 65px;
+    p {
+      font-family: Tahoma, arial, helvetica;
+      font-size: 18px;
+      color: #181717;
+      padding-bottom: 30px;
+      &:last-child {
+        margin-bottom: 25px;
+      }
+    }
     .form-group {
       label {
 
@@ -119,6 +131,52 @@
     font-size: 12px;
     color: #181717;
   }
+  .cnt-info {
+    background-color: #FFF;
+    padding: 30px;
+    margin-bottom: 40px;
+    p {
+      max-width: 850px;
+      font-family: Tahoma, arial, helvetica;
+      font-size: 18px;
+      line-height: 25px;
+      color: #181717;
+      &:last-child {
+        padding-bottom: 0;
+      }
+      .error {
+        color: #D9655F;
+      }
+    }
+  }
+  .tooltip {
+    &.right {
+      padding-left: 10px;
+      .tooltip-arrow {
+        border-right-color: #FFF;
+        border-width: 10px 10px 10px 0;
+        margin-top: -10px;
+        left: 1px;
+      }
+    }
+    &.in {
+      opacity: 1;
+    }
+    .tooltip-inner {
+      background-color: #FFF;
+      border: 1px solid #CCCCCC;
+      border-radius: 0;
+      padding: 20px;
+      max-width: 230px;
+
+
+      font-family: Tahoma, arial, helvetica;
+      font-size: 14px;
+      line-height: 18px;
+      color: #181717;
+      text-align: left;
+    }
+  }
   .hightlight {
     padding: 0 10px;
     &.yellow {
@@ -144,4 +202,22 @@
 }
 .footer-new-vh {
   padding: 38px 0 48px 0;
+}
+
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom {
+  padding: 22px 5px 5px 5px;
+  margin-top: 35px;
+  table {
+    tr {
+      td {
+        padding: 11px 10px;
+        font-size: 11px;
+      }
+    }
+  }
+  .datepicker-days {
+    .table-condensed {
+      width: 265px;
+    }
+  }
 }

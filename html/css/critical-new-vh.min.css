@@ -8339,7 +8339,6 @@ ul.list-icons li:before {
   top: 0;
   right: 0;
   width: 164px;
-  height: 164px;
 }
 @media (max-width: 767px) {
   .d-nuevo-vehiculo .header .ilustracion {
@@ -8347,8 +8346,16 @@ ul.list-icons li:before {
     height: 80px;
     right: 15px;
   }
-  .d-nuevo-vehiculo .header .ilustracion img {
-    width: 100%;
+}
+.d-nuevo-vehiculo .header .ilustracion img {
+  width: 100%;
+}
+.d-nuevo-vehiculo .cnt-title-page {
+  max-width: calc(100% - 164px);
+}
+@media (max-width: 767px) {
+  .d-nuevo-vehiculo .cnt-title-page {
+    max-width: 100%;
   }
 }
 .d-nuevo-vehiculo .cnt-title-page .title {
@@ -8386,7 +8393,7 @@ ul.list-icons li:before {
   font-size: 25px;
   font-weight: bold;
   color: #A9A7A8;
-  line-height: 25px;
+  line-height: 34px;
 }
 @media (max-width: 767px) {
   .d-nuevo-vehiculo .cnt-title-step .title-step {
@@ -8406,6 +8413,15 @@ ul.list-icons li:before {
 }
 .d-nuevo-vehiculo .cnt-form {
   margin-bottom: 65px;
+}
+.d-nuevo-vehiculo .cnt-form p {
+  font-family: Tahoma, arial, helvetica;
+  font-size: 18px;
+  color: #181717;
+  padding-bottom: 30px;
+}
+.d-nuevo-vehiculo .cnt-form p:last-child {
+  margin-bottom: 25px;
 }
 .d-nuevo-vehiculo .cnt-form .form-group .form-control {
   background-color: #FFF;
@@ -8434,6 +8450,24 @@ ul.list-icons li:before {
   font-family: Tahoma, arial, helvetica;
   font-size: 12px;
   color: #181717;
+}
+.d-nuevo-vehiculo .cnt-info {
+  background-color: #FFF;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+.d-nuevo-vehiculo .cnt-info p {
+  max-width: 850px;
+  font-family: Tahoma, arial, helvetica;
+  font-size: 18px;
+  line-height: 25px;
+  color: #181717;
+}
+.d-nuevo-vehiculo .cnt-info p:last-child {
+  padding-bottom: 0;
+}
+.d-nuevo-vehiculo .cnt-info p .error {
+  color: #D9655F;
 }
 .d-nuevo-vehiculo .tooltip.right {
   padding-left: 10px;
@@ -8487,4 +8521,15 @@ ul.list-icons li:before {
 }
 .footer-new-vh {
   padding: 38px 0 48px 0;
+}
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom {
+  padding: 22px 5px 5px 5px;
+  margin-top: 35px;
+}
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table tr td {
+  padding: 11px 10px;
+  font-size: 11px;
+}
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom .datepicker-days .table-condensed {
+  width: 265px;
 }

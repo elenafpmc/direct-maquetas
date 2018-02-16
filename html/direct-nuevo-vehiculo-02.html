@@ -129,7 +129,7 @@
     </head>
     <body>    
     
-<main class="wrapper public d-nuevo-vehiculo" role="main">
+<main class="wrapper public tooltips d-nuevo-vehiculo" role="main">
 	<div class="cnt-bg-white">
 		<header class="header">
 			<div class="container">
@@ -150,29 +150,58 @@
 	<div class="cnt-bg-grey">
 		<div class="container">
 			<div class="cnt-title-step">
-				<p class="title-step actual">1. <span class="hightlight yellow">Valida tus datos</span></p>
-				<p class="title-step">2. Completa el formulario</p>
+				<p class="title-step">1. Valida tus datos</p>
+				<p class="title-step actual">2. <span class="hightlight yellow">Completa el formulario</span></p>
 			</div>
 			<form class="cnt-form">
 				<div class="row">
+					<div class="col-sm-8">
+						<p>
+							Vamos a cambiar tu <strong>SEAT PANDA</strong> por un
+						</p>
+						<p>
+							<strong>ASTON MARTIN DB11, V12 COUPE 3P, GLOSS SILVER</strong>,
+							en tu seguro
+							<strong>A TODO RIESGO SIN FRANQUICIA</strong>
+							y por un importe de
+							<strong>999,99€.</strong>
+						</p>
+						<p>
+							<strong>Completa los siguientes datos:</strong>
+						</p>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col-sm-4">
 						<div class="form-group has-error">
-							<label for="nif">NIF/NIE:</label>
-							<input type="text" name="nif" id="nif" class="form-control" placeholder="Ej: 12345678Z" />
+							<label for="nueva-matricula">Nueva matrícula:</label>
+							<input type="text" name="nueva-matricula" id="nueva-matricula" class="form-control" placeholder="Ej: 1234XYZ" />
 							<span class="error-msg">
-								Por favor revisa el formato
-							</span>
-							<span class="error-msg">
-								El dato introducido es incorrecto
+								Por favor revisa el campo
 							</span>
 						</div>
 					</div>
 					<div class="col-sm-4">
-						<button type="button" class="btn btn-block btn-black caps" disabled>Confirmar datos</button>
+						<div class="form-group has-error">
+							<label for="fecha-efecto">
+								Fecha de efecto: 
+							</label>
+							<span class="icon-svg-info-dark xs" data-toggle="tooltip" data-placement="right" title="Desde la fecha que indiques, tu vehículo está asegurado."></span>
+							<input type="text" name="fecha-efecto" id="fecha-efecto" class="js-datepicker form-control" placeholder="DD-MM-YYYY" data-provide="datepicker" data-date-format="dd-mm-yyyy" readonly />
+							<span class="error-msg">
+								Por favor revisa el campo
+							</span>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-block btn-black caps" disabled>Enviar</button>
 					</div>
 				</div>
 			</form>
-			<p class="lopd-message">Si desea ejercitar sus derechos de protección de datos de carácter personal, debe comunicarlo por escrito a la dirección postal AXA Globa Direct Seguros y Reaseguros. S.A.U., Apartado de Corrreos nº61082/2812696 28080 – Madrid.</p>
+			<p class="lopd-message">
+				<strong>Recuerda:</strong>
+				todo lo que acordaste por teléfono quedará recogido en tus futuras condiciones particulares una vez se confirme en cambio de vehículo.
+			</p>
 		</div>
 	</div>
 </main>
@@ -195,6 +224,20 @@
 			
 		</footer>
 
+	    <!-- JS Necesarios ADN -->	  	
+
+	  	<script src="js/critical.js"></script>
+		<script src="js/async.js"></script>
+		<script src="js/bootstrap-select.js"></script>
+	    <!-- /JS Necesarios ADN -->
+	    
+		 
+		<script src="../src/js/bootstrap-plugins/responsive-tabs-2.3.2.js"></script>
+
+
+		
+   	
+		
 </body>
 </html>
 
