@@ -10105,6 +10105,12 @@ html {
 .d-nuevo-vehiculo .header {
   padding: 60px 0;
 }
+@media (max-width: 767px) {
+  .d-nuevo-vehiculo .header {
+    padding: 20px 0;
+    height: auto;
+  }
+}
 .d-nuevo-vehiculo .header .container {
   position: relative;
 }
@@ -10115,6 +10121,16 @@ html {
   width: 164px;
   height: 164px;
 }
+@media (max-width: 767px) {
+  .d-nuevo-vehiculo .header .ilustracion {
+    width: 80px;
+    height: 80px;
+    right: 15px;
+  }
+  .d-nuevo-vehiculo .header .ilustracion img {
+    width: 100%;
+  }
+}
 .d-nuevo-vehiculo .cnt-title-page .title {
   font-family: Futura-pt;
   font-size: 40px;
@@ -10122,6 +10138,12 @@ html {
   color: #181717;
   line-height: 60px;
   padding: 0;
+}
+@media (max-width: 767px) {
+  .d-nuevo-vehiculo .cnt-title-page .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 .d-nuevo-vehiculo .cnt-title-page .subtitle {
   font-family: Tahoma, arial, helvetica;
@@ -10133,6 +10155,11 @@ html {
 .d-nuevo-vehiculo .cnt-title-step {
   margin-bottom: 65px;
 }
+@media (max-width: 767px) {
+  .d-nuevo-vehiculo .cnt-title-step {
+    margin-bottom: 20px;
+  }
+}
 .d-nuevo-vehiculo .cnt-title-step .title-step {
   display: inline-block;
   font-family: Futura-pt;
@@ -10141,11 +10168,21 @@ html {
   color: #A9A7A8;
   line-height: 25px;
 }
+@media (max-width: 767px) {
+  .d-nuevo-vehiculo .cnt-title-step .title-step {
+    display: block;
+  }
+}
 .d-nuevo-vehiculo .cnt-title-step .title-step.actual {
   color: #181717;
 }
 .d-nuevo-vehiculo .cnt-title-step .title-step + .title-step {
   margin-left: 32px;
+}
+@media (max-width: 767px) {
+  .d-nuevo-vehiculo .cnt-title-step .title-step + .title-step {
+    margin-left: 0;
+  }
 }
 .d-nuevo-vehiculo .cnt-form {
   margin-bottom: 65px;

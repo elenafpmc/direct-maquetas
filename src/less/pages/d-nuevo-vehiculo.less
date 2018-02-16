@@ -11,6 +11,10 @@
   }
   .header {
     padding: 60px 0;
+    @media ( max-width: 767px ) {
+      padding: 20px 0;
+      height: auto;
+    }
     .container {
       position: relative;
     }
@@ -20,6 +24,14 @@
       right: 0;
       width: 164px;
       height: 164px;
+      @media ( max-width: 767px ) {
+        width: 80px;
+        height: 80px;
+        right: 15px;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
   .cnt-title-page {
@@ -30,6 +42,10 @@
       color: #181717;
       line-height: 60px;
       padding: 0;
+      @media ( max-width: 767px ) {
+        font-size: 24px;
+        line-height: 30px;
+      }
     }
     .subtitle {
       font-family: Tahoma, arial, helvetica;
@@ -41,6 +57,9 @@
   }
   .cnt-title-step {
     margin-bottom: 65px;
+    @media ( max-width: 767px ) {
+      margin-bottom: 20px;
+    }
     .title-step {
       display: inline-block;
       font-family: Futura-pt;
@@ -48,11 +67,17 @@
       font-weight: bold;
       color: #A9A7A8;
       line-height: 25px;
+      @media ( max-width: 767px ) {
+        display: block;
+      }
       &.actual {
         color: #181717;
       }
       &+.title-step {
         margin-left: 32px;
+        @media ( max-width: 767px ) {
+          margin-left: 0;
+        }
       }
     }
   }
