@@ -8350,6 +8350,14 @@ ul.list-icons li:before {
 .d-nuevo-vehiculo .header .ilustracion img {
   width: 100%;
 }
+.d-nuevo-vehiculo .cnt-title-page {
+  max-width: calc(100% - 164px);
+}
+@media (max-width: 767px) {
+  .d-nuevo-vehiculo .cnt-title-page {
+    max-width: 100%;
+  }
+}
 .d-nuevo-vehiculo .cnt-title-page .title {
   font-family: Futura-pt;
   font-size: 40px;
