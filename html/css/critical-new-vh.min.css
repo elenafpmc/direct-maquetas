@@ -8339,7 +8339,6 @@ ul.list-icons li:before {
   top: 0;
   right: 0;
   width: 164px;
-  height: 164px;
 }
 @media (max-width: 767px) {
   .d-nuevo-vehiculo .header .ilustracion {
@@ -8347,9 +8346,9 @@ ul.list-icons li:before {
     height: 80px;
     right: 15px;
   }
-  .d-nuevo-vehiculo .header .ilustracion img {
-    width: 100%;
-  }
+}
+.d-nuevo-vehiculo .header .ilustracion img {
+  width: 100%;
 }
 .d-nuevo-vehiculo .cnt-title-page .title {
   font-family: Futura-pt;
@@ -8443,6 +8442,24 @@ ul.list-icons li:before {
   font-family: Tahoma, arial, helvetica;
   font-size: 12px;
   color: #181717;
+}
+.d-nuevo-vehiculo .cnt-info {
+  background-color: #FFF;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+.d-nuevo-vehiculo .cnt-info p {
+  max-width: 850px;
+  font-family: Tahoma, arial, helvetica;
+  font-size: 18px;
+  line-height: 25px;
+  color: #181717;
+}
+.d-nuevo-vehiculo .cnt-info p:last-child {
+  padding-bottom: 0;
+}
+.d-nuevo-vehiculo .cnt-info p .error {
+  color: #D9655F;
 }
 .d-nuevo-vehiculo .tooltip.right {
   padding-left: 10px;
