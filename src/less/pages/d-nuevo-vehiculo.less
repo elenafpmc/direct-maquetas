@@ -80,7 +80,7 @@
     }
   }
   .cnt-title-step {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
     @media ( max-width: 767px ) {
       margin-bottom: 20px;
     }
@@ -91,6 +91,7 @@
       font-weight: bold;
       color: #A9A7A8;
       line-height: 34px;
+      padding-bottom: 0;
       @media ( max-width: 767px ) {
         display: block;
       }
@@ -106,7 +107,7 @@
     }
   }
   .cnt-form {
-    margin-bottom: 65px;
+    margin-bottom: 115px;
     p {
       font-family: Tahoma, arial, helvetica;
       font-size: 18px;
@@ -117,6 +118,16 @@
       }
     }
     .form-group {
+      label {
+        margin-bottom: 10px;
+      }
+      .ico-info {
+        width: 21px;
+        height: 21px;
+        position: relative;
+        bottom: 3px;
+        margin-left: 7px;
+      }
       .form-control {
         background-color: #FFF;
         font-family: Tahoma, arial, helvetica;
@@ -133,7 +144,7 @@
       &.has-error {
         .form-control {
           border: 1px solid #FF0000;
-          box-shadow: inset 1px 1px 7px 0 rgba(230,103,95,0.50);
+          box-shadow: inset 1px 1px 7px 0 rgba(230,103,95,0.50)!important;
           &.js-datepicker{
             background-image: url(../img/ico-calendar-error.png);
           }
@@ -150,6 +161,18 @@
     }
     .btn.btn-black {
       margin-top: 36px;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #D8D8D8;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+      }
     }
   }
   .lopd-message {
@@ -179,10 +202,24 @@
     &.right {
       padding-left: 10px;
       .tooltip-arrow {
-        border-right-color: #FFF;
+        border-right-color: #CCCCCC;
         border-width: 10px 10px 10px 0;
         margin-top: -10px;
-        left: 1px;
+        left: 0px;
+        &:before {
+          content: '';
+          display: block;
+          border-color: transparent;
+          border-right-color: #F6F6F6;
+          border-style: solid;
+          border-width: 10px 10px 10px 0;
+          margin-top: -10px;
+          width: 0;
+          height: 0;
+          position: absolute;
+          left: 1px;
+          top: 0;
+        }
       }
     }
     &.in {
@@ -234,10 +271,21 @@
   padding: 22px 5px 5px 5px;
   margin-top: 35px;
   table {
+    thead {
+      th.prev,
+      th.next {
+        background-size: 14px;
+      }
+    }
     tr {
       td {
         padding: 11px 10px;
         font-size: 11px;
+        &.disabled,
+        &.old {
+          color: #CCCCCC;
+          pointer-events: none;
+        }
       }
     }
   }
@@ -245,5 +293,11 @@
     .table-condensed {
       width: 265px;
     }
+  }
+  &:before {
+    left: 27px;
+  }
+  &:after {
+    left: 28px;
   }
 }

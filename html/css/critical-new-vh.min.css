@@ -8401,7 +8401,7 @@ ul.list-icons li:before {
   padding: 10px 0 0 0;
 }
 .d-nuevo-vehiculo .cnt-title-step {
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 }
 @media (max-width: 767px) {
   .d-nuevo-vehiculo .cnt-title-step {
@@ -8415,6 +8415,7 @@ ul.list-icons li:before {
   font-weight: bold;
   color: #A9A7A8;
   line-height: 34px;
+  padding-bottom: 0;
 }
 @media (max-width: 767px) {
   .d-nuevo-vehiculo .cnt-title-step .title-step {
@@ -8433,7 +8434,7 @@ ul.list-icons li:before {
   }
 }
 .d-nuevo-vehiculo .cnt-form {
-  margin-bottom: 65px;
+  margin-bottom: 115px;
 }
 .d-nuevo-vehiculo .cnt-form p {
   font-family: Tahoma, arial, helvetica;
@@ -8443,6 +8444,16 @@ ul.list-icons li:before {
 }
 .d-nuevo-vehiculo .cnt-form p:last-child {
   margin-bottom: 25px;
+}
+.d-nuevo-vehiculo .cnt-form .form-group label {
+  margin-bottom: 10px;
+}
+.d-nuevo-vehiculo .cnt-form .form-group .ico-info {
+  width: 21px;
+  height: 21px;
+  position: relative;
+  bottom: 3px;
+  margin-left: 7px;
 }
 .d-nuevo-vehiculo .cnt-form .form-group .form-control {
   background-color: #FFF;
@@ -8459,7 +8470,7 @@ ul.list-icons li:before {
 }
 .d-nuevo-vehiculo .cnt-form .form-group.has-error .form-control {
   border: 1px solid #FF0000;
-  box-shadow: inset 1px 1px 7px 0 rgba(230, 103, 95, 0.5);
+  box-shadow: inset 1px 1px 7px 0 rgba(230, 103, 95, 0.5) !important;
 }
 .d-nuevo-vehiculo .cnt-form .form-group.has-error .form-control.js-datepicker {
   background-image: url(../img/ico-calendar-error.png);
@@ -8474,6 +8485,18 @@ ul.list-icons li:before {
 }
 .d-nuevo-vehiculo .cnt-form .btn.btn-black {
   margin-top: 36px;
+  position: relative;
+}
+.d-nuevo-vehiculo .cnt-form .btn.btn-black:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #D8D8D8;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
 }
 .d-nuevo-vehiculo .lopd-message {
   font-family: Tahoma, arial, helvetica;
@@ -8502,10 +8525,24 @@ ul.list-icons li:before {
   padding-left: 10px;
 }
 .d-nuevo-vehiculo .tooltip.right .tooltip-arrow {
-  border-right-color: #FFF;
+  border-right-color: #CCCCCC;
   border-width: 10px 10px 10px 0;
   margin-top: -10px;
+  left: 0px;
+}
+.d-nuevo-vehiculo .tooltip.right .tooltip-arrow:before {
+  content: '';
+  display: block;
+  border-color: transparent;
+  border-right-color: #F6F6F6;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  margin-top: -10px;
+  width: 0;
+  height: 0;
+  position: absolute;
   left: 1px;
+  top: 0;
 }
 .d-nuevo-vehiculo .tooltip.in {
   opacity: 1;
@@ -8555,12 +8592,27 @@ ul.list-icons li:before {
   padding: 22px 5px 5px 5px;
   margin-top: 35px;
 }
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table thead th.prev,
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table thead th.next {
+  background-size: 14px;
+}
 .datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table tr td {
   padding: 11px 10px;
   font-size: 11px;
 }
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table tr td.disabled,
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table tr td.old {
+  color: #CCCCCC;
+  pointer-events: none;
+}
 .datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom .datepicker-days .table-condensed {
   width: 265px;
+}
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom:before {
+  left: 27px;
+}
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom:after {
+  left: 28px;
 }
 .a-nuevo-vehiculo .cnt-bg-white {
   background-color: #FFF;
@@ -8630,7 +8682,7 @@ ul.list-icons li:before {
   padding: 10px 0 0 0;
 }
 .a-nuevo-vehiculo .cnt-title-step {
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 @media (max-width: 767px) {
   .a-nuevo-vehiculo .cnt-title-step {
@@ -8643,6 +8695,7 @@ ul.list-icons li:before {
   font-size: 22px;
   color: #343C3D;
   line-height: 28px;
+  padding-bottom: 0;
 }
 @media (max-width: 767px) {
   .a-nuevo-vehiculo .cnt-title-step .title-step {
@@ -8681,6 +8734,13 @@ ul.list-icons li:before {
   font-family: "Source Sans Pro";
   font-size: 17px;
   color: #00008F;
+  margin-bottom: 10px;
+}
+.a-nuevo-vehiculo .cnt-form .form-group .ico-info {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  bottom: 3px;
 }
 .a-nuevo-vehiculo .cnt-form .form-group .form-control {
   background-color: #FFF;
@@ -8715,7 +8775,7 @@ ul.list-icons li:before {
   color: #FF0000;
 }
 .a-nuevo-vehiculo .cnt-form .btn.btn-blue {
-  margin-top: 26px;
+  margin-top: 34px;
   height: 50px;
   padding: 0 28px;
   background-color: #00008F;
@@ -8725,6 +8785,11 @@ ul.list-icons li:before {
   line-height: 22px;
   letter-spacing: 0.1em;
   color: #FFF;
+}
+@media (max-width: 767px) {
+  .a-nuevo-vehiculo .cnt-form .btn.btn-blue {
+    width: 100%;
+  }
 }
 .a-nuevo-vehiculo .lopd-message {
   padding-top: 30px;
@@ -8755,10 +8820,24 @@ ul.list-icons li:before {
   padding-left: 10px;
 }
 .a-nuevo-vehiculo .tooltip.right .tooltip-arrow {
-  border-right-color: #F6F6F6;
+  border-right-color: #CCCCCC;
   border-width: 10px 10px 10px 0;
   margin-top: -10px;
+  left: 0px;
+}
+.a-nuevo-vehiculo .tooltip.right .tooltip-arrow:before {
+  content: '';
+  display: block;
+  border-color: transparent;
+  border-right-color: #F6F6F6;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  margin-top: -10px;
+  width: 0;
+  height: 0;
+  position: absolute;
   left: 1px;
+  top: 0;
 }
 .a-nuevo-vehiculo .tooltip.in {
   opacity: 1;
@@ -8812,7 +8891,7 @@ ul.list-icons li:before {
   list-style-type: none;
   line-height: 15px;
   height: 15px;
-  padding: 0 2px;
+  padding: 0 5px 0 0px;
   border-right: 1px solid #FFF;
 }
 .footer-new-vh.axa ul li span {
@@ -8839,12 +8918,27 @@ ul.list-icons li:before {
   padding: 22px 5px 5px 5px;
   margin-top: 35px;
 }
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table thead th.prev,
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table thead th.next {
+  background-size: 14px;
+}
 .datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table tr td {
   padding: 11px 10px;
   font-size: 11px;
 }
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table tr td.disabled,
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom table tr td.old {
+  color: #CCCCCC;
+  pointer-events: none;
+}
 .datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom .datepicker-days .table-condensed {
   width: 265px;
+}
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom:before {
+  left: 27px;
+}
+.datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom:after {
+  left: 28px;
 }
 body.axa .datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom {
   padding: 5px;
