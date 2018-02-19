@@ -8428,12 +8428,20 @@ ul.list-icons li:before {
   font-family: Tahoma, arial, helvetica;
   font-size: 16px;
 }
+.d-nuevo-vehiculo .cnt-form .form-group .form-control.js-datepicker {
+  background-image: url(../img/ico-calendar.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
 .d-nuevo-vehiculo .cnt-form .form-group .error-msg {
   display: none;
 }
 .d-nuevo-vehiculo .cnt-form .form-group.has-error .form-control {
   border: 1px solid #FF0000;
   box-shadow: inset 1px 1px 7px 0 rgba(230, 103, 95, 0.5);
+}
+.d-nuevo-vehiculo .cnt-form .form-group.has-error .form-control.js-datepicker {
+  background-image: url(../img/ico-calendar-error.png);
 }
 .d-nuevo-vehiculo .cnt-form .form-group.has-error .error-msg {
   display: block;
@@ -8662,12 +8670,20 @@ ul.list-icons li:before {
   color: #343C3D;
   height: 50px;
 }
+.a-nuevo-vehiculo .cnt-form .form-group .form-control.js-datepicker {
+  background-image: url(../img/ico-calendar.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
 .a-nuevo-vehiculo .cnt-form .form-group .error-msg {
   display: none;
 }
 .a-nuevo-vehiculo .cnt-form .form-group.has-error .form-control {
   border: 1px solid #FF0000;
   box-shadow: inset 1px 1px 7px 0 rgba(230, 103, 95, 0.5);
+}
+.a-nuevo-vehiculo .cnt-form .form-group.has-error .form-control.js-datepicker {
+  background-image: url(../img/ico-calendar-error.png);
 }
 .a-nuevo-vehiculo .cnt-form .form-group.has-error .error-msg {
   display: block;

@@ -113,6 +113,11 @@
         font-weight: 400;
         color: #343C3D;
         height: 50px;
+        &.js-datepicker {
+          background-image: url(../img/ico-calendar.png);
+          background-repeat: no-repeat;
+          background-position: right 10px center;
+        }
       }
       .error-msg {
         display: none;
@@ -121,6 +126,9 @@
         .form-control {
           border: 1px solid #FF0000;
           box-shadow: inset 1px 1px 7px 0 rgba(230,103,95,0.50);
+          &.js-datepicker{
+            background-image: url(../img/ico-calendar-error.png);
+          }
         }
         .error-msg {
           display: block;
