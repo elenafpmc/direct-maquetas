@@ -8484,8 +8484,10 @@ ul.list-icons li:before {
   color: #FF0000;
 }
 .d-nuevo-vehiculo .cnt-form .btn.btn-black {
-  margin-top: 36px;
+  margin-top: 30px;
+  height: 57px;
   position: relative;
+  border: 0;
 }
 .d-nuevo-vehiculo .cnt-form .btn.btn-black:after {
   content: '';
@@ -8494,7 +8496,7 @@ ul.list-icons li:before {
   height: 3px;
   background-color: #D8D8D8;
   position: absolute;
-  bottom: -8px;
+  bottom: -3px;
   left: 0;
   right: 0;
 }
