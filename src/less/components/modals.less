@@ -23,4 +23,73 @@
 	
 }
 
-.
+.modal {
+	&.modal-error {
+		.modal-dialog {
+			width: 740px;
+			@media (max-width: 767px) {
+				width: auto;
+			}
+			.modal-content {
+				background-color: @color-danger;
+				border-radius: 0;
+				padding: 30px;
+				.modal-header {
+					.title {
+						font-size: 25px;
+						color: @color-default;
+						.icon-svg-warning {
+							margin-right: 10px;
+							vertical-align: bottom;
+						}
+					}
+					.btn-close {
+						top: 15px;
+						right: 15px;
+					}
+				}
+				.modal-body {
+					padding: 30px 0 0 0;
+					.btn-black {
+						border-color: @color-black;
+					}
+				}
+			}
+		}
+	}
+	&.modal-success {
+		.modal-dialog {
+			width: 740px;
+			@media (max-width: 767px) {
+				width: auto;
+			}
+			.modal-content {
+				background-color: @color-success;
+				border-radius: 0;
+				padding: 30px;
+				.modal-header {
+					.title {
+						font-size: 25px;
+						color: @color-default;
+						.img-icon {
+							width: 40px;
+							height: 40px;
+							margin-right: 10px;
+							vertical-align: text-bottom;
+						}
+					}
+					.btn-close {
+						top: 15px;
+						right: 15px;
+					}
+				}
+				.modal-body {
+					padding: 30px 0 0 0;
+					.btn-black {
+						border-color: @color-black;
+					}
+				}
+			}
+		}
+	}
+}

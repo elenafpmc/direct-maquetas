@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 		        tasks: ['zetzer'],
 		        options: {
 		            spawn: false,
-		            livereload: true,
+		            livereload: true
 		        },
 		    },		
 
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 		        tasks: ['newer:jshint'],
 		        options: {
 		            spawn: false,
-		            livereload: true,
+		            livereload: true
 		        },
 		    },		
 		    uglify: {
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
 		        tasks: ['newer:uglify'],
 		        options: {
 		            spawn: false,
-		            livereload: false,
+		            livereload: false
 		        },
 		    },
 			imagemin: {
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 			  tasks: ['newer:imagemin'],
 			  options: {
 			      spawn: false,
-			      livereload: false,
+			      livereload: false
 			  }
 			},  		    
 			less: {
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
 			    tasks: ['less'],
 			    options: {
 		          spawn: false,
-		          livereload: false,
+		          livereload: false
 		      	}
 			},
 			svgmin: {
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
 			    tasks: ['newer:svgmin'],
 			    options: {
 		          spawn: false,
-		          livereload: false,
+		          livereload: false
 		      	}
 			},			
 			//webfont: {
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
 			    tasks: ['grunticon'],
 			    options: {
 		          spawn: false,
-		          livereload: false,
+		          livereload: false
 		      	}
 			},
 			grunticonLess: {
@@ -126,7 +126,7 @@ module.exports = function(grunt) {
 			    tasks: ['less'],
 			    options: {
 		          spawn: false,
-		          livereload: false,
+		          livereload: false
 		      	}
 			},
 			
@@ -135,9 +135,9 @@ module.exports = function(grunt) {
 			    tasks: ['autoprefixer'],
 			    options: {
 		          spawn: false,
-		          livereload: false,
+		          livereload: false
 		      	}
-			},
+			}
 			
 		},
 		
@@ -147,7 +147,7 @@ module.exports = function(grunt) {
 		  },
 		  options: {
 		    proxy: "<%= globalConfig.web  %>",
-			    watchTask : true,
+			    watchTask : true
 		  }
 		},
 		svgmin: {
@@ -174,7 +174,7 @@ module.exports = function(grunt) {
 			options: {
 				mangle: false,
 				beautify: true,
-				wrap: true,
+				wrap: true
 			},						
 			critical: {
 			  files: {
@@ -189,11 +189,11 @@ module.exports = function(grunt) {
 				'<%= globalConfig.tplPath  %>/js/bootstrap/scrollspy.js',	
 															
 				'<%= globalConfig.tplPath  %>/js/adn/helpers.js',
-				'<%= globalConfig.tplPath  %>/js/adn/main.js',
+				'<%= globalConfig.tplPath  %>/js/adn/main.js'
 				
 				
-			    ],
-			  },
+			    ]
+			  }
 			},
 			async: {
 			  files: {
@@ -241,10 +241,10 @@ module.exports = function(grunt) {
 				'<%= globalConfig.tplPath  %>/js/adn/main_async.js',
 				'<%= globalConfig.tplPath  %>/js/adn/box_collapse_layout.js',
 				'<%= globalConfig.tplPath  %>/js/adn/animations.js',				
-				'<%= globalConfig.tplPath  %>/js/adn/help-block.js',
+				'<%= globalConfig.tplPath  %>/js/adn/help-block.js'
 				
-			    ],
-			  },
+			    ]
+			  }
 			}
 		},
 		imagemin: {
@@ -276,7 +276,7 @@ module.exports = function(grunt) {
 			     "<%= globalConfig.system  %>/css/async-new-vh.min.css": "<%= globalConfig.tplPath  %>/less/async-new-vh.less",
 			     "<%= globalConfig.system  %>/css/critical.min.css": "<%= globalConfig.tplPath  %>/less/critical.less",
 			     "<%= globalConfig.system  %>/css/critical-new-vh.min.css": "<%= globalConfig.tplPath  %>/less/critical-new-vh.less",
-			     "<%= globalConfig.system  %>/css/fonts.min.css": "<%= globalConfig.tplPath  %>/less/fonts.less",
+			     "<%= globalConfig.system  %>/css/fonts.min.css": "<%= globalConfig.tplPath  %>/less/fonts.less"
 		    }
 		  }
 		},	
@@ -311,7 +311,7 @@ module.exports = function(grunt) {
 		        options: {
 			        pngfolder :'ie8-icon',
 			        enhanceSVG: true,
-			        cssprefix:'.icon-svg-',
+			        cssprefix:'.icon-svg-'
 		        }
 		    }
 		},	
@@ -322,8 +322,8 @@ module.exports = function(grunt) {
 			      browsers: ['last 2 versions']
 			},			
 			no_dest: {
-		      src: '<%= globalConfig.system  %>/css/*.css', // -> src/css/file1.css, src/css/file2.css
-		    },			
+		      src: '<%= globalConfig.system  %>/css/*.css' // -> src/css/file1.css, src/css/file2.css
+		    }
 			
 		},
 		
@@ -332,13 +332,13 @@ module.exports = function(grunt) {
 		    main: {
 		      options: {
 		        env: {
-		          title: "Zetzer",
+		          title: "Zetzer"
 		        },
 		        partials: "src/includes/",
 		        templates: "templates",
 		        
 		        dot_template_settings:{
-			        strip: false,
+			        strip: false
 			        
 		        }
 		      },
@@ -352,7 +352,7 @@ module.exports = function(grunt) {
 		          flatten: false
 		        }
 		      ]
-		    },
+		    }
 		  },
 
   				
