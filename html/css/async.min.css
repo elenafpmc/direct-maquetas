@@ -1139,6 +1139,7 @@ footer .list-inline a {
   width: 740px;
   transform: translateY(-50%);
   margin-top: 50vh;
+  z-index: 9999;
 }
 @media (max-width: 767px) {
   .modal.modal-error .modal-dialog {
@@ -1179,6 +1180,7 @@ footer .list-inline a {
   width: 740px;
   transform: translateY(-50%);
   margin-top: 50vh;
+  z-index: 9999;
 }
 @media (max-width: 767px) {
   .modal.modal-success .modal-dialog {
@@ -1222,6 +1224,10 @@ footer .list-inline a {
 }
 .modal-backdrop.in {
   opacity: 1;
+  z-index: 9998;
+}
+.modal-open .affix-holder .affix {
+  z-index: -1;
 }
 /*	--------------------------------------------------
 	Avisos de error

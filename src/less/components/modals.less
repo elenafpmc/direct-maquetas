@@ -29,6 +29,7 @@
 			width: 740px;
 			transform: translateY(-50%);
 			margin-top: 50vh;
+			z-index: 9999;
 			@media (max-width: 767px) {
 				width: auto;
 			}
@@ -71,6 +72,7 @@
 			width: 740px;
 			transform: translateY(-50%);
 			margin-top: 50vh;
+			z-index: 9999;
 			@media (max-width: 767px) {
 				width: auto;
 			}
@@ -116,5 +118,14 @@
 	background-color: rgba(24, 21, 18, 0.9);
 	&.in {
 		opacity: 1;
+		z-index: 9998;
+	}
+}
+
+.modal-open {
+	.affix-holder {
+		.affix {
+			z-index: -1;
+		}
 	}
 }
