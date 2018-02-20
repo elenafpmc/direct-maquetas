@@ -1137,6 +1137,8 @@ footer .list-inline a {
 }
 .modal.modal-error .modal-dialog {
   width: 740px;
+  transform: translateY(-50%);
+  margin-top: 50vh;
 }
 @media (max-width: 767px) {
   .modal.modal-error .modal-dialog {
@@ -1146,6 +1148,8 @@ footer .list-inline a {
 .modal.modal-error .modal-dialog .modal-content {
   background-color: #f2958d;
   border-radius: 0;
+  box-shadow: none!important;
+  border: 0;
   padding: 30px;
 }
 .modal.modal-error .modal-dialog .modal-content .modal-header .title {
@@ -1155,6 +1159,8 @@ footer .list-inline a {
 .modal.modal-error .modal-dialog .modal-content .modal-header .title .icon-svg-warning {
   margin-right: 10px;
   vertical-align: bottom;
+  position: relative;
+  top: 5px;
 }
 .modal.modal-error .modal-dialog .modal-content .modal-header .btn-close {
   top: 15px;
@@ -1163,11 +1169,16 @@ footer .list-inline a {
 .modal.modal-error .modal-dialog .modal-content .modal-body {
   padding: 30px 0 0 0;
 }
+.modal.modal-error .modal-dialog .modal-content .modal-body p {
+  padding-bottom: 30px;
+}
 .modal.modal-error .modal-dialog .modal-content .modal-body .btn-black {
   border-color: #000000;
 }
 .modal.modal-success .modal-dialog {
   width: 740px;
+  transform: translateY(-50%);
+  margin-top: 50vh;
 }
 @media (max-width: 767px) {
   .modal.modal-success .modal-dialog {
@@ -1177,6 +1188,8 @@ footer .list-inline a {
 .modal.modal-success .modal-dialog .modal-content {
   background-color: #dae275;
   border-radius: 0;
+  box-shadow: none!important;
+  border: 0;
   padding: 30px;
 }
 .modal.modal-success .modal-dialog .modal-content .modal-header .title {
@@ -1188,6 +1201,8 @@ footer .list-inline a {
   height: 40px;
   margin-right: 10px;
   vertical-align: text-bottom;
+  position: relative;
+  top: 5px;
 }
 .modal.modal-success .modal-dialog .modal-content .modal-header .btn-close {
   top: 15px;
@@ -1196,8 +1211,17 @@ footer .list-inline a {
 .modal.modal-success .modal-dialog .modal-content .modal-body {
   padding: 30px 0 0 0;
 }
+.modal.modal-success .modal-dialog .modal-content .modal-body p {
+  padding-bottom: 30px;
+}
 .modal.modal-success .modal-dialog .modal-content .modal-body .btn-black {
   border-color: #000000;
+}
+.modal-backdrop {
+  background-color: rgba(24, 21, 18, 0.9);
+}
+.modal-backdrop.in {
+  opacity: 1;
 }
 /*	--------------------------------------------------
 	Avisos de error
