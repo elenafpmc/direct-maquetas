@@ -1,63 +1,180 @@
 var app = angular.module("newVehicle", ['ngSanitize']);
 
-
-app.directive('validatedate', function () {
+app.directive('validatenifformat', function () {
     return {
         require: 'ngModel',
         link: function (scope, elm, attrs, ctrl) {
-            ctrl.$validators.validatedate = function (modelValue, viewValue) {
-                newdate = modelValue.split("-").reverse().join("-");
+            ctrl.$validators.validatenifformat = function (modelValue, viewValue) {
 
-                var date = new Date(newdate);
-                var _now = new Date();
+                if (modelValue) {
+                    var dni = modelValue;
 
-                _now.setFullYear(_now.getFullYear()-1); //no mas antiguo de un año desde hoy
+                    var numero,
+                        let, letra;
 
-                if (date.getTime() > _now.getTime()) {
-                    return false;
+                    var expresion_regular_dni = /^[XYZ]?\d{5,8}[A-Z]$/;
+
+                    dni = dni.toUpperCase();
+
+                    numero = dni.substr(0, dni.length - 1);
+                    numero = numero.replace('X', 0);
+                    numero = numero.replace('Y', 1);
+                    numero = numero.replace('Z', 2);
+                    let = dni.substr(dni.length - 1, 1);
+                    numero = numero % 23;
+                    letra = 'TRWAGMYFPDXBNJZSQVHLCKET';
+                    letra = letra.substring(numero, numero + 1);
+
+                    if (letra != let || expresion_regular_dni.test(dni) !== true) {
+                        return false;
+                    }
+                    return true;
                 }
-                return true;
-            };
+            }
+        }
+
+    };
+});
+
+app.directive('validatenumregister', function () {
+    return {
+        require: 'ngModel',
+        link: function (scope, elm, attrs, ctrl) {
+            ctrl.$validators.validatenumregister = function (modelValue, viewValue) {
+
+                if (modelValue) {
+
+                    var numReg = modelValue;
+
+                    numReg = numReg.toUpperCase();
+
+                    var regexp_numReg = /^[0-9]{4}[A-Z]{3}$/;
+
+                    if (regexp_numReg.test(numReg) !== true) {
+                        return false;
+                    }
+                    return true;
+
+                }
+
+            }
         }
     };
 });
 
-app.directive('validatenif', function () {
+
+app.directive('validatestartdate', function () {
     return {
         require: 'ngModel',
         link: function (scope, elm, attrs, ctrl) {
-            ctrl.$validators.validatenif = function (modelValue, viewValue) {
-              
-                if (modelValue.length < 2 ) {
+            ctrl.$validators.validatestartdate = function (modelValue, viewValue) {
+
+                if (modelValue) {
+                    console.log(modelValue)
+                    return true;
+                }else{
+                    console.log("sin valor ", modelValue);
                     return false;
                 }
-                return true;
-            };
+
+            }
         }
     };
 });
 
 
-app.controller('newVehicleCtrl', function($scope, $http, $timeout) {
+
+app.controller('newVehicleCtrl', function ($scope, $http, $timeout) {
+
+    window.history.pushState({
+        page: 1
+    }, "", "direct-nuevo-vehiculo.html#step1");
+    setTimeout(function () {
+        $('.d-nuevo-vehiculo').addClass('visible-content');
+    }, 1000);
+
+
+
+    $scope.steps = true;
+    $scope.step1 = true;
+    $scope.step2 = false;
+    $scope.completed = false;
+    $scope.errorsession = false;
+    $scope.errorlink = false;
+    $scope.errorform = false;
+
+
 
     $scope.user = {
         name: 'Verónica'
     };
-    var date=new Date();
-    var today_day = date.getDate();
-    var today_month = date.getMonth() + 1;
-    today_day = (today_day < 10) ? ("0" + today_day) : today_day;
-    today_month = today_month < 10 ? ("0" + today_month) : today_month;
 
-    $scope.data2 = {
-        date: today_day+'-'+today_month+'-'+date.getFullYear()
+
+    // step 1
+    $scope.nif = '';
+
+    $scope.nextStep = function () {
+        $scope.step1 = false;
+        $scope.step2 = true;
+
+        window.history.pushState({
+            page: 2
+        }, "", "direct-nuevo-vehiculo.html#step2");
     }
 
-    $scope.enableNext = false;
 
-    $scope.checkNIF = function(){
-        if($('#nif').val() ) {
-            console.log($('#nif').val() );
+    // step 2
+    $scope.vehicle = {
+        brand: "SEAT",
+        model: "PANDA"
+    }
+
+    $scope.newVehicle = {
+        brand: "ASTON MARTIN",
+        model: "DB11",
+        version: "V12 COUPE 3P",
+        property: "GLOSS SILVER",
+        insurance: "TODO RIESGO SIN FRANQUICIA",
+        annualPrice: "999,99"
+    }
+ 
+    
+
+    $scope.numberregister = "";
+    
+    $scope.startdate = "";
+    $scope.required = "true";
+
+    $scope.send = function(){
+        $scope.steps = false;
+        switch($scope.numberregister){
+            case "1111abc":
+                $scope.errorsession = true;
+                window.history.pushState({
+                    page: 2
+                }, "", "direct-nuevo-vehiculo.html#errorsession");
+          
+            break;
+            case "2222abc":
+                $scope.errorlink = true;            
+                window.history.pushState({
+                    page: 2
+                }, "", "direct-nuevo-vehiculo.html#errorlink");
+          
+            break;
+            case "3333abc":
+                $scope.errorform = true;
+                window.history.pushState({
+                    page: 2
+                }, "", "direct-nuevo-vehiculo.html#errorform");
+          
+            break;
+            default:
+                $scope.completed = true; 
+                window.history.pushState({
+                    page: 2
+                }, "", "direct-nuevo-vehiculo.html#complete");
+             
         }
-    };
+    }
 });

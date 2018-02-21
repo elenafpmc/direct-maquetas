@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="ie8 legacy-ie no-js" lang="es"  itemscope itemtype="http://schema.org/Organization"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 legacy-ie no-js" lang="es"  itemscope itemtype="http://schema.org/Organization"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-legacy-ie no-js" lang="es" itemscope itemtype="http://schema.org/Organization">
+<!--<![endif]-->
+
+<head>
+	<!-- Precargas en primera visita -->
+	<link rel="prefetch" href="js/critical.js">
+	<link rel="prefetch" href="css/critical-new-vh.min.css">
+	<link rel="prefetch" href="css/async-new-vh.min.css">
+	<!-- /Precargas en primera visita -->
+	<meta charset="utf-8">
+	<!--[if IE]>        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<![endif]-->
+	<title>Home Direct</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="adniberia.com">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<meta name="format-detection" content="telephone=no">
+	<!-- IE Clearfix -->
+	<!--[if IE]>
+			<meta http-equiv="cleartype" content="on">
+		<![endif]-->
+	<!-- Mobile app -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-startup-image" href="img/splash.png">
+	<meta name="mobile-web-app-capable" content="yes">
+	<!-- /Mobile app -->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/critical-new-vh.min.css">
+	<link rel="stylesheet" type="text/css" href="css/async-new-vh.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.min.css">
+	<link rel="stylesheet" type="text/css" href="css/grunticon/icons.data.svg.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/grunticon/icons.data.png.css">
+	   	<link rel="stylesheet" type="text/css" href="css/grunticon/icons.fallback.css">-->
+	<!-- /CSS -->
+	<script async src="js/vendor/modernizr.js"></script>
+	<!-- fonts direct -->
+	<script type="text/javascript" src="//use.typekit.net/ors0dxf.js"></script>
+	<script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+	<!-- /fonts direct -->
+	<!-- /SVG Inliner -->
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+	<meta name="theme-color" content="#0079c8">
+	<!-- /favicon -->
+	<!-- OpenGraph -->
+	<meta property="og:image" content="img/icons/favicon-192x192.png" />
+	<meta property="og:title" content="" />
+	<meta property="og:site_name" content="adniberia.com" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:type" content="website" />
+	<!-- /OpenGraph -->
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@flickr" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="img/icons/favicon-192x192.png" />
+	<meta name="twitter:url" content="" />
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="img/icons/favicon-192x192.png">
+	<!-- /Twitter Card -->
+	<link rel="alternate" hreflang="en" href="/" />
+	<!-- HTML5 IE8 -->
+	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	<!-- /HTML5 IE8 -->
+
+	<style>
+		.d-nuevo-vehiculo {
+			opacity: 0;
+			transition: opacity linear 0.4s;
+		}
+
+		.d-nuevo-vehiculo.visible-content {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<main class="wrapper public d-nuevo-vehiculo" role="main" ng-app="newVehicle" ng-controller="newVehicleCtrl">
+		<div class="cnt-bg-white">
+			<header class="header">
+				<div class="container">
+					<a href="#">
+						<img src="img/logo-solo-direct.png" alt="" />
+					</a>
+					<div class="ilustracion" ng-hide="completed || errorform">
+						<img src="img/coche-moto.png" alt="" />
+					</div>
+					<div class="ilustracion" ng-show="completed">
+						<img src="img/pulgar.png" alt="" />
+					</div>
+					<div class="ilustracion" ng-show="errorform">
+						<img src="img/exclamacion.png" alt="" />
+					</div>
+				</div>
+			</header>
+			<div class="container">
+				<div class="cnt-title-page">
+					<p class="title" ng-show="steps">Hola
+						<span class="hightlight yellow">{{ user.name }}</span>
+					</p>
+					<p class="title" ng-hide="completed">Aquí puedes cambiar el vehículo de tu seguro</p>
+					<p class="subtitle" ng-hide="completed">Es muy fácil, solo tienes que seguir estos pasos.</p>
+					<p class="title" ng-show="completed">¡Todo en orden!</p>
+				</div>
+			</div>
+		</div>
+		
+		
+
+		<div class="cnt-bg-grey">
+			<div class="container" ng-show="steps">
+				<div class="cnt-title-step">
+					<p class="title-step" ng-class="{ 'actual': step1 }">1.
+						<span class="" ng-class="{ 'yellow hightlight': step1 }">Valida tus datos</span>
+					</p>
+					<p class="title-step" ng-class="{ 'actual': step2 }">2.
+						<span class="" ng-class="{ 'yellow hightlight': step2 }">Completa el formulario</span>
+					</p>
+				</div>
+				<div ng-show="step1">
+					<form class="cnt-form" name="form1">
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="form-group" ng-class="{ 'has-error': form1.nif.$error.validatenifformat }">
+									<label for="nif">NIF/NIE:</label>
+									<input ng-model="nif" validatenifformat type="text" name="nif" id="nif" class="form-control" placeholder="Ej: 12345678Z"
+									/>
+									<span class="error-msg" ng-hide="!form1.nif.$error.validatenifformat">
+										Por favor revisa el formato
+									</span>
+									<span class="error-msg">
+										El dato introducido es incorrecto
+									</span>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<button type="button" class="btn btn-block btn-black caps" ng-disabled="!form1.$valid" ng-click="nextStep()">Confirmar datos</button>
+							</div>
+						</div>
+					</form>
+					<p class="lopd-message">Si desea ejercitar sus derechos de protección de datos de carácter personal, debe comunicarlo por escrito a la dirección
+						postal AXA Globa Direct Seguros y Reaseguros. S.A.U., Apartado de Corrreos nº61082/2812696 28080 – Madrid.
+					</p>
+				</div>
+				<div ng-show="step2">
+					<form class="cnt-form" name="form2">
+						<div class="row">
+							<div class="col-sm-8">
+								<p>
+									Vamos a cambiar tu
+									<strong>{{ vehicle.brand }} {{ vehicle.model }}</strong> por un
+								</p>
+								<p>
+									<strong>{{ newVehicle.brand }} {{ newVehicle.model }}, {{ newVehicle.version }}, {{ newVehicle.property }}</strong>, en
+									tu seguro
+									<strong>A {{ newVehicle.insurance }}</strong>
+									y por un importe de
+									<strong>{{ newVehicle.annualPrice }}€.</strong>
+								</p>
+								<p>
+									<strong>Completa los siguientes datos:</strong>
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="form-group" ng-class="{ 'has-error': form2.numberregister.$error.validatenumregister }">
+									<label for="numberregister">Nueva matrícula:</label>
+									<input ng-model="numberregister" validatenumregister type="text" name="numberregister" id="numberregister" class="form-control"
+									 placeholder="Ej: 1234XYZ" />
+									<span class="error-msg" ng-hide="!form2.numberregister.$error.validatenumregister">
+										Por favor revisa el campo
+									</span>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<div class="form-group">
+										<label for="startdate">
+											Fecha de efecto:
+										</label>
+										<span class="icon-svg-info-dark xs" data-toggle="tooltip" data-placement="right" title="Desde la fecha que indiques, tu vehículo está asegurado."></span>
+										<input type="text" name="startdate" ng-required="required" ng-model="startdate" id="startdate" class="js-datepicker form-control"
+										 placeholder="DD-MM-YYYY" data-provide="datepicker" data-date-end-date="+1y" data-date-start-date="+1d" data-date-format="dd-mm-yyyy"
+										 readonly />
+
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<button type="button" class="btn btn-block btn-black caps" ng-disabled="!form2.$valid" ng-click="send()">Enviar</button>
+							</div>
+						</div>
+					</form>
+					<p class="lopd-message">
+						<strong>Recuerda:</strong>
+						todo lo que acordaste por teléfono quedará recogido en tus futuras condiciones particulares una vez se confirme en cambio
+						de vehículo.
+					</p>
+				</div>
+			</div>
+			<div class="container" ng-show="completed">
+				<div class="cnt-info">
+					<p>Te confirmamos que el cambio de vehículo se ha
+						<strong>
+							<span class="hightlight yellow">realizado con éxito</span> y entrará en vigor en la fecha y con las coberturas que nos has indicado.</strong>
+					</p>
+					<p>El día
+						<strong>{{ startdate }}</strong> cobraremos/devolveremos
+						<strong>{{ newVehicle.annualPrice }} €</strong> de tu cuenta/tarjeta.</p>
+					<p>Revisa tu email, donde podrás encontrar tus nuevas condiciones particulares.</p>
+					<p>
+						<strong>Tu equipo DIRECT.</strong>
+					</p>
+				</div>
+			</div>
+			<div class="container" ng-show="errorsession">
+				<div class="cnt-info">
+					<p>Lo sentimos pero
+						<strong class="error">tu sesión ha caducado.</strong>
+					</p>
+					<p>Para garantizar la seguridad de la operación, vas a ser redirigido a la página de validación de datos.</p>
+					<p>Muchas gracias por usar este servicio.</p>
+					<p>
+						<strong>Tu equipo DIRECT.</strong>
+					</p>
+				</div>
+			</div>
+			<div class="container" ng-show="errorlink">
+				<div class="cnt-info">
+					<p>Lo sentimos,
+						<strong class="error">por tu seguridad este link se encuentra inactivo.</strong>
+					</p>
+					<p>Si tienes alguna duda,
+						<strong>puedes llamarnos al 918 378 902</strong> y estaremos encantados de ayudarte.</p>
+					<p>
+						<strong>Tu equipo DIRECT.</strong>
+					</p>
+				</div>
+			</div>
+			<div class="container" ng-show="errorform">
+				<div class="cnt-info">
+					<p>Lo sentimos,
+						<strong class="error">pero no se ha podido realizar el cambio de matrícula.</strong>
+					</p>
+					<p>Por favor, inténtalo de nuevo más tarde.</p>
+					<p>
+						<strong>Tu equipo DIRECT.</strong>
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer-new-vh">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-md-6">
+					<h2 class="h3 text-center-xs">Con la solidez de AXA Group</h2>
+				</div>
+			</div>
+			<!-- row -->
+		</div>
+	</footer>
+	<!-- JS Necesarios ADN -->
+	<script src="js/critical.js"></script>
+
+	<script src="js/async.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+
+	<!-- /JS Necesarios ADN -->
+
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.4.1/angular-sanitize.js"></script>
+	<script type="text/javascript" src="js/newVehicle.js"></script>
+</body>
+
+</html>
