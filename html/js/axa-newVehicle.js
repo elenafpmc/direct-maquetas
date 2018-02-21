@@ -66,7 +66,7 @@ app.directive('validatenumregister', function () {
 
 app.controller('newVehicleCtrl', function ($scope, $http, $timeout) {
 
-    var fileName = "direct-nuevo-vehiculo.html";
+    var fileName = "axa-nuevo-vehiculo.html";
 
     window.history.pushState({
         page: 1
@@ -76,6 +76,7 @@ app.controller('newVehicleCtrl', function ($scope, $http, $timeout) {
     }, 1000);
 
 
+    
 
     $scope.steps = true;
     $scope.step1 = true;

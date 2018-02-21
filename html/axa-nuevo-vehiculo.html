@@ -4,7 +4,6 @@
 <!--[if !IE]><!-->
 <html class="no-legacy-ie no-js" lang="es" itemscope itemtype="http://schema.org/Organization">
 <!--<![endif]-->
-
 <head>
 	<!-- Precargas en primera visita -->
 	<link rel="prefetch" href="js/critical.js">
@@ -91,61 +90,34 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	<!-- /HTML5 IE8 -->
-
-	<style>
-		.d-nuevo-vehiculo {
-			opacity: 0;
-			transition: opacity linear 0.4s;
-		}
-
-		.d-nuevo-vehiculo.visible-content {
-			opacity: 1;
-		}
-	</style>
 </head>
-
-<body>
-	<main class="wrapper public d-nuevo-vehiculo" role="main" ng-app="newVehicle" ng-controller="newVehicleCtrl" >
+<body class="axa">
+	<main class="wrapper public a-nuevo-vehiculo" role="main" ng-app="newVehicle" ng-controller="newVehicleCtrl" >
 		<div class="cnt-bg-white">
 			<header class="header">
 				<div class="container">
 					<a href="#">
-						<img src="img/logo-solo-direct.png" alt="" />
+						<img src="img/logo-axa.png" alt="" />
 					</a>
-					<div class="ilustracion" ng-hide="completed || errorform">
-						<img src="img/coche-moto.png" alt="" />
-					</div>
-					<div class="ilustracion" ng-show="completed">
-						<img src="img/pulgar.png" alt="" />
-					</div>
-					<div class="ilustracion" ng-show="errorform">
-						<img src="img/exclamacion.png" alt="" />
+					<div class="ilustracion" >
+						<img src="img/axa-coche-moto.png" alt="" ng-hide="errorform" />
+						<img src="img/axa-exclamacion.png" alt="" ng-show="errorform" />
 					</div>
 				</div>
 			</header>
 			<div class="container">
 				<div class="cnt-title-page">
-					<p class="title" ng-show="steps">Hola
-						<span class="hightlight yellow">{{ user.name }}</span>
-					</p>
-					<p class="title" ng-hide="completed">Aquí puedes cambiar el vehículo de tu seguro</p>
-					<p class="subtitle" ng-hide="completed">Es muy fácil, solo tienes que seguir estos pasos.</p>
-					<p class="title" ng-show="completed">¡Todo en orden!</p>
+					<p class="title" ng-show="steps">Hola {{ user.name }}</p>
+					<p class="title">Aquí puedes cambiar el vehículo de tu seguro</p>
+					<p class="subtitle">Es muy fácil, solo tienes que seguir estos pasos.</p>
 				</div>
 			</div>
 		</div>
-		
-		
-
 		<div class="cnt-bg-grey">
 			<div class="container" ng-show="steps">
 				<div class="cnt-title-step">
-					<p class="title-step" ng-class="{ 'actual': step1 }">1.
-						<span class="" ng-class="{ 'yellow hightlight': step1 }">Valida tus datos</span>
-					</p>
-					<p class="title-step" ng-class="{ 'actual': step2 }">2.
-						<span class="" ng-class="{ 'yellow hightlight': step2 }">Completa el formulario</span>
-					</p>
+					<p class="title-step" ng-class="{ 'actual': step1 }">1. Valida tus datos</p>
+					<p class="title-step" ng-class="{ 'actual': step2 }">2. Completa el formulario</p>
 				</div>
 				<div ng-show="step1">
 					<form class="cnt-form" name="form1">
@@ -153,24 +125,22 @@
 							<div class="col-sm-4">
 								<div class="form-group" ng-class="{ 'has-error': form1.nif.$error.validatenifformat }">
 									<label for="nif">NIF/NIE:</label>
-									<input ng-model="nif" validatenifformat type="text" name="nif" id="nif" class="form-control" placeholder="Ej: 12345678Z"
-									/>
+									<input ng-model="nif" validatenifformat type="text" name="nif" id="nif" class="form-control" placeholder="Ej: 12345678Z" />
 									<span class="error-msg" ng-hide="!form1.nif.$error.validatenifformat">
-										Por favor revisa el formato
+										Por favor revisa el campo
 									</span>
 									<span class="error-msg">
 										El dato introducido es incorrecto
 									</span>
 								</div>
 							</div>
-							<div class="col-sm-4">
-								<button type="button" class="btn btn-block btn-black caps" ng-disabled="!form1.$valid" ng-click="nextStep()">Confirmar datos</button>
+							<div class="col-sm-3">
+								<button type="button" class="btn btn-blue caps" ng-disabled="!form1.$valid" ng-click="nextStep()">Confirmar datos</button>
 							</div>
 						</div>
 					</form>
 					<p class="lopd-message">Si desea ejercitar sus derechos de protección de datos de carácter personal, debe comunicarlo por escrito a la dirección
-						postal AXA Globa Direct Seguros y Reaseguros. S.A.U., Apartado de Corrreos nº61082/2812696 28080 – Madrid.
-					</p>
+						postal AXA Globa Direct Seguros y Reaseguros. S.A.U., Apartado de Corrreos nº61082/2812696 28080 – Madrid.</p>
 				</div>
 				<div ng-show="step2">
 					<form class="cnt-form" name="form2">
@@ -196,8 +166,7 @@
 							<div class="col-sm-4">
 								<div class="form-group" ng-class="{ 'has-error': form2.numberregister.$error.validatenumregister }">
 									<label for="numberregister">Nueva matrícula:</label>
-									<input ng-model="numberregister" validatenumregister type="text" name="numberregister" id="numberregister" class="form-control"
-									 placeholder="Ej: 1234XYZ" />
+									<input ng-model="numberregister" validatenumregister type="text" name="numberregister" id="numberregister" class="form-control" placeholder="Ej: 1234XYZ" />
 									<span class="error-msg" ng-hide="!form2.numberregister.$error.validatenumregister">
 										Por favor revisa el campo
 									</span>
@@ -205,105 +174,95 @@
 							</div>
 							<div class="col-sm-4">
 								<div class="form-group">
-									<div class="form-group">
-										<label for="startdate">
-											Fecha de efecto:
-										</label>
-										<span class="icon-svg-info-dark xs" data-toggle="tooltip" data-placement="right" title="Desde la fecha que indiques, tu vehículo está asegurado."></span>
-										<input type="text" name="startdate" ng-required="required" ng-model="startdate" id="startdate" class="js-datepicker form-control"
-										 placeholder="DD-MM-YYYY" data-provide="datepicker" data-date-end-date="+1y" data-date-start-date="+1d" data-date-format="dd-mm-yyyy"
-										 readonly />
-
-									</div>
+									<label for="startdate">
+										Fecha de efecto
+									</label>
+									<img src="img/ico-info-axa.png" class="ico-info" alt="info" data-toggle="tooltip" data-placement="right" title="Desde la fecha que indiques, tu vehículo está asegurado." />
+									<input ng-required="required" ng-model="startdate" type="text" name="startdate" id="startdate" class="js-datepicker form-control" placeholder="DD-MM-YYYY" data-provide="datepicker" data-date-end-date="+1y" data-date-start-date="+1d" data-date-format="dd-mm-yyyy" readonly />
 								</div>
 							</div>
 							<div class="col-sm-4">
-								<button type="button" class="btn btn-block btn-black caps" ng-disabled="!form2.$valid" ng-click="send()">Enviar</button>
+								<button ng-disabled="!form2.$valid" ng-click="send()" type="button" class="btn btn-block btn-blue caps">Enviar</button>
 							</div>
 						</div>
 					</form>
 					<p class="lopd-message">
 						<strong>Recuerda:</strong>
-						todo lo que acordaste por teléfono quedará recogido en tus futuras condiciones particulares una vez se confirme en cambio
-						de vehículo.
+						todo lo que acordaste por teléfono quedará recogido en tus futuras condiciones particulares una vez se confirme en cambio de vehículo.
 					</p>
 				</div>
 			</div>
 			<div class="container" ng-show="completed">
 				<div class="cnt-info">
-					<p>Te confirmamos que el cambio de vehículo se ha
-						<strong>
-							<span class="hightlight yellow">realizado con éxito</span> y entrará en vigor en la fecha y con las coberturas que nos has indicado.</strong>
-					</p>
-					<p>El día
-						<strong>{{ startdate }}</strong> cobraremos/devolveremos
-						<strong>{{ newVehicle.annualPrice }} €</strong> de tu cuenta/tarjeta.</p>
+					<p>Te confirmamos que el cambio de vehículo se ha <strong><span class="hightlight yellow">realizado con éxito</span> y entrará en vigor en la fecha y con las coberturas que nos has indicado.</strong></p>
+					<p>El día <strong>{{ startdate }}</strong> cobraremos/devolveremos <strong>{{ newVehicle.annualPrice }} €</strong> de tu cuenta/tarjeta.</p>
 					<p>Revisa tu email, donde podrás encontrar tus nuevas condiciones particulares.</p>
-					<p>
-						<strong>Tu equipo DIRECT.</strong>
-					</p>
+					<p><strong>Tu equipo AXA.</strong></p>
 				</div>
 			</div>
 			<div class="container" ng-show="errorsession">
 				<div class="cnt-info">
-					<p>Lo sentimos pero
-						<strong class="error">tu sesión ha caducado.</strong>
-					</p>
+					<p>Lo sentimos pero <strong class="error">tu sesión ha caducado.</strong></p>
 					<p>Para garantizar la seguridad de la operación, vas a ser redirigido a la página de validación de datos.</p>
 					<p>Muchas gracias por usar este servicio.</p>
-					<p>
-						<strong>Tu equipo DIRECT.</strong>
-					</p>
+					<p><strong>Tu equipo AXA.</strong></p>
 				</div>
 			</div>
 			<div class="container" ng-show="errorlink">
 				<div class="cnt-info">
-					<p>Lo sentimos,
-						<strong class="error">por tu seguridad este link se encuentra inactivo.</strong>
-					</p>
-					<p>Si tienes alguna duda,
-						<strong>puedes llamarnos al 918 378 902</strong> y estaremos encantados de ayudarte.</p>
-					<p>
-						<strong>Tu equipo DIRECT.</strong>
-					</p>
+					<p>Lo sentimos, <strong class="error">por tu seguridad este link se encuentra inactivo.</strong></p>
+					<p>Si tienes alguna duda, <strong>puedes llamarnos al 918 378 902</strong> y estaremos encantados de ayudarte.</p>
+					<p><strong>Tu equipo AXA.</strong></p>
 				</div>
 			</div>
 			<div class="container" ng-show="errorform">
 				<div class="cnt-info">
-					<p>Lo sentimos,
-						<strong class="error">pero no se ha podido realizar el cambio de matrícula.</strong>
-					</p>
+					<p>Lo sentimos, <strong class="error">pero no se ha podido realizar el cambio de matrícula.</strong></p>
 					<p>Por favor, inténtalo de nuevo más tarde.</p>
-					<p>
-						<strong>Tu equipo DIRECT.</strong>
-					</p>
+					<p><strong>Tu equipo AXA.</strong></p>
 				</div>
 			</div>
 		</div>
 	</main>
-	<footer class="footer-new-vh">
+	<footer class="footer-new-vh axa">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-5 col-md-6">
-					<h2 class="h3 text-center-xs">Con la solidez de AXA Group</h2>
+					<ul>
+						<li>
+							<span>Copyright AXA © 2018</span>
+						</li>
+						<li>
+							<a href="#">
+								Política de cookies
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Aviso legal
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Condiciones de contratación
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<!-- row -->
 		</div>
 	</footer>
+
 	<!-- JS Necesarios ADN -->
 	<script src="js/critical.js"></script>
 	<script src="js/async.js"></script>
 	<script src="js/bootstrap-select.js"></script>
 	<script src="js/responsive-tabs"></script>
-
-
-
 	<!-- /JS Necesarios ADN -->
 
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.4.1/angular-sanitize.js"></script>
-	<script type="text/javascript" src="js/newVehicle.js"></script>
+	<script type="text/javascript" src="js/axa-newVehicle.js"></script>
 </body>
-
 </html>
