@@ -8333,7 +8333,7 @@ ul.list-icons li:before {
   font-weight: normal;
   font-style: normal;
 }
-main.wrapper {
+.d-nuevo-vehiculo {
   min-height: calc(100vh - 128px);
   background-color: #E6E6E6;
 }
@@ -8621,7 +8621,7 @@ main.wrapper {
 .datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom:after {
   left: 28px;
 }
-main.wrapper {
+.a-nuevo-vehiculo {
   min-height: calc(100vh - 124px);
   background-color: #FFF;
 }
