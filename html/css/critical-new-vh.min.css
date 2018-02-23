@@ -8797,6 +8797,9 @@ ul.list-icons li:before {
   letter-spacing: 0.1em;
   color: #FFF;
 }
+.a-nuevo-vehiculo .cnt-form .btn.btn-blue[disabled] {
+  opacity: 1;
+}
 @media (max-width: 767px) {
   .a-nuevo-vehiculo .cnt-form .btn.btn-blue {
     width: 100%;
