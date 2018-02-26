@@ -7159,7 +7159,9 @@ body {
   font-size: 1.4rem;
   font-family: Tahoma, arial, helvetica;
   color: #181512;
-  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 h1,
 h2,
@@ -8594,6 +8596,20 @@ ul.list-icons li:before {
 }
 .footer-new-vh {
   padding: 38px 0 48px 0;
+}
+.footer-new-vh small {
+  color: #fff;
+  padding-top: 5px;
+}
+.footer-new-vh a {
+  color: #FFF;
+  text-decoration: none;
+}
+.footer-new-vh a + a {
+  margin-left: 15px;
+}
+.footer-new-vh .footer-links {
+  text-align: right;
 }
 .datepicker.dropdown-menu.datepicker-dropdown.datepicker-orient-left.datepicker-orient-bottom {
   padding: 22px 5px 5px 5px;

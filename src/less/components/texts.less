@@ -27,7 +27,10 @@ body {
 	font-size: 1.4rem;
 	font-family: Tahoma, arial, helvetica;
 	color: @color-text;
-	font-smoothing: antialiased;
+
+	text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 //Reset a los Hx para que no tengan valores, se les pasará mediante clases

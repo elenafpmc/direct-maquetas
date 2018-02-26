@@ -7159,7 +7159,9 @@ body {
   font-size: 1.4rem;
   font-family: Tahoma, arial, helvetica;
   color: #181512;
-  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 h1,
 h2,
