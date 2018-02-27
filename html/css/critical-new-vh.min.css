@@ -8747,7 +8747,7 @@ ul.list-icons li:before {
 .a-nuevo-vehiculo .cnt-form p {
   font-family: "Source Sans Pro";
   font-size: 17px;
-  font-weight: 100;
+  font-weight: 400;
   color: #181717;
   padding-bottom: 30px;
 }
@@ -8886,22 +8886,22 @@ ul.list-icons li:before {
 }
 .a-nuevo-vehiculo ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  font-weight: 100;
+  font-weight: 400;
   color: #B1B1B1;
 }
 .a-nuevo-vehiculo ::-moz-placeholder {
   /* Firefox 19+ */
-  font-weight: 100;
+  font-weight: 400;
   color: #B1B1B1;
 }
 .a-nuevo-vehiculo :-ms-input-placeholder {
   /* IE 10+ */
-  font-weight: 100;
+  font-weight: 400;
   color: #B1B1B1;
 }
 .a-nuevo-vehiculo :-moz-placeholder {
   /* Firefox 18- */
-  font-weight: 100;
+  font-weight: 400;
   color: #B1B1B1;
 }
 .footer-new-vh {
@@ -8927,14 +8927,14 @@ ul.list-icons li:before {
 .footer-new-vh.axa ul li span {
   font-family: "Source Sans Pro";
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 400;
   color: #FFF;
   line-height: 15px;
 }
 .footer-new-vh.axa ul li a {
   font-family: "Source Sans Pro";
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 400;
   color: #FFF;
   line-height: 15px;
 }
