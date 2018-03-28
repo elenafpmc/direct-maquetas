@@ -1,45 +1,56 @@
 .a-nuevo-vehiculo {
   min-height: ~"calc(100vh - 124px)";
   background-color: #FFF;
+
   .cnt-bg-white {
     background-color: #FFF;
     border-bottom: 6px solid #00008F;
     padding-bottom: 60px;
   }
+
   .cnt-bg-grey {
     background-color: #FFF;
     padding-top: 60px;
     padding-bottom: 30px;
   }
+
   .header {
     padding: 60px 0 30px 0;
+
     @media ( max-width: 767px ) {
       padding: 20px 0;
       height: auto;
     }
+
     .container {
       position: relative;
     }
+
     .ilustracion {
       position: absolute;
       top: 0;
       right: 0;
       width: 140px;
+
       @media ( max-width: 767px ) {
         width: 80px;
         height: 80px;
         right: 15px;
       }
+
       img {
         width: 100%;
       }
     }
   }
+
   .cnt-title-page {
     max-width: ~"calc(100% - 164px)";
+
     @media ( max-width: 767px ) {
       max-width: 100%;
     }
+
     .title {
       font-family: "Source Sans Pro";
       font-size: 38px;
@@ -47,9 +58,26 @@
       color: #00008F;
       line-height: 48px;
       padding: 0;
+
+      &--condensed {
+        line-height: 48px;
+        padding: 5px 0 25px;
+      }
+
+      &--last {
+        margin: 0 0 80px;
+        @media ( max-width: 767px ) {
+          margin: 40px 0 20px;
+        }
+      }
+
       @media ( max-width: 767px ) {
         font-size: 24px;
         line-height: 30px;
+
+        br {
+          display: none;
+        }
       }
     }
     .subtitle {
@@ -58,13 +86,23 @@
       line-height: 22px;
       color: #343C3D;
       padding: 10px 0 0 0;
+
+      &--last {
+        margin: 0 0 30px;
+      }
     }
   }
   .cnt-title-step {
     margin-bottom: 60px;
+
+    &--condensed {
+      margin-bottom: 48px;
+    }
+
     @media ( max-width: 767px ) {
       margin-bottom: 20px;
     }
+
     .title-step {
       display: inline-block;
       font-family: "Source Sans Pro";
@@ -95,11 +133,22 @@
       font-weight: 400;
       color: #181717;
       padding-bottom: 30px;
+
       &.lead {
         font-size: 22px;
         font-weight: 600;
         line-height: 25px;
         padding: 30px 0;
+      }
+
+      &.form-title {
+        font-family: "Source Sans Pro";
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 32px;
+        padding: 0;
+        margin: 0 0 16px;
+        color: #00008F;
       }
     }
     .form-group {
@@ -252,7 +301,134 @@
     font-weight: 400;
     color: #B1B1B1;
   }
+
+  &.a-gdpr {
+    .form-main-title {
+      padding: 30px 0;
+      margin-bottom: 30px;
+      border-top: 1px solid #C0C0C0;
+      border-bottom: 1px solid #C0C0C0;
+
+      p {
+        font-family: "Source Sans Pro";
+        font-weight: 600;
+        font-size: 38px;
+        color: #00008F;
+        letter-spacing: 0;
+        line-height: 48px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .header-list {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: 0;
+      margin: 10px 0 60px;
+
+      li {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 0 32px;
+        padding: 0;
+
+        &.block-icon {
+          [class*="icon-"] {
+            height: 24px;
+            width: 24px;
+            margin-top: 3px;
+          }
+
+          .text-icon {
+            font-family: "Source Sans Pro";
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 30px;
+            color: #00008F;
+
+            @media ( max-width: 767px ) {
+              font-size: 18px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .cnt-form {
+      .block-direct {
+        padding: 0;
+
+        .radio + .error-msg {
+          padding-left: 0;
+
+          @media ( max-width: 767px ) {
+            max-width: 46%;
+            margin-top: -40px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+      .radio {
+        padding: 5px 0 5px 32px;
+        margin: 0 0 18px;
+
+        &:last-of-type {
+          margin: 0;
+
+          @media ( max-width: 767px ) {
+            margin: 0 0 40px;
+          }
+        }
+
+        label {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          margin: 0;
+          text-transform: uppercase;
+
+          &::before {
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+
+      p {
+        &:last-child {
+          margin-bottom: 25px;
+
+          @media ( max-width: 767px ) {
+            padding: 0;
+            margin-bottom: 25px;
+          }
+        }
+
+        &.no-spacing {
+          padding: 0;
+          margin: 0;
+
+          @media ( max-width: 767px ) {
+            padding: 0;
+            margin-bottom: 25px;
+          }
+        }
+      }
+
+      .btn.btn-black {
+        height: auto;
+      }
+    }
+  }
 }
+
+
+
 .footer-new-vh {
   padding: 38px 0 48px 0;
   &.axa {
@@ -345,7 +521,7 @@ body.axa {
     }
     .datepicker-days {
       .table-condensed {
-        
+
       }
     }
   }
