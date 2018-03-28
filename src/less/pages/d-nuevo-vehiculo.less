@@ -69,9 +69,26 @@
       color: #181717;
       line-height: 60px;
       padding: 0;
+
+      &--condensed {
+        line-height: 52px;
+        padding: 20px 0;
+      }
+
+      &--last {
+        margin: 0 0 80px;
+        @media ( max-width: 767px ) {
+          margin: 40px 0 20px;
+        }
+      }
+
       @media ( max-width: 767px ) {
         font-size: 24px;
         line-height: 30px;
+
+        br {
+          display: none;
+        }
       }
     }
     .subtitle {
@@ -80,13 +97,23 @@
       line-height: 19px;
       color: #181717;
       padding: 10px 0 0 0;
+
+      &--last {
+        margin: 0 0 30px;
+      }
     }
   }
   .cnt-title-step {
     margin-bottom: 60px;
+
+    &--condensed {
+      margin-bottom: 48px;
+    }
+
     @media ( max-width: 767px ) {
       margin-bottom: 20px;
     }
+
     .title-step {
       display: inline-block;
       font-family: "Futura-pt";
@@ -111,15 +138,27 @@
   }
   .cnt-form {
     margin-bottom: 115px;
+
     p {
       font-family: Tahoma, arial, helvetica;
       font-size: 18px;
       color: #181717;
       padding-bottom: 30px;
+
       &:last-child {
         margin-bottom: 25px;
       }
+
+      &.form-title {
+        font-family: "Futura-pt";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0 0 16px;
+      }
     }
+
     .form-group {
       label {
         margin-bottom: 10px;
@@ -141,18 +180,22 @@
           background-position: right 10px center;
         }
       }
+
       .error-msg {
         display: none;
       }
+
       &.has-error {
         .form-control {
           border: 1px solid #FF0000;
           box-shadow: inset 1px 1px 7px 0 rgba(230,103,95,0.50)!important;
           color: #000;
+
           &.js-datepicker{
             background-image: url(../img/ico-calendar-error.png);
           }
         }
+
         .error-msg {
           display: block;
           padding: 13px 0 0 10px;
@@ -163,11 +206,13 @@
         }
       }
     }
+
     .btn.btn-black {
       margin-top: 30px;
       height: 57px;
       position: relative;
       border: 0;
+
       &:after {
         content: '';
         display: block;
@@ -181,24 +226,29 @@
       }
     }
   }
+
   .lopd-message {
     font-family: Tahoma, arial, helvetica;
     font-size: 12px;
     color: #181717;
   }
+
   .cnt-info {
     background-color: #FFF;
     padding: 30px;
     margin-bottom: 40px;
+
     p {
       max-width: 850px;
       font-family: Tahoma, arial, helvetica;
       font-size: 18px;
       line-height: 25px;
       color: #181717;
+
       &:last-child {
         padding-bottom: 0;
       }
+
       .error {
         color: #D9655F;
       }
@@ -207,11 +257,13 @@
   .tooltip {
     &.right {
       padding-left: 10px;
+
       .tooltip-arrow {
         border-right-color: #CCCCCC;
         border-width: 10px 10px 10px 0;
         margin-top: -10px;
         left: 0px;
+
         &:before {
           content: '';
           display: block;
@@ -228,17 +280,17 @@
         }
       }
     }
+
     &.in {
       opacity: 1;
     }
+
     .tooltip-inner {
       background-color: #FFF;
       border: 1px solid #CCCCCC;
       border-radius: 0;
       padding: 20px;
       max-width: 230px;
-
-
       font-family: Tahoma, arial, helvetica;
       font-size: 14px;
       line-height: 18px;
@@ -246,12 +298,15 @@
       text-align: left;
     }
   }
+
   .hightlight {
     padding: 0 10px;
+
     &.yellow {
       background-color: #F5D777;
     }
   }
+
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-weight: normal;
     color: #B1B1B1;
@@ -268,7 +323,121 @@
     font-weight: normal;
     color: #B1B1B1;
   }
+
+  &.d-gdpr {
+
+    .header-list {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: 0;
+      margin: 10px 0 60px;
+
+      li {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 0 32px;
+        padding: 0;
+
+        &.block-icon {
+          [class*="icon-"] {
+            height: 24px;
+            width: 24px;
+            margin-top: 3px;
+          }
+
+          .text-icon {
+            font-family: "Futura-pt";
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 32px;
+            color: #181717;
+
+            @media ( max-width: 767px ) {
+              font-size: 18px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .content-card {
+      display: block;
+      background-color: #FFF;
+      padding: 30px;
+    }
+
+    .cnt-form {
+      .block-direct {
+        padding: 0;
+
+        .radio + .error-msg {
+          padding-left: 0;
+
+          @media ( max-width: 767px ) {
+            max-width: 46%;
+            margin-top: -40px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+      .radio {
+        padding: 5px 0 5px 32px;
+        margin: 0 0 18px;
+
+        &:last-of-type {
+          margin: 0;
+
+          @media ( max-width: 767px ) {
+            margin: 0 0 40px;
+          }
+        }
+
+        label {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          margin: 0;
+          text-transform: uppercase;
+
+          &::before {
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+
+      p {
+        &:last-child {
+          margin-bottom: 25px;
+
+          @media ( max-width: 767px ) {
+            padding: 0;
+            margin-bottom: 25px;
+          }
+        }
+
+        &.no-spacing {
+          padding: 0;
+          margin: 0;
+
+          @media ( max-width: 767px ) {
+            padding: 0;
+            margin-bottom: 25px;
+          }
+        }
+      }
+
+      .btn.btn-black {
+        height: auto;
+      }
+    }
+  }
 }
+
 .footer-new-vh {
   padding: 38px 0 48px 0;
 
@@ -280,7 +449,7 @@
     color: #FFF;
     text-decoration: none;
     & + a{
-      margin-left: 15px; 
+      margin-left: 15px;
     }
   }
   .footer-links{
