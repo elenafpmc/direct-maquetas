@@ -326,6 +326,21 @@
 
   &.d-gdpr {
 
+    .title {
+      @media ( max-width: 991px ) {
+        br {
+          display: none;
+        }
+      }
+    }
+
+    p {
+      a {
+        color: #181717;
+        text-decoration: none;
+      }
+    }
+
     .header-list {
       display: block;
       position: relative;
@@ -364,12 +379,6 @@
       }
     }
 
-    .content-card {
-      display: block;
-      background-color: #FFF;
-      padding: 30px;
-    }
-
     .cnt-form {
       .block-direct {
         padding: 0;
@@ -384,6 +393,7 @@
           }
         }
       }
+
       .radio {
         padding: 5px 0 5px 32px;
         margin: 0 0 18px;
@@ -410,10 +420,12 @@
         }
       }
 
+      .has-error .radio label {
+        color: #000000;
+      }
+
       p {
         &:last-child {
-          margin-bottom: 25px;
-
           @media ( max-width: 767px ) {
             padding: 0;
             margin-bottom: 25px;
@@ -430,9 +442,20 @@
           }
         }
       }
+    }
 
-      .btn.btn-black {
-        height: auto;
+    .content-card {
+      display: block;
+      background-color: #FFF;
+      padding: 30px;
+
+      p {
+        padding-bottom: 23px;
+      }
+
+      .form-title {
+        padding: 0;
+        margin-bottom: 25px;
       }
     }
   }
