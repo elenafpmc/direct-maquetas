@@ -66,7 +66,7 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
 
 
     // step 1
-    $scope.nif = '02710212f';
+    $scope.nif = '';
 
     // step2
 
