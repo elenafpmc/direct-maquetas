@@ -121,10 +121,10 @@
 			</header>
 			<div class="container" ng-hide="completed">
 				<div class="cnt-title-page">
-					<p class="title" ng-show="steps">Hola
+					<p class="title " ng-show="steps">Hola
 						<span class="hightlight yellow">{{ user.name }}</span>
 					</p>
-					<p class="title title--condensed">Necesitamos que aceptes la nueva
+					<p class="title title--condensed" ng-class="{'no-greeting' : !steps}" >Necesitamos que aceptes la nueva
 						<br /> Política de Protección para:</p>
 					<ul class="list-unstyled header-list">
 						<li class="block-icon">
