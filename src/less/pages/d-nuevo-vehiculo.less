@@ -75,7 +75,7 @@
         padding: 20px 0;
         &.no-greeting{
           padding-top:80px !important;
-        } 
+        }
       }
 
       &--last {
@@ -331,6 +331,9 @@
 
     .title {
       @media ( max-width: 991px ) {
+        &:first-child {
+          margin-top: 40px;
+        }
         br {
           display: none;
         }
@@ -378,6 +381,16 @@
               line-height: 24px;
             }
           }
+        }
+      }
+    }
+
+    .cnt-title-step {
+      @media ( max-width: 767px ) {
+        margin-bottom: 40px;
+        
+        .title-step {
+          padding-bottom: 20px;
         }
       }
     }

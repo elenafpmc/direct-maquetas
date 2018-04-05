@@ -8627,6 +8627,9 @@ ul.list-icons li:before {
   color: #B1B1B1;
 }
 @media (max-width: 991px) {
+  .d-nuevo-vehiculo.d-gdpr .title:first-child {
+    margin-top: 40px;
+  }
   .d-nuevo-vehiculo.d-gdpr .title br {
     display: none;
   }
@@ -8666,6 +8669,14 @@ ul.list-icons li:before {
   .d-nuevo-vehiculo.d-gdpr .header-list li.block-icon .text-icon {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .d-nuevo-vehiculo.d-gdpr .cnt-title-step {
+    margin-bottom: 40px;
+  }
+  .d-nuevo-vehiculo.d-gdpr .cnt-title-step .title-step {
+    padding-bottom: 20px;
   }
 }
 .d-nuevo-vehiculo.d-gdpr .cnt-form .block-direct {
@@ -9078,6 +9089,14 @@ ul.list-icons li:before {
   font-weight: 400;
   color: #B1B1B1;
 }
+@media (max-width: 991px) {
+  .a-nuevo-vehiculo.a-gdpr .title:first-child {
+    margin-top: 20px;
+  }
+  .a-nuevo-vehiculo.a-gdpr .title br {
+    display: none;
+  }
+}
 .a-nuevo-vehiculo.a-gdpr p a {
   color: #181717;
   text-decoration: none;
@@ -9118,8 +9137,13 @@ ul.list-icons li:before {
 .a-nuevo-vehiculo.a-gdpr .cnt-bg-grey {
   min-height: 400px;
 }
-.a-nuevo-vehiculo.a-gdpr .cnt-title-step {
-  margin-bottom: 56px;
+@media (max-width: 767px) {
+  .a-nuevo-vehiculo.a-gdpr .cnt-title-step {
+    margin-bottom: 38px;
+  }
+  .a-nuevo-vehiculo.a-gdpr .cnt-title-step .title-step {
+    padding-bottom: 20px;
+  }
 }
 .a-nuevo-vehiculo.a-gdpr .form-main-title {
   padding: 30px 0;
@@ -9172,6 +9196,7 @@ ul.list-icons li:before {
   padding-top: 2px;
   margin: 0;
   text-transform: uppercase;
+  color: #181717;
 }
 .a-nuevo-vehiculo.a-gdpr .cnt-form .radio label::before {
   height: 24px;

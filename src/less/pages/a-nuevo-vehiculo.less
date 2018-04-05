@@ -50,7 +50,7 @@
     @media ( max-width: 767px ) {
       max-width: 100%;
     }
-    
+
     .title {
       font-family: "Source Sans Pro";
       font-size: 38px;
@@ -64,10 +64,10 @@
       &--condensed {
         line-height: 48px;
         padding: 5px 0 25px;
-        
+
         &.no-greeting{
           padding-top:48px !important;
-        } 
+        }
       }
 
       &--last {
@@ -310,6 +310,17 @@
 
   &.a-gdpr {
 
+    .title {
+      @media ( max-width: 991px ) {
+        &:first-child {
+          margin-top: 20px;
+        }
+        br {
+          display: none;
+        }
+      }
+    }
+
     p {
       a {
         color: #181717;
@@ -360,7 +371,13 @@
     }
 
     .cnt-title-step {
-      margin-bottom: 56px;
+      @media ( max-width: 767px ) {
+        margin-bottom: 38px;
+
+        .title-step {
+          padding-bottom: 20px;
+        }
+      }
     }
 
     .form-main-title {
@@ -418,6 +435,7 @@
           padding-top: 2px;
           margin: 0;
           text-transform: uppercase;
+          color: #181717;
 
           &::before {
             height: 24px;
