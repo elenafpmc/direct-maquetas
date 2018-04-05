@@ -109,9 +109,7 @@
 		<div class="cnt-bg-white">
 			<header class="header">
 				<div class="container">
-					<a href="#">
-						<img src="img/logo-solo-direct.png" alt="" />
-					</a>
+					<img src="img/logo-solo-direct.png" alt="" />
 					<div class="ilustracion">
 						<img src="img/seatbelt.png" alt="" ng-hide="completed || errorform"/>
 						<img src="img/exclamacion.png" alt="" ng-show="errorform"/>
@@ -125,7 +123,7 @@
 						<span class="hightlight yellow">{{ user.name }}</span>
 					</p>
 					<p class="title title--condensed" ng-class="{'no-greeting' : !steps}" >Necesitamos que aceptes la nueva
-						<br /> Política de Protección para:</p>
+						<br /> Política de Protección de Datos para:</p>
 					<ul class="list-unstyled header-list">
 						<li class="block-icon">
 							<span class="icon-svg-checked-yellow pull-left" data-grunticon-embed=""></span>
@@ -166,10 +164,10 @@
 						<div class="row">
 							<div class="col-sm-4">
 								<div class="form-group" ng-class="{ 'has-error': form1.nif.$error.validatenifformat }">
-									<label for="nif">DNI / NIE / CIF</label>
+									<label for="nif">NIF / NIE / CIF</label>
 									<input type="text" name="nif" id="nif" ng-model="nif" validatenifformat class="form-control" placeholder="Ej: 12345678Z" />
 									<span class="error-msg" ng-hide="!form1.nif.$error.validatenifformat">
-										Por favor revisa el formato
+										Por favor, revisa el formato
 									</span>
 									<span class="error-msg">
 										El dato introducido es incorrecto
