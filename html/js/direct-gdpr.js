@@ -174,6 +174,23 @@ app.directive('capitalize', function() {
 });
 
 
+app.directive("scrollTo",function() {
+    return {
+        restrict: "A",
+        link: function(scope, elem, attrs) {
+            var scrollelement = attrs.scrollelement
+            
+            //On click
+            $(elem).click(function() {
+                var $target = $(this).closest('form').find(scrollelement).first();
+                var to = $target.offset().top - 100;
+
+                $("html, body").animate({ scrollTop: to }, 500);
+            });
+        }
+    }
+});
+
 app.controller('gdprController', function ($scope, $http, $timeout) {
 
     var fileName = "direct-gdpr.html";
@@ -202,7 +219,7 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
     };
 
     // step 1
-    $scope.nif = '';
+    $scope.nif = '11111111H';
 
     $scope.findNif = function(){
         
@@ -221,15 +238,12 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
         radio3: ''
     };
 
-    $scope.scrollToError = function () {
-        console.log($('has-herror:visible').first());
-        
-       $scope.scrollToAnchor($scope.from2.$error.required[0].$name);
-    }
 
     $scope.nextStep = function () {
         $scope.step1 = false;
         $scope.step2 = true;
+
+        window.scrollTo(0,  0 ); 
 
         window.history.pushState({
             page: 2
@@ -237,10 +251,10 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
     }
     
     $scope.required = "true";
-
    
     $scope.send = function(){
         $scope.steps = false;
+        window.scrollTo(0,  0 );  
 
         if($scope.pp.radio1 == 'no' && $scope.pp.radio2 == 'no' && $scope.pp.radio3 == 'no'){
             $scope.errorform = true;
