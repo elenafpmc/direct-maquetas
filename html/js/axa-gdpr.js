@@ -194,6 +194,15 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
 
     var fileName = "axa-gdpr.html";
 
+    var nextPage = function () {
+        $('body').addClass('fade-in');
+        setTimeout(function(){
+            $('body').removeClass('fade-in');
+        }, 3000);
+        
+        window.scrollTo(0,  0 ); 
+    }
+
     window.history.pushState({
         page: 1
     }, "", fileName + "#step1");
@@ -221,7 +230,7 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
 
 
     // step 1
-    $scope.nif = '11111111H';
+    $scope.nif = '';
 
     $scope.findNif = function(){
         
@@ -246,7 +255,7 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
         $scope.step1 = false;
         $scope.step2 = true;
 
-        window.scrollTo(0,  0 ); 
+        nextPage();
 
         window.history.pushState({
             page: 2
@@ -258,7 +267,7 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
    
     $scope.send = function(){
         $scope.steps = false;
-        window.scrollTo(0,  0 ); 
+        nextPage();
 
         if($scope.pp.radio1 == 'no' && $scope.pp.radio2 == 'no' && $scope.pp.radio3 == 'no'){
             $scope.errorform = true;

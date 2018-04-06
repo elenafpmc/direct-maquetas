@@ -183,9 +183,11 @@ app.directive("scrollTo",function() {
             //On click
             $(elem).click(function() {
                 var $target = $(this).closest('form').find(scrollelement).first();
-                var to = $target.offset().top - 100;
-
-                $("html, body").animate({ scrollTop: to }, 500);
+                if($target.length > 0){
+                    var to = $target.offset().top - 100;
+                    $("html, body").animate({ scrollTop: to }, 500);
+                }
+               
             });
         }
     }
@@ -194,6 +196,16 @@ app.directive("scrollTo",function() {
 app.controller('gdprController', function ($scope, $http, $timeout) {
 
     var fileName = "direct-gdpr.html";
+
+    var nextPage = function () {
+        $('body').addClass('fade-in');
+        setTimeout(function(){
+            $('body').removeClass('fade-in');
+        }, 3000);
+        
+        window.scrollTo(0,  0 ); 
+    }
+    
 
     window.history.pushState({
         page: 1
@@ -219,7 +231,7 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
     };
 
     // step 1
-    $scope.nif = '11111111H';
+    $scope.nif = '';
 
     $scope.findNif = function(){
         
@@ -229,6 +241,8 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
             $scope.nifFinded = false;
         }
     }
+
+
 
     // step2
 
@@ -243,6 +257,8 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
         $scope.step1 = false;
         $scope.step2 = true;
 
+        nextPage();
+
         window.scrollTo(0,  0 ); 
 
         window.history.pushState({
@@ -251,10 +267,13 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
     }
     
     $scope.required = "true";
+
+    
    
     $scope.send = function(){
         $scope.steps = false;
-        window.scrollTo(0,  0 );  
+
+        nextPage();
 
         if($scope.pp.radio1 == 'no' && $scope.pp.radio2 == 'no' && $scope.pp.radio3 == 'no'){
             $scope.errorform = true;
