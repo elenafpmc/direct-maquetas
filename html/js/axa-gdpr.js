@@ -224,7 +224,9 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
 
     $scope.user = {
         name: 'Verónica',
-        nif:'11111111H'
+        nif:'11111111H',
+        cif: 'J5428581B',
+        nie: 'X3847574L'
     };
 
 
@@ -234,7 +236,7 @@ app.controller('gdprController', function ($scope, $http, $timeout) {
 
     $scope.findNif = function(){
         
-        if( $scope.nif == $scope.user.nif ){
+        if( $scope.nif == $scope.user.nif || $scope.nif == $scope.user.cif || $scope.nif == $scope.user.nie  ){
             $scope.nifFinded = true;
         }else{
             $scope.nifFinded = false;
