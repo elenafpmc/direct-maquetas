@@ -165,7 +165,7 @@
 							<div class="col-sm-4">
 								<div class="form-group" ng-class="{ 'has-error': form1.nif.$error.validatenifformat || !nifFinded}">
 									<label for="nif">NIF / NIE / CIF</label>
-									<input type="text" name="nif" id="nif" ng-model="nif" validatenifformat value="{{ nif | uppercase }}" capitalize class="form-control" placeholder="Ej: 11111111H" />
+									<input type="text" name="nif" id="nif" ng-model="nif" validatenifformat value="{{ nif | uppercase }}"  ng-change="findNif()" capitalize class="form-control" placeholder="Ej: 11111111H" />
 									<span class="error-msg" ng-hide="!form1.nif.$error.validatenifformat">
 										Por favor, revisa el formato
 									</span>
