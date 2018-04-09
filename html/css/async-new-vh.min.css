@@ -32,6 +32,7 @@
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
@@ -228,10 +229,19 @@
   outline: 0;
 }
 .modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
   transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 .modal-open .modal {
@@ -249,6 +259,7 @@
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: 0;
@@ -312,6 +323,7 @@
     margin: 30px auto;
   }
   .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
   .modal-sm {
@@ -445,6 +457,7 @@
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   white-space: normal;
 }
@@ -822,53 +835,124 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 .animated {
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 .animated.infinite {
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .animated.hinge {
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
-@keyframes bounceIn {
+@-webkit-keyframes bounceIn {
   0% {
     opacity: 0;
+    -webkit-transform: scale(0.3);
     transform: scale(0.3);
   }
   50% {
     opacity: 1;
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
   }
   70% {
+    -webkit-transform: scale(0.9);
     transform: scale(0.9);
   }
   100% {
     opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  70% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
   }
 }
 .bounceIn {
+  -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
 }
-@keyframes bounceOut {
+@-webkit-keyframes bounceOut {
   0% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
   25% {
+    -webkit-transform: scale(0.95);
     transform: scale(0.95);
   }
   50% {
     opacity: 1;
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
   100% {
     opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+}
+@keyframes bounceOut {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
     transform: scale(0.3);
   }
 }
 .bounceOut {
+  -webkit-animation-name: bounceOut;
   animation-name: bounceOut;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes fadeIn {
   0% {
@@ -879,20 +963,46 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 .fadeIn {
+  -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-@keyframes fadeInDown {
+@-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
   }
 }
 .fadeInDown {
+  -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes fadeOut {
   0% {
@@ -903,6 +1013,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 .fadeOut {
+  -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
 /*	----------------------------------------------------------------------------------------------------
@@ -1066,17 +1177,13 @@ footer .list-inline a {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   border: 1px solid transparent;
   white-space: nowrap;
   font-size: 14px;
   line-height: 1.42857143;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   top: 15px;
   right: 15px;
 }
@@ -1133,17 +1240,13 @@ footer .list-inline a {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   border: 1px solid transparent;
   white-space: nowrap;
   font-size: 14px;
   line-height: 1.42857143;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   top: 15px;
   right: 15px;
 }
